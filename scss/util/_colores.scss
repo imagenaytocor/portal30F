@@ -23,7 +23,7 @@ $grisFondo: #EBEBEB;
 $grisTexto: tint($negro, 75%);
 $grisBorde: rgb(204,204,204);
 $titulo1: #5D99DB;
-//$error: rgb(231,76,60);
+//$alert-color: rgb(231,76,60);
 
 $enlace: rgb(0,131,215);
 $enlaceHover: tint($enlace, 45%);
@@ -120,7 +120,6 @@ $site-color-h1: zip($sites, $colorSites_h1);
 
 //colores mensajes
 
-$error: rgb(230,76,59);
 $exito: rgb(25,187,155);
 $info: rgb(52,152,219);
 $warning: rgb(241,196,15);

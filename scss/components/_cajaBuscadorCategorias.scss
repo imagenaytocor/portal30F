@@ -48,7 +48,7 @@ ul.cat1nivel > li {
 		content: "\f106";
 	}
 	&.catMarcada > label {
-		color: $error;
+		color: $alert-color;
 	}
 	@include breakpoints(tablet){
 		&:nth-child(3n) {

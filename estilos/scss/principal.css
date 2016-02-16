@@ -4606,7 +4606,7 @@ ul.cat1nivel > li {
   ul.cat1nivel > li label.padrecito.abierto:after {
     content: "\f106"; }
   ul.cat1nivel > li.catMarcada > label {
-    color: #e64c3b; }
+    color: #E64C3B; }
   @media (min-width: 45em) {
     ul.cat1nivel > li:nth-child(3n) {
       clear: left; } }
@@ -6091,7 +6091,7 @@ ul.cat3nivel {
       font-size: 16px;
       font-size: 1rem; } }
 .aviso .linea1banner {
-  background-color: #e64c3b;
+  background-color: #E64C3B;
   color: #fefefe;
   flex-basis: 26%;
   padding: .5em;
@@ -7010,20 +7010,20 @@ p#note {
     background-color: #9163c9; }
 
 .Error, .labelError, .inputError, input.Error, textarea.Error, .nullError {
-  color: #e64c3b; }
+  color: #E64C3B; }
 
 #contenidoAux .labelError {
   margin-bottom: 0; }
 
 .inputError, input.Error, input.labelError, input.inputError, textarea.Error, textarea.labelError, textarea.inputError, .nullError {
-  border-color: #e64c3b !important; }
+  border-color: #E64C3B !important; }
 
 textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
-  border: 1px solid #e64c3b; }
+  border: 1px solid #E64C3B; }
 
 .ayudaForm {
-  background-color: #e64c3b;
-  border: 1px solid #e64c3b;
+  background-color: #E64C3B;
+  border: 1px solid #E64C3B;
   border-radius: 0.3em;
   color: #fefefe;
   float: left;
@@ -7040,7 +7040,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
       #contenidoAux .ayudaForm {
         width: 100%; } }
   .ayudaForm:before {
-    background: none repeat scroll 0 0 #e64c3b;
+    background: none repeat scroll 0 0 #E64C3B;
     top: -6px;
     content: " ";
     height: 10px;
@@ -7078,8 +7078,8 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
       font-weight: 200; }
 
 #instruccionesUnicaError {
-  background-color: #e64c3b;
-  border: 1px solid #e64c3b;
+  background-color: #E64C3B;
+  border: 1px solid #E64C3B;
   margin-bottom: 1em;
   padding: .5em 1em;
   border-radius: 0.3em; }

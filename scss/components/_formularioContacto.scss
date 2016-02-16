@@ -121,7 +121,7 @@
 }
 
 .Error {
-	color: $error;
+	color: $alert-color;
 }
 
 .labelError {
@@ -132,7 +132,7 @@
 }
 
 .inputError {
-	border-color: $error !important;
+	border-color: $alert-color !important;
 	@extend .Error;
 }
 
@@ -142,7 +142,7 @@ input.Error {
 
 textarea.Error {
 	@extend .inputError;
-	border: 1px solid $error;
+	border: 1px solid $alert-color;
 }
 
 .nullError {
@@ -150,8 +150,8 @@ textarea.Error {
 }
 
 .ayudaForm {
-	background-color: $error;
-	border: 1px solid $error;
+	background-color: $alert-color;
+	border: 1px solid $alert-color;
 	border-radius: $global-radius;
 	color: $white;
 	float: left;
@@ -168,7 +168,7 @@ textarea.Error {
 		}
 	}
 	&:before {
-		background: none repeat scroll 0 0 $error;
+		background: none repeat scroll 0 0 $alert-color;
 		top: -6px;
 		content: " ";
 		height: 10px;
@@ -206,8 +206,8 @@ textarea.Error {
 }
 
 #instruccionesUnicaError {
-	background-color: $error;
-	border: 1px solid $error;
+	background-color: $alert-color;
+	border: 1px solid $alert-color;
 	margin-bottom: 1em;
 	padding: .5em 1em;
 	border-radius: $global-radius;
