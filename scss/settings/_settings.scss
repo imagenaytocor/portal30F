@@ -71,7 +71,7 @@ $global-weight-light: 200;
 $global-weight-normal: 400;
 $global-weight-bold: 500;
 
-$global-radius: 0;
+$global-radius: .3em;
 $global-namespace: false;
 $global-text-direction: ltr;
 $rem-base: 16px;
@@ -100,9 +100,6 @@ $quote-line-height:1.5;
 // Prueba
 
 $prueba-font-family: "VAG Rounded W10 Black", sans-serif;
-
-// Border-radius 6px
-$default-border-radius: .3em;
 
 // Breakpoints
 $bigPhone: 30;

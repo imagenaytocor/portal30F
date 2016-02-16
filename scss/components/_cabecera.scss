@@ -69,7 +69,7 @@ ul#idiomas {
 		&.activo {
 			display: block;
 			border: 1px solid #CCC;
-			border-radius: $default-border-radius;
+			border-radius: $global-radius;
 			padding: .2em .5em;
 		}
 		& a {
@@ -194,7 +194,7 @@ ul#accesos {
 #buscadorCabecera {
 	& fieldset {
 		border: 1px solid #CCC;
-		border-radius: $default-border-radius;
+		border-radius: $global-radius;
 		position: absolute;
 		right: .75em;
 		top: 3.75em;
@@ -218,7 +218,7 @@ ul#accesos {
 
 	& #query-input {
 		border:  none;
-		border-radius: $default-border-radius 0 0 $default-border-radius;
+		border-radius: $global-radius 0 0 $global-radius;
 		float: left;
 		line-height: 2.35;
 	}

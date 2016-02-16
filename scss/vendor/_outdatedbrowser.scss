@@ -52,7 +52,7 @@ website:    http://www.burocratik.com
 	width: 400px; /*need for IE*/
   text-decoration: none;
   border: 1px solid $blanco;
-  border-radius: $default-border-radius;
+  border-radius: $global-radius;
   cursor: pointer;
 }
 

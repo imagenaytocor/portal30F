@@ -17,7 +17,7 @@
 		}
 		& input {
 			border: 1px solid $grisTexto;
-			border-radius: $default-border-radius;
+			border-radius: $global-radius;
 			display: block;
 			margin: .25em 0;
 			padding: .15em .5em;
@@ -112,7 +112,7 @@
 		}
 	}
 	border: none !important;
-	border-radius: $default-border-radius;
+	border-radius: $global-radius;
 	color: #FFF;
 	float: right;
 	line-height: 2;
@@ -152,7 +152,7 @@ textarea.Error {
 .ayudaForm {
 	background-color: $error;
 	border: 1px solid $error;
-	border-radius: $default-border-radius;
+	border-radius: $global-radius;
 	color: $blanco;
 	float: left;
 	@include rem('font-size',16px);
@@ -210,7 +210,7 @@ textarea.Error {
 	border: 1px solid $error;
 	margin-bottom: 1em;
 	padding: .5em 1em;
-	border-radius: $default-border-radius;
+	border-radius: $global-radius;
 	& p {
 		&.resultadoError {
 			@include title3-style;

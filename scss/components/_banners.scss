@@ -658,7 +658,7 @@ span.fa {
 	}
 	& span.linea2banner em {
 		border: 1px solid $blanco;
-		border-radius: $default-border-radius;
+		border-radius: $global-radius;
 		padding: .25em .75em;
 	}
 	@include breakpoints(bigPhone){
