@@ -1,7 +1,7 @@
 //_cajaIndice.scss
 
 .cajaIndice {
-	border: 1px solid $grisBorde;
+	border: 1px solid $medium-gray;
 	margin-bottom: 1em;
 	padding: .5em 1em;;
 	& h2, 
@@ -23,7 +23,7 @@
 	& li {
 		text-transform: uppercase;
 		&:before {
-			color: $grisBorde;
+			color: $medium-gray;
 			content: "\f101";
 			display: inline-block; 
 			font-family: FontAwesome; 

@@ -58,19 +58,19 @@
 		  margin-right: .5em;
 		}
 		& a {
-			color: $grisTexto;
+			color: $dark-gray;
 		}
 	}
 	&.cajaDesplegable {
 		background-color: $white;
-		border: 1px solid $grisBorde;
+		border: 1px solid $medium-gray;
 		margin-bottom: 0.5em;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 		& img {
 			align-self: stretch;
-			background-color: $grisFondo;
+			background-color: $light-gray;
 			justify-content: space-around;
 		}
 		& h3 {

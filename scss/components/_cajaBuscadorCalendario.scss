@@ -32,7 +32,7 @@
 .ui-datepicker {
 	background-color: $white;
 	& .ui-datepicker-header {
-		border: 1px solid $grisBorde;
+		border: 1px solid $medium-gray;
 		display: flex;
 		font-family: $header-font-family;
 		justify-content: space-between;
@@ -79,8 +79,8 @@
 		}
 	}
 	& .ui-datepicker-title {
-		border-right: 1px solid $grisBorde;
-		border-left: 1px solid $grisBorde;
+		border-right: 1px solid $medium-gray;
+		border-left: 1px solid $medium-gray;
 		flex-basis: 80%;
 		margin: 0 !important;
 		order:2;

@@ -5,7 +5,7 @@
 }
 
 p#note {
-	background-color: $grisFondo;
+	background-color: $light-gray;
 	color: $enlace;
 	@include rem('font-size', 18px);
 	font-weight: $global-weight-normal;

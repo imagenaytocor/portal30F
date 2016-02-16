@@ -12,7 +12,7 @@
 		list-style: none;
 	}
 	& .relacionadosContenido li:before {
-		color: $grisTexto;
+		color: $dark-gray;
 	}
 	& .textoContenido dt {
 		font-weight: $global-weight-normal;
@@ -21,7 +21,7 @@
 		margin-left: 1em;
 	}
 	& + & {
-		border-top: 1px solid $grisBorde;
+		border-top: 1px solid $medium-gray;
 		padding-top: 1em;
 	}
 	.row & + & {
@@ -31,7 +31,7 @@
 }
 
 .cajaImgTxt {
-	background-color: $grisFondo;
+	background-color: $light-gray;
 	& .imagen {
 		//height: 6.25em;
 		width: 100%;
@@ -84,14 +84,14 @@
 .cajaDesplegable {
 	&.cajaGenerica {
 		background-color: $white;
-		border: 1px solid $grisBorde;
+		border: 1px solid $medium-gray;
 		margin-bottom: .5em;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 		& .imagen {
 			align-self: stretch;
-			background-color: $grisFondo;
+			background-color: $light-gray;
 			justify-content: space-around;
 			margin: 0;
 			order: 3;
@@ -210,17 +210,17 @@
 }
 
 .cajaInfo {
-	background-color: $grisFondo;
-	border: 1px solid $grisBorde;
+	background-color: $light-gray;
+	border: 1px solid $medium-gray;
 	padding: .5em 1em;
 	margin-bottom: 1em;
 	& h2 {
-		border-bottom: 1px solid $grisBorde;
+		border-bottom: 1px solid $medium-gray;
 		margin-bottom: 0.5em;
 	}
 	& h3 {
 		@include title2-style;
-		border-bottom: 1px solid $grisBorde;
+		border-bottom: 1px solid $medium-gray;
 		margin-bottom: 0.5em;
 
 	}
@@ -235,7 +235,7 @@
 }
 
 .cajaInfoFlecha {
-	border: 1px solid $grisBorde !important;
+	border: 1px solid $medium-gray !important;
 	padding: .5em;
 	margin-bottom: 1em;
 	.colCaja & + & {

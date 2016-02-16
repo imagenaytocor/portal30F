@@ -166,8 +166,8 @@ body:after {
 .colCaja {
 	margin-bottom: 1.5em;
 	&.fondoGris {
-		background-color: $grisFondo;
-		border: 1px solid $grisBorde;
+		background-color: $light-gray;
+		border: 1px solid $medium-gray;
 		padding: .5em 1em;
 		margin-bottom: 1em;
 	}
@@ -347,7 +347,7 @@ body:after {
 }
 
 .cajaBorde {
-	border: 1px solid $grisBorde;
+	border: 1px solid $medium-gray;
 	padding: .5em 1em;
 	& h2 {
 		@include rem('font-size',25px);

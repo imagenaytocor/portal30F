@@ -7,7 +7,7 @@
 }
 
 ul.cat1nivel > li {
-	border: 1px solid $grisBorde;
+	border: 1px solid $medium-gray;
 	margin-bottom:.5em;
 	padding-top: .5em;
 	@include breakpoints(tablet){
@@ -67,7 +67,7 @@ ul.cat1nivel > li {
 
 ul.cat2nivel {
 	background-color: $white;
-	border-top: 1px solid $grisBorde;
+	border-top: 1px solid $medium-gray;
 	margin: .5em 0 0 0;
 	padding: .5em 0 0 2.5%;
  	& > li {

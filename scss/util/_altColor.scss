@@ -3,7 +3,7 @@
 		color: $test-this-color;
 	} 
 	@else {
-		color: $grisTexto;
+		color: $dark-gray;
 		background-color: $test-this-color;
 	} 
 }

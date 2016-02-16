@@ -8,7 +8,7 @@
 		width: 100%;
 	}
 	& .desConTitulo {
-		background-color: $grisFondo;
+		background-color: $light-gray;
 		margin-bottom: 1em;
 		padding: 0 .5em 0 0;
 		position: relative;
@@ -28,11 +28,11 @@
 			float: right;
 			margin-top: .5em;
 			@include rem('font-size', 18px);
-			color: $grisTexto;
+			color: $dark-gray;
 			font-weight: $global-weight-normal;
 		}
 		& a {
-			color: $grisTexto;
+			color: $dark-gray;
 		}
 		& .imagen {
 			float: left;
@@ -43,7 +43,7 @@
 			@include rem('font-size', 16px);
 			float: right;
 			width: 48%;
-			color: $grisTexto;
+			color: $dark-gray;
 			font-family: $subheader-font-family;
 			font-weight: $global-weight-light;
 			margin-bottom: 2.5em;
@@ -63,7 +63,7 @@
 		}
 		& span.fa {
 			bottom: 0.25em;
-			color: $grisTexto;
+			color: $dark-gray;
 			cursor: pointer;
 			font-size: 2.5rem;
 			position: absolute;
@@ -87,7 +87,7 @@
 				@include rem('font-size', 16px);
 				padding: 0;
 				&:before {
-						color: $grisTexto;
+						color: $dark-gray;
 						content: "\f101";
 						font-family: FontAwesome;
 						@include rem('font-size',20px);

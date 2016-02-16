@@ -22,7 +22,7 @@
 		}
 	}
 	& a {
-		background-color: $grisFondo;
+		background-color: $light-gray;
 		border-radius :.15em;
 		color: $enlace;
 		@each $a in $site-color {
@@ -34,7 +34,7 @@
 		text-decoration: none;
 		&.current {
 				background-color: $white;
-				border: 1px solid $grisBorde;
+				border: 1px solid $medium-gray;
 				color: $black;
 		}
 		@include breakpoints(tablet){
@@ -48,7 +48,7 @@
 }
 
 .panes{
-	border: 1px solid $grisBorde;
+	border: 1px solid $medium-gray;
 	margin: 0 0 1em;
 	& > div {
 		padding: .5em;

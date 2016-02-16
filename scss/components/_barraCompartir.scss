@@ -32,7 +32,7 @@
 		}
 		& ul {
 			display: inline;
-			background-color: $grisFondo;
+			background-color: $light-gray;
 			border: 1px dotted #CCC;
 			padding: .75em .25em .25em .5em;
 			position: relative;
@@ -51,7 +51,7 @@
 				}
 			}
 			&:before {
-				background: none repeat scroll 0 0 $grisFondo;
+				background: none repeat scroll 0 0 $light-gray;
 				border-top: 1px dotted #CCC;
 				border-left: 1px dotted #CCC;
 				top: 15px;

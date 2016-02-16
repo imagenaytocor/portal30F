@@ -13,7 +13,7 @@
     position: absolute;
     top: 0;
     left: -250px;
-    background: $grisFondo;
+    background: $light-gray;
     & ul {
     	display: flex;
     	flex-direction: column;
@@ -254,7 +254,7 @@
 				flex-basis: 23%; 
 				margin: 0 1% 1em;
 				padding: 0px 1em 1em;
-				border-right: 1px dotted $grisBorde;
+				border-right: 1px dotted $medium-gray;
 			}
 			& a {
 				color: $enlace;
@@ -284,9 +284,9 @@
 		}
 	}
 	& a {
-		color: $grisTexto;
+		color: $dark-gray;
 		&:visited {
-			color: $grisTexto;
+			color: $dark-gray;
 		}
 	}
 }

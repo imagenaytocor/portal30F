@@ -16,17 +16,10 @@
   @return mix($color, black, $percentage);
 }
 
-//$black provisional hasta eliminar los colores generales de este fichero
-$black: #0a0a0a;
 
 // Colores del proyecto
 
-$grisFondo: #EBEBEB;
-//$grisTexto: (lighten($black, 25%));
-$grisTexto: tint($black, 75%);
-$grisBorde: rgb(204,204,204);
 $titulo1: #5D99DB;
-//$alert-color: rgb(231,76,60);
 
 $enlace: rgb(0,131,215);
 $enlaceHover: tint($enlace, 45%);

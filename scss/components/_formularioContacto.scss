@@ -1,7 +1,7 @@
 //_formularioContacto.scss
 
 #cajaFormularioGenerico {
-		border: 1px solid $grisBorde;
+		border: 1px solid $medium-gray;
 		padding: 1em;
 	& legend {
 		@include title3-style;
@@ -16,7 +16,7 @@
 			width: 75%;
 		}
 		& input {
-			border: 1px solid $grisTexto;
+			border: 1px solid $dark-gray;
 			border-radius: $global-radius;
 			display: block;
 			margin: .25em 0;
@@ -191,7 +191,7 @@ textarea.Error {
 }
 
 .cajaAyudaBorde {
-	background-color: $grisFondo;
+	background-color: $light-gray;
 	clear: both;
 	padding: .5em;
 	& p {

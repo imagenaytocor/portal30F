@@ -1,13 +1,13 @@
 //_acordeones.scss
 
 .acordeon {
-	border: 1px solid $grisBorde;
+	border: 1px solid $medium-gray;
 	clear: both;
 	margin: 0;
 	& h3 {
 		@include rem('font-size',20px);
-		background-color: $grisFondo;
-		border-bottom: 1px solid $grisBorde;
+		background-color: $light-gray;
+		border-bottom: 1px solid $medium-gray;
 		border-left: 2px solid $enlace;
 		@each $a in $site-color {
 			.#{nth($a, 1)} & {
@@ -62,8 +62,8 @@
 }
 
 .tituloAcordeon {
-	background-color: $grisFondo;
-	border: 1px solid $grisBorde;
+	background-color: $light-gray;
+	border: 1px solid $medium-gray;
 	border-left: 2px solid $enlace;
 	@each $a in $site-color {
 		.#{nth($a, 1)} & {

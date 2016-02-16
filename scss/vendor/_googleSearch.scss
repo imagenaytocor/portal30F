@@ -71,7 +71,7 @@ input.gsc-search-button {
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-page {
-	border: 1px solid $grisBorde;
+	border: 1px solid $medium-gray;
 	color: $enlace;
 	@each $a in $site-color {
 		.#{nth($a, 1)} & {
@@ -82,5 +82,5 @@ input.gsc-search-button {
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
-	color: $grisTexto;
+	color: $dark-gray;
 	}

@@ -44,7 +44,7 @@
 		margin-bottom: .5em;
 	}
 	& > p {
-		background-color: $grisFondo;
+		background-color: $light-gray;
 		border: 1px solid #CCC;
 		cursor: pointer;
 		padding: .25em .5em;
@@ -219,14 +219,14 @@
 	}
 	&.cajaDesplegable {
 		background-color: $white;
-		border: 1px solid $grisBorde;
+		border: 1px solid $medium-gray;
 		margin-bottom: 0.5em;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
 		& img {
 			align-self: stretch;
-			background-color: $grisFondo;
+			background-color: $light-gray;
 			justify-content: space-around;
 		}
 		& h2 {
@@ -268,7 +268,7 @@
 		clear: both;
 	}
 	& .imagenLista {
-		background-color: $grisFondo;
+		background-color: $light-gray;
 		margin-right: 1.625%;
 		padding: .5em;
 		width: 30%;
@@ -354,7 +354,7 @@
 // listado complejo - sin dt - 1, 3, 4 y 6
 %listCompNoDT {
 	& .listadoResultados > li {
-		border-bottom: 1px dotted $grisBorde;
+		border-bottom: 1px dotted $medium-gray;
 		float: left;
 		padding: 0 0 .5em;
 		width: 100%;
@@ -414,7 +414,7 @@
 // nuevo listEventosComplejo - dt - 2, 5, 8, 9
 %listCompDT {
 	& .listadoResultados > li {
-		border-bottom: 1px dotted $grisBorde;
+		border-bottom: 1px dotted $medium-gray;
 		float: left;
 		padding: 0 0 .5em;
 		width: 100%;

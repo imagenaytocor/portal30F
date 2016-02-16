@@ -6,7 +6,7 @@
 				margin-right: .3em;
 				& a {
 					&::before {
-						border:1px solid $grisBorde;
+						border:1px solid $medium-gray;
 						border-radius: $global-radius;
 					}
 				}
@@ -28,7 +28,7 @@
 				}*/
 			}
 		& .facebook a::before {
-			color: $grisTexto;
+			color: $dark-gray;
 			display: block;
 			text-align: center;
 			height: 1.2em;
@@ -36,7 +36,7 @@
 			width: 1.2em;
 		}
 		& .twitter a::before {
-			color: $grisTexto;
+			color: $dark-gray;
 			display: block;
 			text-align: center;
 			height: 1.2em;

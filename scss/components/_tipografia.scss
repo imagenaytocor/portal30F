@@ -114,7 +114,7 @@ dt {
 
 dd {
 	//@include list-style;
-	color: $grisTexto;
+	color: $dark-gray;
 	font-family: $header-font-family;
 	@include rem('font-size', 16px);
 	font-weight: $global-weight-light;

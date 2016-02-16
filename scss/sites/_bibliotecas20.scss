@@ -73,7 +73,7 @@
 		}
 	}
 	& .hilo2nivel a {
-		color: $grisTexto;
+		color: $dark-gray;
 	}
 	& .menuPrincipal .nivel2 > li > a:hover,
 	& .hilo2nivel a:hover {
@@ -133,7 +133,7 @@
 		font-weight: $global-weight-normal;
 	} 
 	& p.linea1cajaPromocion a {
-		color: $grisTexto;
+		color: $dark-gray;
 	}
 	& #outdated {
 		background-image: url('//estaticos.coruna.es/imagesdu/bibliotecas.jpg');
