@@ -1,0 +1,17 @@
+/*_temp.scss -> Estilos necesarios durante la creación de las CSS*/
+
+.paginaPortada.site_1382936859765 #contenido,
+.paginaPortada.site_1414721835012 #contenido {
+	flex-basis: 100%;
+	padding: 1.5em 3.125%;
+	width: 100%;
+	@include breakpoints(tablet){
+		display: flex;
+		flex-direction: column;
+		flex-wrap: no-wrap;
+	}
+}
+
+.enlaceXcelerate {
+	display: none;
+}

@@ -1,0 +1,46 @@
+//Enviar a un amigo
+
+#dialogEnviarAmigo {
+	max-width: 100% !important;
+	& .frameEnviarAmigo {
+		height: 15em;
+		width: 100%;
+		@include breakpoints(bigPhone) {
+			height: 10em;
+		}
+	}
+}
+
+.body_1427249842048 {
+	& .ui-dialog {
+		border: 1px solid red !important;
+	}
+	& h2 {
+		@include rem('font-size',20px);
+	}
+}
+
+.botoneraDialog {
+	padding: 1em 0 .25em;
+}
+
+#botonCerrar {
+	background-color: $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			background-color: nth($a, 2);
+		}
+	}
+	border: none !important;
+	border-radius: $default-border-radius;
+	color: #FFF;
+	float: right;
+	line-height: 2;
+	padding: 0 .5em;
+	text-transform: uppercase;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: $titulos-font-family !important;
+	@include rem('font-size',20px);
+}

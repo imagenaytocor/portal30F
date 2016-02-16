@@ -1,0 +1,152 @@
+/*_tipografia.scss*/
+
+html {
+	font-size: $global-font-size;
+}
+
+body {
+    background-color:#FFF;
+    color:$txt;
+    font: {
+    	family: $base-font-family;
+    	size: 1.6rem;
+    	weight:$regular;
+    }
+    line-height:$global-lineheight;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+::-moz-selection {
+    background-color: tint($enlace, 35%);
+    @each $a in $site-color {
+    	.#{nth($a, 1)} & {
+    		background-color: tint(nth($a, 2), 35%);
+    	}
+    }
+    color: $enlace;
+    @each $a in $site-color {
+    	.#{nth($a, 1)} & {
+    		color: nth($a, 2);
+    	}
+    }
+    text-shadow: none;
+}
+
+::selection {
+    background-color: tint($enlace, 35%);
+    @each $a in $site-color {
+    	.#{nth($a, 1)} & {
+    		background-color: tint(nth($a, 2), 35%);
+    	}
+    }
+    color: $enlace;
+    @each $a in $site-color {
+    	.#{nth($a, 1)} & {
+    		color: nth($a, 2);
+    	}
+    }
+    text-shadow: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+h2 {
+	@include title2-style;
+	.colCaja > & {
+		flex-basis: 100%;
+		width:100%;
+	}
+}
+
+h3 {
+	@include title3-style;
+	.colCaja > & {
+		flex-basis: 100%;
+		width:100%;
+	}
+}
+
+h4 {
+	@include title4-style;
+}
+
+h5 {
+	@include title5-style;
+}
+
+h6 {
+	@include title6-style;
+}
+
+p {
+	@include para-style;
+	&.tituloInterno {
+		margin-bottom: .5em;
+		text-transform: uppercase;
+	}
+}
+
+a {
+	@include link-style;
+}
+
+dt {
+	//@include title3-style;
+	color: $negro;
+	font-family: $titulos-font-family;
+	@include rem('font-size',16px);
+	font-weight: $light;
+	line-height: 1.3;
+}
+
+dd {
+	//@include list-style;
+	color: $grisTexto;
+	font-family: $titulos-font-family;
+	@include rem('font-size', 16px);
+	font-weight: $light;
+	line-height: 1.3;
+	margin-bottom:.5em;
+}
+
+ul,
+ol {
+	list-style: inside;
+	margin-left: 3.125%;
+}
+
+li {
+	@include list-style;
+	ol > & {
+		list-style-type: decimal;
+	}
+}
+
+label, input, select, legend {
+	@include para-style;
+}
+
+table {
+	@include list-style;
+}
+
+img {
+	max-width: 100%;
+}
+
+blockquote p {
+	@include quote-style;
+}

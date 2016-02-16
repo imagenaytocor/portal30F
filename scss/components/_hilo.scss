@@ -1,0 +1,43 @@
+//_hilo.scss
+
+#hilo {
+	border-bottom: 1px dotted #CCC;
+	margin-bottom: .5em;
+	padding: .5em 3.125%;
+	width: 100%;
+	@include breakpoints(desktop){
+		flex-basis: 100%;
+	}
+	& ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	& li {
+		@include rem('font-size', 16px);
+		font-weight: $light;
+		list-style: none;
+		margin-bottom: 0;
+		margin-right: .5em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-transform: uppercase;
+		white-space: nowrap;
+		&:after {
+			content: ">";
+			margin-left: .5em;
+		}
+		&:last-of-type:after {
+			content: "";
+			margin-left: 0;
+		}
+	}
+	.paginaPortada & {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding: 0;
+		& ul {
+			@include offleft;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+//_relacionados.scss
+
+.relacionados {
+	margin-top: 1em;
+		@include breakpoints(desktop){
+			margin-top: 0;
+		}
+	& .tituloInterno {
+		border-left: 2px solid $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				border-left-color: nth($a, 2);
+			}
+		}
+		margin-bottom: 0;
+		padding: .3em .55em;
+		text-transform: uppercase;
+	}
+	& ul {
+		list-style: none;
+	}
+	@include breakpoints(desktop){
+		flex-basis: 30%;
+		& .tituloInterno {
+			border-left: none;
+			padding-left: 0;
+		}
+		& ul {
+			margin-left: 0;
+		}
+		& li {
+			background-color: rgba($blanco,.8);
+			border: 1px solid $grisFondo;
+			padding: .5em;
+			&.descripcion {
+				background-color: transparent;
+				border: none;
+				@include rem('font-size',16px);
+				padding: 0 1em .5em 1.75em;
+			}
+		}
+	}
+}
+
+.relacionadosItem {
+	& ul {
+		list-style: none;
+	}
+	& li {
+		&:before  {
+			color: $negro;
+			content: '\f101';
+			cursor: pointer;
+			display: inline-block;
+		  font-family: FontAwesome;
+		  @include rem('font-size',18px);
+		  line-height: 1;
+		  margin-right: .5em;
+		  .dirPie & {
+		  	display: none;
+		  }
+		}
+		&.descripcion:before {
+			display: none;
+		}
+	}
+}

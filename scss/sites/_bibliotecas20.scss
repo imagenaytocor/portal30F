@@ -1,0 +1,177 @@
+//_bibliotecas20.scss
+
+//cajaTwitter portada
+#contenido_1383099167388 {
+	& iframe {
+		height: 25em !important;
+		@include breakpoints(tablet){
+			height: 34.375em !important;
+		}
+		@include breakpoints(desktop){
+			height: 18.75em !important;
+		}
+	}
+}
+
+//Ocultar relacionados en programa, fechaInscripcion en listado 
+
+.site_1382936859765 {
+	& a {
+		font-weight: $regular;
+		&:hover {
+			color: $blanco;
+		}
+	}
+	& #menuMapaWeb .menu_1424941872927 {
+		@include breakpoints(desktop) {
+			@include offleft;
+		}
+	}
+	& h1 {
+		@include rem('font-size', 33px);
+		padding-bottom: 1em;
+		top: 3.1em;
+		& a {
+			font-weight: $light;
+		}
+		@include breakpoints(bigPhone) {
+			@include rem('font-size', 40px);
+			padding-bottom: .9em;
+			top: 2.55em;
+		}
+		@include breakpoints(tablet) {
+			@include rem('font-size', 60px);
+			padding-bottom: .6em;
+			top: 1.68em;
+		}
+		@include breakpoints(desktop) {
+			padding-bottom: .1em;
+			top: 1.53em;
+		}
+	}
+	& ul#accesos {
+		right: 1em;
+		top: 9.95em;
+		& a:before {
+			@include rem('font-size', 20px);
+		}
+		@include breakpoints(bigPhone) {
+			right: 2em;
+			top: 10.5em;
+		}
+		@include breakpoints(tablet) {
+			top: 12.5em;
+			& a:before {
+				@include rem('font-size', 24px);
+			}
+		}
+		@include breakpoints(desktop) {
+			top: 8.7em;
+			& a:before {
+				@include rem('font-size', 24px);
+			}
+		}
+	}
+	& .hilo2nivel a {
+		color: $grisTexto;
+	}
+	& .menuPrincipal .nivel2 > li > a:hover,
+	& .hilo2nivel a:hover {
+		background-color: transparent;
+		cursor: default;
+	}
+	& #centro {
+		margin-top: 2.5em;
+		@include breakpoints(bigPhone) {
+			margin-top: 3.5em;
+		}
+		@include breakpoints(tablet) {
+			margin-top: 4.5em;
+		}
+		@include breakpoints(desktop) {
+			margin-top: 5.5em;
+		}
+	}
+	&.paginaPortada #centro {
+		margin-top: 1em;
+		@include breakpoints(bigPhone) {
+			margin-top: 2em;
+		}
+		@include breakpoints(tablet) {
+			margin-top: 3em;
+		}
+		@include breakpoints(desktop) {
+			margin-top: 4em;
+		}
+	}
+	& .detallePrograma .relacionados,
+	& #detallePrograma .relacionados,
+	& .detallePrograma h3.tituloInterno,
+	& .detallePrograma li:before,
+	& .detallePrograma li > a {
+		@include offleft;
+	} 
+	& #detalleEntidad .relacionados,
+	& #detallePrograma .programaIndicadores, 
+	& #detallePrograma .programaMasInformacion {
+		display: none;
+	}
+	& #detalleEntidad .horario {
+		display: none;
+	}
+	& .videoExterno iframe + p {
+		margin-top: .5em;
+	}
+	& .listEventos3,
+	& .listEventos5 {
+		& dt[class^="fechaInscripcion"],
+		& dd[class^="fechaInscripcion"] {
+			@include offleft;
+		}
+	}
+	& .destacadosPortada p {
+		font-weight: $regular;
+	} 
+	& p.linea1cajaPromocion a {
+		color: $grisTexto;
+	}
+	& #outdated {
+		background-image: url('//estaticos.coruna.es/imagesdu/bibliotecas.jpg');
+	}
+	// Ajustes verde
+	
+	& .destacadosPortada span.linea1banner {
+	    background-color: $colorBibliotecas;
+	    color: $blanco;
+	    font-weight: $medium;
+	}
+	& .destacadosPortada span.linea2banner {
+	    border-top: 3px solid $blanco;
+	}
+	& .bannerUnaLinea p.linea1cajaPromocion a {
+		color: $colorBibliotecas;
+		font-weight: $medium;
+	}
+	& .fondoColor p.linea1cajaPromocion a {
+		color: $blanco;
+	}
+	& .ui-datepicker-prev,
+	& .ui-datepicker-next {
+		font-weight: $medium;
+	}
+	& span[class$="_fancy"]{
+		margin: 1% !important;
+		overflow: hidden;
+		width: 98%;
+		& > span {
+			width: 92% !important;
+		}
+		& > a {
+			width: 90%;
+		}
+	}
+	& .mason p {
+		font-style: normal;
+	}
+}
+

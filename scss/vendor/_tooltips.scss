@@ -1,0 +1,14 @@
+//_tooltips.scss
+
+div.tooltip {
+  background-color: rgba(15, 52, 83, 0.75);
+  border: 1px dotted $blanco;
+  border-radius: 3px;
+  color: $blanco;
+  margin-top: .5em;
+  padding: .25em;
+}
+
+.tooltip.bottom {
+  background:url(/images/black_arrow_bottom.png);
+}

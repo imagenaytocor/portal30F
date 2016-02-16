@@ -1,0 +1,232 @@
+//_formularioContacto.scss
+
+#cajaFormularioGenerico {
+		border: 1px solid $grisBorde;
+		padding: 1em;
+	& legend {
+		@include title3-style;
+		margin-top: 0;
+	}
+	& label {
+		clear: both;
+		float: left;
+		@include rem('font-size',16px);
+		width: 100%;
+		@include breakpoints(bigPhone){
+			width: 75%;
+		}
+		& input {
+			border: 1px solid $grisTexto;
+			border-radius: $default-border-radius;
+			display: block;
+			margin: .25em 0;
+			padding: .15em .5em;
+			width: 80%;
+		}
+		&.ficheroAdjuntoInput input {
+			border: none;
+			@include rem('font-size',14px);
+			margin-left: 0;
+			@include breakpoints(bigPhone){
+				@include rem('font-size',16px);
+			}
+		}
+	}
+	& input[type="checkbox"] {
+		display: inline;
+		width: 10%;
+	}
+	& input[type="file"] {
+		@include rem('font-size',14px);
+	}
+	& input[type="submit"] {
+		@extend .botonEnviarFormulario;
+	}
+	& textarea {
+		width: 100%;
+		@include breakpoints(bigPhone){
+			display: block;
+			width: 83%;
+		}
+	}
+	& select {
+		display: block;
+		margin: .25em 0;
+		padding: .15em .5em;
+		width: 80%;
+	}
+	& .campoCorto {
+		& label select {
+			@include breakpoints(tablet){
+				display: inline-block;
+				margin-left: .5em;
+				width: 15%;
+			}
+		}
+		& .DescripcionLarga {
+			overflow: hidden;
+			width: 80%;
+			& p {
+				@include rem('font-size',16px);
+			}
+		}
+	}
+}
+
+.campoCorto {
+	& label select {
+		@include breakpoints(tablet){
+			display: inline-block;
+			margin-left: .5em;
+			width: 15%;
+		}
+	}
+}
+
+#formContacto {
+	@extend #cajaFormularioGenerico;
+}
+
+.colFormulario {
+	float: left;
+	width: 100%;
+}
+
+.campoObligatorio {
+	@include rem('font-size',16px);
+}
+
+.textoLegal {
+	& p {
+		@include rem('font-size',14px);
+	}
+}
+
+
+.botonEnviarFormulario,
+#solicitar {
+	background-color: $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			background-color: nth($a, 2);
+		}
+	}
+	border: none !important;
+	border-radius: $default-border-radius;
+	color: #FFF;
+	float: right;
+	line-height: 2;
+	padding: 0 .5em;
+	text-transform: uppercase;
+}
+
+.Error {
+	color: $error;
+}
+
+.labelError {
+	@extend .Error;
+	#contenidoAux & {
+		margin-bottom: 0;
+	}
+}
+
+.inputError {
+	border-color: $error !important;
+	@extend .Error;
+}
+
+input.Error {
+	@extend .inputError;
+}
+
+textarea.Error {
+	@extend .inputError;
+	border: 1px solid $error;
+}
+
+.nullError {
+	@extend .inputError;
+}
+
+.ayudaForm {
+	background-color: $error;
+	border: 1px solid $error;
+	border-radius: $default-border-radius;
+	color: $blanco;
+	float: left;
+	@include rem('font-size',16px);
+	margin-top: .5em;
+	padding: 0.25em 0.5em;
+	position: relative;
+	width: 100%;
+	@include breakpoints(bigPhone){
+		float: right;
+		width: 25%;
+		#contenidoAux & {
+			width: 100%;
+		}
+	}
+	&:before {
+		background: none repeat scroll 0 0 $error;
+		top: -6px;
+		content: " ";
+		height: 10px;
+		left: 12px;
+		margin: 0 auto;
+		position: absolute;
+		transform: rotate(-45deg);
+		width: 10px;
+		z-index: 10;
+		@include breakpoints(bigPhone){
+			top: 35%;
+			left: -100%;
+			right: 0;
+			#contenidoAux & {
+				top: -6px;
+				left: -80%;
+			}
+		}
+	}
+}
+
+.cajaAyudaBorde {
+	background-color: $grisFondo;
+	clear: both;
+	padding: .5em;
+	& p {
+		@include rem('font-size',14px);
+	}
+	& p:first-of-type {
+		@include title3-style;
+		& strong {
+			font-weight: $light;
+		}
+	}
+}
+
+#instruccionesUnicaError {
+	background-color: $error;
+	border: 1px solid $error;
+	margin-bottom: 1em;
+	padding: .5em 1em;
+	border-radius: $default-border-radius;
+	& p {
+		&.resultadoError {
+			@include title3-style;
+			color: $blanco;
+		}
+		color: $blanco;
+		margin-bottom: 0;
+	}
+}
+
+//Campos eliminados en formularios
+
+//Qué falta en la agenda
+#sf_1430183569439 {
+	& .direccionLocalidad label:last-of-type,
+	& .direccionProvincia {
+		display: none;
+	}
+}

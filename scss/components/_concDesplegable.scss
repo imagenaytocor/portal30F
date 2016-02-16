@@ -1,0 +1,117 @@
+//_conce.scss
+
+.concDesplegable {
+	&.row {
+		justify-content: flex-start;
+	}
+	& h3 {
+		width: 100%;
+	}
+	& .desConTitulo {
+		background-color: $grisFondo;
+		margin-bottom: 1em;
+		padding: 0 .5em 0 0;
+		position: relative;
+		width: 100%;
+		@include breakpoints (bigPhone) {
+			width: 60%;
+		}
+		@include breakpoints (tablet) {
+			margin: 0 2% 1em 0;
+			width: 48%;
+			&:nth-of-type(2n) {
+				margin: 0 0 1em 2%;
+			}
+		}
+		& h3 {
+			width: 48%;
+			float: right;
+			margin-top: .5em;
+			@include rem('font-size', 18px);
+			color: $grisTexto;
+			font-weight: $regular;
+		}
+		& a {
+			color: $grisTexto;
+		}
+		& .imagen {
+			float: left;
+			margin: 0;
+			width: 48%;
+		}
+		& p {
+			@include rem('font-size', 16px);
+			float: right;
+			width: 48%;
+			color: $grisTexto;
+			font-family: $titulos2-font-family;
+			font-weight: $light;
+			margin-bottom: 2.5em;
+			@include breakpoints (desktop) {
+				@include rem('font-size', 14px);
+			}
+			& + p {
+				margin-top: -2em;
+			}
+			&.bio {
+				float: none;
+				margin-bottom: 0;
+				padding: 1em 0;
+				overflow: hidden;
+				width: 100%;
+			}
+		}
+		& span.fa {
+			bottom: 0.25em;
+			color: $grisTexto;
+			cursor: pointer;
+			font-size: 2.5rem;
+			position: absolute;
+			right: 0.25em;
+			&.abierto {
+				transform: rotate(-180deg);
+			}
+		}
+		& .relacionados {
+			clear: both;
+			display: none;
+			margin: 0 .5em 2.5em 1em;
+			padding-top: .5em;
+			& .tituloInterno {
+				display: none;
+			}
+			& li {
+				background-color: transparent;
+				border: medium none;
+				font-family: $titulos2-font-family;
+				@include rem('font-size', 16px);
+				padding: 0;
+				&:before {
+						color: $grisTexto;
+						content: "\f101";
+						font-family: FontAwesome;
+						@include rem('font-size',20px);
+						line-height: 1;
+						padding-right: .5em;
+				}
+			}
+		}
+	}
+}
+
+#contenidoUnacol {
+	& .row.concDesplegable {
+		@include breakpoints (desktop) {
+			justify-content: flex-start;
+		}
+	}
+	& .concDesplegable .desConTitulo {
+		@include breakpoints (desktop) {
+			margin: 0 2% 1em 0;
+			width: 32%;
+			&:nth-of-type(3n) {
+				margin-right: 0;
+			}
+		}
+	}
+}

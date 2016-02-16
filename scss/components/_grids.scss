@@ -1,0 +1,355 @@
+//_grids.scss
+
+html {
+    background: #FFF;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: #f6f5f5;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body:after {
+    content: '320';
+    display: none;
+    @include breakpoints(bigPhone) {
+    	content: 'bigPhone';
+    }
+    @include breakpoints(tablet) {
+    	content: 'tablet';
+    }
+    @include breakpoints(desktop) {
+    	content: 'desktop';
+    }
+    @include breakpoints(desktopW) {
+    	content: 'desktopW';
+    }
+    @include breakpoints(medDesktop) {
+    	content: 'medDesktop';
+    }
+    @include breakpoints(bigDesktop) {
+    	content: 'bigDesktop';
+    }
+}
+
+#caja>div {
+	@include clearfix();
+	max-width: 80em;
+}
+
+#marco {
+    position: relative;
+    margin: 0 auto;
+    max-width: 80em;
+    width: 100%;
+}
+
+#caja {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transform: translate3d(0);
+    transform: translate3d(0);
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+#centro {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 1em;
+	position: relative;
+	@each $a in $sites {
+		.#{nth($a, 1)} & {
+			margin-top: 6em;
+		}
+	}
+	.paginaPortada & {
+		padding-top: 1em;
+		@include breakpoints(tablet){
+			padding-top: 0;
+		}
+	}
+}
+
+#contenidoCentralSuperior {
+	padding: 1.5em 3.125%;
+	width: 100%;
+	@include breakpoints(tablet){
+		display: flex;
+	}
+	.paginaPortada.site_1266409838114 & {
+		background: rgb(255,255,255) url(//estaticos.coruna.es/imagesdu/fondoFoto_2.jpg) no-repeat scroll;
+		background-position: center top;
+		background-size: cover;
+		margin-bottom: 1em;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+#contenidoUnacol {
+	padding: 0 3.125% 1.5em;
+	width: 100%;
+	@include breakpoints(tablet){
+		display: flex;
+		flex-direction: column;
+		flex-wrap: no-wrap;
+	}
+	@include breakpoints(desktop){
+		& > div:first-of-type {
+				padding-top:.5em;
+		}
+		& > .bannerHero:first-of-type {
+				padding-top: 0;
+		}
+	}
+}
+
+#contenido {
+	padding: 1.5em 3.125%;
+	width: 100%;
+	@include breakpoints(desktop){
+		flex-basis: 66%;
+		padding: 1.5em 1% 1.5em 3.125%;
+		width: auto;
+		.no-flexboxlegacy & {
+			flex-basis: 58%;
+		}
+	}
+}
+
+#contenidoAux {
+	padding: 1.5em 3.125%;
+	width: 100%;
+	@include breakpoints(desktop){
+		flex-basis: 33%;
+		padding: 1.5em 3.125% 1.5em 1%;
+		width: auto;
+	}
+	& > div {
+		margin-bottom: 1em;
+	}
+	& .colCaja > div {
+		margin-bottom: 1em;
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+}
+
+#contenidoCentralInferior {
+	padding: 0 3.125% 1.5em;
+	width: 100%;
+	@include breakpoints(tablet){
+		display: flex;
+		flex-direction: column;
+		flex-wrap: no-wrap;
+	}
+}
+
+.imagen {
+	& img {
+		max-width: 100%;
+		width: 100%;
+	}
+	&.right {
+		@include breakpoints (tablet){
+			float: right !important;
+			margin: 0 0 .5em 1em !important;
+		}
+	}
+}
+
+.colCaja {
+	margin-bottom: 1.5em;
+	&.fondoGris {
+		background-color: $grisFondo;
+		border: 1px solid $grisBorde;
+		padding: .5em 1em;
+		margin-bottom: 1em;
+	}
+}
+
+.row {
+	float: left;
+	margin: .5em 0 1em;
+	& .row {
+		margin-top: 0;
+	}
+	& > div {
+		float: left;
+		@include breakpoints(tablet){
+			float: none;
+		}
+		&.m-50:nth-of-type(2n) {
+			margin-left:2%;
+			@include breakpoints(tablet){
+				margin-left: 0;
+			}
+		}
+	}
+	@include breakpoints(tablet){
+		float: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: flex-start;
+		margin: .5em 0 1.5em;
+		&.t-20 {
+			flex-basis: 18%;
+		}
+		&.t-25 {
+				flex-basis: 23%;
+		}
+		&.t-33 {
+				flex-basis: 32%;
+		}
+		&.t-50 {
+				flex-basis: 48%;
+		}
+		&.t-66 {
+				flex-basis: 65%;
+		}
+		&.t-100 {
+				flex-basis: 100%;
+		}
+	}
+	@include breakpoints(desktop){
+		&.d-20 {
+				flex-basis: 19%;
+			}
+		&.d-25 {
+				flex-basis: 24%;
+			}
+		&.d-33 {
+				flex-basis: 32%;
+				//flex-flow: column nowrap;
+				//justify-content: flex-start;
+			}
+		&.d-50 {
+				flex-basis: 48%;
+			}
+		&.d-66 {
+				flex-basis: 65%;
+		}
+		&.d-75 {
+				flex-basis: 74%;
+		}
+		&.d-100 {
+				flex-basis: 100%;
+		}
+	}
+}
+
+.m-100 {
+	width: 100%;
+}
+
+.m-50 {
+	width: 49%;
+}
+
+.m-33 {
+	width: 31%;
+}
+
+.t-100 {
+	@include breakpoints(tablet){
+		width: 100%;
+	}
+}
+
+.t-66 {
+	@include breakpoints(tablet){
+		width: 66%;
+	}
+}
+
+.t-50 {
+	@include breakpoints(tablet){
+		width: 48%;
+	}
+}
+
+.t-33 {
+	@include breakpoints(tablet){
+		width: 32%;
+	}
+}
+
+.t-25 {
+	@include breakpoints(tablet){
+		width: 24%;
+	}
+}
+
+.t-20 {
+	@include breakpoints(tablet){
+		width: 19%;
+	}
+}
+
+.t-16 {
+	@include breakpoints(tablet){
+		width: 16%;
+	}
+}
+
+.d-100 {
+	@include breakpoints(desktop){
+		width: 100%;
+	}
+}
+
+.d-75 {
+	@include breakpoints(desktop){
+		width: 75%;
+	}
+}
+
+.d-66 {
+	@include breakpoints(desktop){
+		width: 66%;
+	}
+}
+
+.d-50 {
+	@include breakpoints(desktop){
+		width: 48%;
+	}
+}
+
+.d-33 {
+	@include breakpoints(desktop){
+		width: 32%;
+	}
+}
+
+.d-25 {
+	@include breakpoints(desktop){
+		width: 24%;
+	}
+}
+
+.d-20 {
+	@include breakpoints(desktop){
+		width: 19%;
+	}
+}
+.d-16 {
+	@include breakpoints(desktop){
+		width: 16%;
+	}
+}
+
+.cajaBorde {
+	border: 1px solid $grisBorde;
+	padding: .5em 1em;
+	& h2 {
+		@include rem('font-size',25px);
+	}
+}

@@ -1,0 +1,75 @@
+// Reset
+@import 'vendor/normalize';
+
+// Sass utilities
+@import 'util/util';
+
+// Global variables and styles
+@import 'global';
+@import 'settings/settings';
+
+
+// Third-party
+@import "vendor/anythingslider";
+@import "vendor/tooltips";
+@import "vendor/outdatedbrowser";
+@import "vendor/colorbox";
+@import "vendor/googleSearch";
+@import "vendor/sgf";
+
+// components / componentes
+@import "components/temp";
+@import "components/tipografia";
+@import "components/tablas";
+@import "components/grids";
+@import "components/cabecera";
+@import "components/menu";
+@import "components/hilo";
+@import "components/barraHerramientas";
+@import "components/barraCompartir";
+@import "components/detalleAsset";
+@import "components/detalleNoticia";
+@import "components/detalleEvento";
+@import "components/detalleEntidad";
+@import "components/detallePrograma";
+@import "components/cajaRSS";
+@import "components/pestanas";
+@import "components/navegacionInterna";
+@import "components/cajaAcordeon";
+@import "components/concDesplegable";
+@import "components/cajaBuscadorResultado";
+@import "components/cajaBuscadorCalendario";
+@import "components/cajaBuscadorFormulario";
+@import "components/cajaBuscadorCategorias";
+@import "components/paginador";
+@import "components/cajaGenerica";
+@import "components/cajaTexto";
+@import "components/cajaIndice";
+@import "components/cajaMasonry";
+@import "components/cajaAlfresco";
+@import "components/acordeones";
+@import "components/relacionados";
+@import "components/enlaces";
+@import "components/enlacesInternos";
+@import "components/banners";
+@import "components/countdown";
+@import "components/actualidadPortada";
+@import "components/formularioContacto";
+@import "components/enviarAmigo";
+@import "components/pie";
+@import "components/tilesApp";
+@import "components/sliders";
+
+// modificaciones para sites
+@import "sites/portal30";
+@import "sites/bibliotecas20";
+@import "sites/cultura";
+@import "sites/cmix";
+@import "sites/agora";
+@import "sites/pmus";
+@import "sites/rede";
+@import "sites/empleo";
+@import "sites/carreras";
+@import "sites/cme";
+@import "sites/adopcion";
+@import "sites/servSoc";

@@ -1,0 +1,79 @@
+//_cajaTexto.scss
+
+.cajaTexto {
+	&.row {
+		& h2 {
+			width: 100%;
+		}
+	}
+	& .imagen {
+		float: right;
+		margin: 0 0 0 1em;
+		width: 40%;
+		&.left {
+			float: left;
+			margin: 0 1em 0 0;
+		}
+	}
+}
+
+.mapaPlantas {
+	background-color: $grisFondo;
+	float: left;
+	margin-bottom: 1em;
+	padding: 1em;
+	width: 100%;
+	& .imagen {
+		width: 50%;
+		& ~ * {
+			margin-left: 56%;
+		}
+	}
+	& div > ul,
+	& div > ol,
+	& li,
+	& div > p {
+		font-family: $alt-font-family;
+		margin-left: 5%;
+	}
+	& li > * {
+		margin-left: 7%;
+	}
+}
+
+.contenidoApartado {
+	& .imagen {
+		margin-bottom: 1em;
+		position: relative;
+		@include breakpoints(tablet){
+			float: left;
+			margin: 0 1em .5em 0 !important;
+			width: 40%;
+		}
+		& p.pieImagen {
+			background-color: $negro;
+			bottom: 0;
+			color: $blanco;
+			@include rem('font-size',14px);
+			left: 0;
+			margin-bottom: 0;
+			padding: .25em .5em;
+			position: absolute;
+		}
+	}
+}
+
+
+//Bug de Firefox - elementos float dentro de flex no calcula bien el ancho
+//.no-cssreflections .article,
+.no-cssreflections .article + #navegacionInterna {
+	@include breakpoints(desktop){
+		max-width: 37.82em;
+	}
+	@include breakpoints(medDesktop){
+		max-width: 44.36em;
+	}
+	@include breakpoints(bigDesktop){
+		max-width: 48em;
+	}
+}

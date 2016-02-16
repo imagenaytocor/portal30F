@@ -1,0 +1,238 @@
+//_cabecera.scss
+%h1_site {
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			background-color: nth($a, 2);
+		}
+	}
+	font-family: $titulos-font-family;
+	@include rem('font-size', 60px);
+	font-weight: $regular;
+	left: 3.125%;
+	padding: .1em .2em;
+	top: 1.68em;
+	width: 93%;
+
+	& a {
+		color: $blanco;
+		&:visited {
+			color: $blanco;
+			}
+	}
+	@include breakpoints(tablet) {
+
+		background-image: none;
+		left: .35em;
+		top: 1.68em;
+		width: 95%;
+	}
+	@include breakpoints(desktop){
+		top: 1.54em;
+		width: 96%;
+	}
+}
+h1 {
+	@include offleft;
+	@each $site in $sites {
+		.#{$site} & {
+			@extend %h1_site;
+		}
+	}
+}
+
+#cabecera {
+	background-color: $grisFondo;
+	background-image: url(//estaticos.coruna.es/imagesdu/logoMovil.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.75);
+	min-height: 100px;
+	@include breakpoints(tablet){
+		backgroundackground-image: url(//estaticos.coruna.es/imagesdu/logo.png);
+	}
+	@include breakpoints(desktop){
+		box-shadow: none;
+		min-height: 92px;
+	}
+
+}
+
+ul#idiomas {
+	position: absolute;
+	right: 3.5%;
+	top: .75em;
+	& li {
+		display: none;
+		font-family: $titulos-font-family;
+		@include rem('font-size', 13px);
+		text-transform: uppercase;
+		&.activo {
+			display: block;
+			border: 1px solid #CCC;
+			border-radius: $default-border-radius;
+			padding: .2em .5em;
+		}
+		& a {
+			color: #666;
+		}
+		& span {
+			@include offleft;
+		}
+		@include breakpoints(tablet){
+			@include rem('font-size', 16px);
+		}
+	}
+}
+
+ul#accesos {
+	position: absolute;
+	right: 2em;
+	top: 9em;
+	list-style: outside none none;
+	z-index: 20;
+	@include breakpoints(desktop){
+		top: 8.5em;
+	}
+
+	& li {
+		float: left;
+	}
+	& span {
+		@include offleft;
+	}
+	& a {
+		color: $blanco;
+		display: block;
+		@include rem('font-size', .1px);
+	}
+	%socialCabecera {
+		&:before {
+				color: $blanco;
+				display: block;
+				font-family: FontAwesome;
+				@include rem('font-size',24px);
+				font-style: normal;
+				height: 1.2em;
+				line-height: 1.2;
+				text-align: center;
+				width: 1.2em;
+		}
+		// Para IE
+		.no-flexboxlegacy & {
+			@include rem('font-size', 14px);
+			visibility: visible;
+		}
+	}
+	& .facebook a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f09a";
+		}
+	}
+	& .twitter a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f099";
+		}
+	}
+	& .youtube a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f167";
+		}
+	}
+	& .foursquare a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f180";
+		}
+	}
+	& .flickr a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f16e";
+		}
+	}
+	& .rss a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f09e";
+		}
+	}
+	& .delicious a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f1a5";
+		}
+	}
+	& .pinterest a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f0d3";
+		}
+	}
+	& .instagram a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f16d";
+		}
+	}
+	& .linkedin a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f0e1";
+		}
+	}
+	& .vimeo a {
+		&:before {
+			@extend %socialCabecera;
+			content: "\f194";
+		}
+	}
+}
+
+#buscadorCabecera {
+	& fieldset {
+		border: 1px solid #CCC;
+		border-radius: $default-border-radius;
+		position: absolute;
+		right: .75em;
+		top: 3.75em;
+		@include breakpoints(tablet){
+			right: 17%;
+			top: .75em;
+		}
+		@include breakpoints(desktop){
+			right: 15%;
+		}
+	}
+	& label {
+		@include offleft;
+	}
+
+	& input {
+		@include rem('font-size', 14px);
+		margin: 0;
+		padding: 0;
+	}
+
+	& #query-input {
+		border:  none;
+		border-radius: $default-border-radius 0 0 $default-border-radius;
+		float: left;
+		line-height: 2.35;
+	}
+
+	& .botonEnviarBuscador {
+		background-color: $enlace;
+		background-image: url(//estaticos.coruna.es/imagesdu/lupaBuscador.png);
+		background-position: .6em .45em;
+		background-repeat: no-repeat;
+		border: none;
+		border-radius: 0 .3em .3em 0;
+		color: transparent;
+		float: left;
+		line-height: 2.2;
+		width: 2.6em;
+	}
+}

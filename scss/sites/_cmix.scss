@@ -1,0 +1,30 @@
+//_cmix.scss
+
+.site_1414721835012 {
+	& #centro {
+		margin-top: 3.5em;
+		@include breakpoints(desktop) {
+			margin-top: 5.5em;
+		}
+	}
+	&.paginaPortada #centro {
+		@include breakpoints(desktop) {
+			margin-top: 7em;
+		}
+	}
+	& #outdated {
+		background-image: url('//estaticos.coruna.es/imagesdu/cmix.jpg');
+	}
+}
+
+::-moz-selection .site_1414721835012 {
+    background-color: tint($colorParticipacion, 25%);
+    color: $blanco;
+    text-shadow: none;
+}
+
+::selection .site_1414721835012 {
+    background-color: tint($colorParticipacion, 25%);
+    color: $blanco;
+    text-shadow: none;
+}

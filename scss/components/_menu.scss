@@ -1,0 +1,313 @@
+// menu
+
+.show-nav #caja {
+	//-webkit-transform: translateX(250px);
+  //-webkit-transform: translate3d(250px, 0, 0);
+    transform: translateX(250px);
+    transform: translate3d(250px, 0, 0);
+}
+
+#menuMapaWeb {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    background: $grisFondo;
+    & ul {
+    	display: flex;
+    	flex-direction: column;
+    	@include breakpoints(desktop){
+    		display: none;
+    		flex-direction: row;
+    		height: inherit;
+    		padding: .5em 0;
+    		&.menuAbierto {
+    			display: flex;
+    		}
+    	}
+    		& li {
+    			border-bottom: 1px solid #FFF;
+    			flex-grow: 1;
+    			font-family: $titulos-font-family;
+    			@include rem('font-size', 20px);
+    			font-weight: $regular;
+    			margin-bottom: 0;
+    			list-style: none;
+    			padding: .5em 0 .5em 1em;
+    			position: relative;
+    			text-transform: uppercase;
+    			@include breakpoints(desktop){
+    				border-bottom: none;
+    				border-right: 1px dotted #CCC;
+    				flex-basis: 20%;
+    				@include rem('font-size', 15px);
+    				padding: .5em 1% .5em 2%;
+    				/*&:first-of-type {
+    					@include offleft;
+    				}*/
+    				&:last-of-type {
+    					border-right:none;
+    				}
+    			}
+    			&.menuActivo {
+    				background-image: url(//estaticos.coruna.es/imagesdu/topoMenuLatActivo.png);
+    				background-position: .75em .9em;
+    				background-repeat: no-repeat;
+    				padding-left: 1.75em;
+    				@include breakpoints(desktop){
+    					background-image: none;
+    				}
+    			}
+    		}
+    	&.nivel2 {
+    		display: none;
+    		@include breakpoints(desktop){
+    			display: block;
+    			& .padre {
+    				position: relative;
+    				&:after {
+    							content: "\f107";
+    							cursor: context-menu;
+    							display: inline-block;
+    							font-family: FontAwesome;
+    							@include rem('font-size',18px);
+    							line-height: 1;
+    							margin-left: .25em;
+    							position: absolute;
+    							top: .35em;
+    							right: 0;
+    					}
+    				& .padre.abierto:after {
+    					content: "\f106";
+    				}
+    			}
+       	}
+    		& li {
+    			border-bottom: none;
+    			@include rem('font-size', 18px);
+    			padding-left: .5em;
+    			&.menuActivo {
+    				padding-left: 2em;
+    				@include breakpoints(desktop){
+    					padding-left: 0;
+    				}
+    			}
+    			@include breakpoints(desktop){
+    				border-right: none;
+    				@include rem('font-size', 15px);
+    				font-weight: $xLight;
+    				padding: .25em 0;
+    				text-transform: none;
+    				& > a {
+    				    color: #000;
+    				    width: 85%;
+    				    display: block;
+    				}
+    			}
+    		}
+    		& a {
+    			color: #999;
+    			&:first-of-type {
+    				display: inline-block;
+    				width: 85%;
+    			}
+    		}
+    	}
+    	&.nivel3 {
+    		display: none;
+    		@include breakpoints(desktop){
+    			display: block;
+    			}
+    		& li {
+    			border-bottom: none;
+    			@include rem('font-size', 16px);
+    			padding-left: .5em;
+    			@include breakpoints(desktop){
+    				border-right: none;
+    				@include rem('font-size', 12px);
+    				font-weight: $xLight;
+    				padding: .25em 0;
+    				text-transform: none;
+    				& a {
+    					color: #000;
+    				}
+    			}
+    		}
+    	}
+    }
+    & a {
+    	color: #666;
+    	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+    	@include breakpoints(desktop){
+    		color: $enlace;
+    		text-shadow: none;
+    	}
+    }
+    @include breakpoints(desktop){
+    	background: $blanco;
+    	box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.75);
+    	height: auto;
+    	left: 0;
+    	margin: 0 2% 0 1.15%;
+    	padding: 0 2% 0 5%;
+    	top: 5.7em;
+    	width: 96%;
+    	z-index: 1;
+    	.site_cmix & {
+    		padding: 0 2%;
+    	}
+    }
+}
+
+.toggle-subNav {
+	@include rem('font-size', 30px);
+	position: absolute;
+	right: .3em;
+	top: .3em;
+	transform: rotate(90deg);
+	-moz-transition:0.5s all;
+	-webkit-transition:0.5s all;
+	&.abierto {
+		transform: rotate(-90deg);
+	}
+}
+
+.menuPrincipal {
+	left: 0;
+	position: relative;
+	top: -2.6em ;
+	z-index: 1;
+	@include breakpoints(desktop){
+		top: 3.7em;
+	}
+	& ul {
+		list-style: none;
+	}
+	& ul.nivel1 {
+
+		margin-top: .6em;
+		@include breakpoints(desktop){
+			margin-top: 0;
+			display: block;
+			width: 10000px;
+			overflow: hidden;
+		}
+			& > li {
+				@include rem('font-size', 18px);
+				float: left;
+				font-weight: $regular;
+				margin: .25em;
+				padding: 0 .25em;
+				text-transform: uppercase;
+				&:first-child {
+					background-color: $blanco;
+					border: 1px solid #CCC;
+					border-radius: 5px;
+					@include rem('font-size', 20px);
+					margin-right:.75em;
+					padding: .15em .35em;
+					position: relative;
+					z-index: 1;
+				}
+				&.menuActivo {
+					background-image: url(//estaticos.coruna.es/imagesdu/topoMenuLatActivo.png);
+					background-position: 50% 1.1em;
+					background-repeat: no-repeat;
+					padding-bottom: 1em;
+				}
+				@include breakpoints(desktop){
+					@include rem('font-size', 20px);
+					&:first-child {
+						margin-top:.15em;
+					}
+				}
+			}
+	}
+	& .subMenu {
+		background-color: $blanco;
+		box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.75);
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: -1;
+		& .wrapper {
+			max-width: 90%;
+			margin: 0px auto;
+		}
+	}
+	& ul.nivel2 {
+		list-style: none;
+		margin-left: 0;
+		padding: 1em;
+		@include breakpoints(desktop){
+			display: flex;
+			flex-direction: row;
+			justify-content: space-start;
+			flex-wrap: wrap;
+			margin-bottom: 1em;
+			& li {
+				@include rem('font-size',18px);
+				flex-shrink: 1;
+				position: relative;
+				flex-basis: 23%; 
+				margin: 0 1% 1em;
+				padding: 0px 1em 1em;
+				border-right: 1px dotted $grisBorde;
+			}
+			& a {
+				color: $enlace;
+				@each $a in $site-color {
+					.#{nth($a, 1)} & {
+						color: nth($a, 2);
+					}
+				}
+				display: block;
+				margin-bottom:.5em;
+			}
+		}
+	}
+	& ul.nivel3 {
+		list-style: none;
+		display: block;
+		& li {
+			border: none;
+			margin: 0 0 0.5em;
+			padding: 0;
+			@include rem('font-size', 14px);
+			font-weight: $xLight;
+			text-transform: none;
+		}
+		& a {
+			color: #000 !important;
+		}
+	}
+	& a {
+		color: $grisTexto;
+		&:visited {
+			color: $grisTexto;
+		}
+	}
+}
+
+.toggle-sub {
+	margin: 0 .25em;
+}
+
+%menuPrincipal_site {
+	@include breakpoints(tablet) {
+		& > li {
+			@include offleft;
+			&:first-child {
+				left: .5em;
+				top: .5em;
+			}
+		}
+	}
+}
+@each $site in $sites {
+	.#{$site} .menuPrincipal {
+		@extend %menuPrincipal_site;
+	}
+}

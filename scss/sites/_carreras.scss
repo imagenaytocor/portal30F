@@ -1,0 +1,33 @@
+//_carreras.scss
+
+.site_1327566431975 {
+	& h1 {
+		@include rem('font-size', 40px);
+		font-weight: $light;
+		top: 2.5em;
+		@include breakpoints(tablet) {
+			@include rem('font-size', 60px);
+			top: 1.68em;
+		}
+		@include breakpoints(desktop) {
+			top: 1.535em;
+		}
+	}
+	& #centro {
+	  margin-top: 3.5em;
+	  @include breakpoints(tablet) {
+	  	margin-top: 3em;
+	  }
+	  @include breakpoints(desktop) {
+	   	margin-top: 5em;
+	  }
+	}
+	&.paginaPortada #centro {
+		@include breakpoints(tablet) {
+			margin-top: 4em;
+		}
+		@include breakpoints(desktop) {
+		 	margin-top: 6.5em;
+		}
+	}
+}

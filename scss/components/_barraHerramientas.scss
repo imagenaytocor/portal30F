@@ -1,0 +1,43 @@
+//_barraHerramientas.scss
+
+#barraHerramientas {
+	display: none;
+	/*@include breakpoints(tablet){
+		border-right: 1px dotted #CCC;
+		@include display-flex;
+		@include flex-basis(6%);
+		margin-right: 1.5%;
+		padding-right: 1.5%;
+	}
+	& ul {
+		margin-left: 0;
+	}
+	& li {
+		list-style: none;
+		& a {
+			@include rem('font-size', .1px);
+			visibility: hidden;
+			&:before  {
+				color: $negro;
+				content: '\f0a1';
+				display: inline-block; 
+			    font-family: FontAwesome; 
+			    @include rem('font-size',30px); 
+			    line-height: 1;
+			    visibility: visible;
+				}
+			// Para IE	
+			.no-flexboxlegacy & {
+				@include rem('font-size', 14px);
+				visibility: visible;
+			}
+		}
+		&.imprimir a:before {
+			content: '\f02f';
+		}
+		&.enviar a:before {
+			content: '\f0e0';
+		}
+	}*/
+	
+}

@@ -1,0 +1,196 @@
+//_cajaAcordeon.scss
+
+#accordion {
+	@include breakpoints(tablet){
+	  margin: 0 auto;
+	}
+  @include breakpoints(desktop){
+    //height:41.5em; 
+  }/*
+  @include breakpoints(desktopW){
+    height:12em;
+  }*/
+	& .promocionContenido {
+		background-color: rgba(15,52,83, .75);
+		border: none;
+		border-bottom: 1px dotted rgb(255,255,255);
+		margin-bottom: 0;;
+		overflow: hidden;
+		padding: 1em 0.5em 1em 1em;
+		&:last-of-type {
+			border-bottom: none;
+		}
+		&.current {
+			background-color: rgba(0,0,0,.5);
+			}
+		@include breakpoints(tablet){
+			border-bottom: none;
+		  border-right: 1px dotted rgb(255,255,255);
+		  float: left;
+		  padding-bottom: 0;
+		  &:last-of-type {
+		  	border-right: none;
+		  }
+		  //height: 39.5em;
+		  & li:before {
+		  	display: none;
+		  }
+		}
+		@include breakpoints(desktop){
+		  background-color: rgba(15,52,83, .75);
+		  //height: 39.5em;
+		}/*
+		@include breakpoints(desktopW){
+		  height: 9em;
+		}*/
+	}
+	& .imagenPromocion {
+		cursor: pointer;
+		float: left;
+		width: 100%;
+		& img {
+		    float:left;
+		    margin-right:.625em;
+		    cursor:pointer;
+		    height: 100%;
+		    object-fit:unset;
+		    opacity:0.5;
+		    filter: alpha(opacity=50);
+		    width: 3em;
+		    &:hover {
+		    	opacity:1;
+		    	filter: alpha(opacity=100);
+		    }
+		    .current & {
+		        cursor:default;
+		        opacity:1;
+		        filter: alpha(opacity=100);
+		    }
+		    @include breakpoints(tablet){
+		    	width: auto;
+		    } 
+		}
+		& p.linea1cajaPromocion {
+			background-color: transparent;
+			color: #FFF;
+			@include rem('font-size', 24px);
+			line-height: .5;
+			padding-top: .5em;
+			& a {
+				color: #FFF;
+			}
+		}
+		@include breakpoints(tablet){
+			width: auto;
+		}
+	} 
+	& .interiorPromocion {
+			height: auto;
+	    width:100%;
+	    float:left;
+	    display:none;
+	    @include breakpoints(tablet){
+	    	width: 0;
+	    }
+	    & a {
+	      color: #FFF;
+	      text-decoration: none;
+	    }
+	    & p.linea1cajaPromocion {
+	    	background-color: transparent;
+	    	color: #FFF;
+	    	@include rem('font-size', 36px);
+	    	margin: .25em 0 0;
+	    	padding-bottom: 0;
+	    }
+	    & ul {
+	    	list-style: none;
+	    	padding: 1em;
+	    	@include breakpoints(tablet){
+	    		padding: 0;
+	    	}
+	    	& ul {
+	    		padding: .25em .5em;
+	    		display: none;
+	    		
+	    		@include breakpoints(desktop){
+	    			display: block;
+	    		}
+	    	}
+	    }
+	    & li {
+	    	color: #FFF;
+	    	@include rem('font-size', 20px);
+	    	margin: .5em 2% 0 0;
+	    	position: relative;
+	    	
+	    	
+	    	&.cerrado {
+	    		cursor: pointer;
+	    		&:after {
+	    			content: "\f107";
+	    			display: inline-block; 
+	    			font-family: FontAwesome; 
+	    			//@include rem('font-size',30px); 
+	    			line-height: .75;
+	    			position: absolute;
+	    			right: .5em;
+	    			top: .25em;
+	    		}
+	    		& > ul {
+	    			display: none;
+	    		}
+	    	}
+	    	&.abierto {
+	    		&:after {
+	    			content: "\f106";
+	    			display: inline-block; 
+	    			font-family: FontAwesome; 
+	    			line-height: .75;
+	    			position: absolute;
+	    			right: .5em;
+	    			top: .25em;
+	    		}
+	    	}
+	    	
+	    	@include breakpoints(desktop){
+	    		//float: left;
+	    		@include rem('font-size', 24px);
+	    		//width: 48%;
+	    		cursor: default;
+	    		&:after {
+	    			content:'';
+	    		}
+	    	}
+	    	& li {
+	    		float: none;
+	    		@include rem('font-size', 16px);
+	    		margin: 0 0 0 1%;
+	    		width: 100%;
+	    		@include breakpoints(tablet){
+	    			//@include rem('font-size', 14px);
+	    			&:after {
+	    				content:'';
+	    			}
+	    		}/*
+	    		@include breakpoints(desktopW){
+	    			&:nth-child(2):after {
+	    				content:'ver +';
+	    				color: red;
+	    				display: block;
+	    				text-align: right;
+	    			}
+	    			&:nth-child(n+3) {
+	    				display:none;
+	    			}
+	    		}*/
+	    	}
+	    }
+	    
+	}
+	
+}	
+
+.interiorPromocion {
+  //min-width:525px;
+}

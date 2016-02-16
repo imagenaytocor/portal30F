@@ -1,0 +1,117 @@
+//_cajaBuscadorCalendario.scss
+
+.cajaBuscadorCalendario {
+	 & table {
+		  width: 100%;
+		  overflow-x: auto;
+		  overflow-y: hidden;
+		  -webkit-overflow-scrolling: touch;
+		  -ms-overflow-style: -ms-autohiding-scrollbar;
+		  border: 1px solid #CCC;
+		  border-collapse: collapse;
+		  text-align: center;
+		  & th {
+		  	font-weight: $regular;
+		  	padding: .5em;
+		  }
+		  & td {
+		  	border: 1px solid #CCC;
+		  	padding: .5em;
+		  }
+		  & a {
+		  	color: #333;
+		  }
+	}
+	&.t-33 {
+		th, td {
+			@include rem('font-size', 14px);
+		}
+	}
+}
+
+.ui-datepicker {
+	background-color: $blanco;
+	& .ui-datepicker-header {
+		border: 1px solid $grisBorde;
+		display: flex;
+		font-family: $titulos-font-family;
+		justify-content: space-between;
+	}
+	& .ui-datepicker-prev {
+		flex-basis: 5%;
+		padding: .5em;
+		position: relative !important;
+		order:1;
+		width: auto;
+		&:before  {
+			color: $negro;
+			content: '\f100';
+			cursor: pointer;
+			display: inline-block;
+		  font-family: FontAwesome;
+		  @include rem('font-size',18px);
+		  line-height: 1;
+		  margin-right: .25em;
+		}
+		& span {
+			display: none !important;
+		}
+	}
+	& .ui-datepicker-next {
+		flex-basis: 5%;
+		padding: .5em;
+		position: relative !important;
+		order:3;
+		text-align: right;
+		width: auto;
+		&:after  {
+			color: $negro;
+			content: '\f101';
+			cursor: pointer;
+			display: inline-block;
+		  font-family: FontAwesome;
+		  @include rem('font-size',18px);
+		  line-height: 1;
+		  margin-left: .18em;
+		}
+		& span {
+			display: none !important;
+		}
+	}
+	& .ui-datepicker-title {
+		border-right: 1px solid $grisBorde;
+		border-left: 1px solid $grisBorde;
+		flex-basis: 80%;
+		margin: 0 !important;
+		order:2;
+		padding: .5em;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.ui-datepicker-inline {
+	& .ui-datepicker-prev {
+		flex-basis: 27%;
+		& span {
+			display: inline !important;
+		}
+	}
+	& .ui-datepicker-next {
+		flex-basis: 27%;
+		& span {
+			display: inline !important;
+		}
+	}
+	& .ui-datepicker-title {
+		flex-basis: 40%;
+	}
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+	text-align: center !important;
+}
+
+.hasDatepicker {
+	cursor: context-menu;
+}

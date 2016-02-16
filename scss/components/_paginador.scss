@@ -1,0 +1,33 @@
+//_paginador.scss
+
+.paginador {
+	margin-bottom: 1em;
+	& ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	& li {
+		border: 1px solid #CCC;
+		list-style: none;
+		margin-bottom: 0;
+		padding: .25em .6em;
+		text-align: center;
+
+		&.pagResActiva {
+			background-color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					background-color: nth($a, 2);
+				}
+			}
+			border-color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					border-color: nth($a, 2);
+				}
+			}
+			color: #FFF;
+		}
+	}
+}

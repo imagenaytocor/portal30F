@@ -1,0 +1,42 @@
+//_enlaces.scss
+
+.enlaceIconos {
+	& .relacionadosContenido li {
+		&:before  {
+			content: '';
+		}
+		& a {
+			&:before  {
+				color: $negro;
+				content: '\f0ac';
+				cursor: pointer;
+				display: inline-block; 
+				font-family: FontAwesome; 
+				@include rem('font-size',18px); 
+				line-height: 1;
+				margin-right: .5em;
+			}
+			&[href*='coruna.es']:before {
+				content: '\f0c1';
+			}
+			&[href*='twitter']:before {
+				content: '\f099';
+			}
+			&[href*='facebook']:before {
+				content: '\f09a';
+			}
+			&[href*='instagram']:before {
+				content: '\f16d';
+			}
+			&[href*='pinterest']:before {
+				content: '\f231';
+			}
+			&[href*='flickr']:before {
+				content: '\f16e';
+			}
+			&[href*='delicious']:before {
+				content: '\f1a5';
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.site_1346721380160 {
+	& h1 {
+		@include rem('font-size', 25px);
+		padding-bottom: 2em;
+		top:  4em;
+		@include breakpoints(bigPhone) {
+			@include rem('font-size', 40px);
+			padding-bottom: 1em;
+			top:  2.5em;
+		}
+		@include breakpoints(tablet) {
+			@include rem('font-size', 50px);
+			top:  2em;
+		}
+		@include breakpoints(desktop) {
+			@include rem('font-size', 60px);
+			padding-bottom: .1em;
+			top:  1.54em;
+		}
+	}
+	& ul#accesos {
+		right: 1em;
+		top: 9.5em;
+		@include breakpoints(bigPhone) {
+			right: 2em;
+			top: 10.5em;
+		}
+		@include breakpoints(tablet) {
+			top: 11.5em;
+		}
+		@include breakpoints(desktop) {
+			top: 9em;
+		}
+	}
+	& .menuPrincipal ul.nivel2 li {
+		flex-basis: 23%;
+		&:last-of-type,
+		&:nth-of-type(4n) {
+			border-right: none;
+		}
+	} 
+	#centro {
+		margin-top: 3em;
+		@include breakpoints(bigPhone) {
+			margin-top: 4em;
+		}
+		@include breakpoints(tablet) {
+			margin-top: 6em;
+		}
+		@include breakpoints(desktop) {
+			margin-top: 6.5em;
+		}
+	}
+}

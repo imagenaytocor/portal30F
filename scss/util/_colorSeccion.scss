@@ -1,0 +1,27 @@
+//Mixin para colores por secciones
+
+@mixin tituloAcordeon {
+	@include title3-style;
+	background-color: $colorSinseccion;
+	@each $a in $seccion-color {
+		.#{nth($a, 1)} & {
+			background-color: nth($a, 2);
+		}
+	}
+	color: $blanco;
+	cursor: pointer;
+	font-style: $bold;
+	margin: 1em 0;
+	padding: .5em;
+	text-transform: uppercase;
+	& > em:after {
+		color: $blanco;
+		font-style: normal;
+		font-weight: $extraBold;
+		float: right;
+		content: "+";
+	}
+	&.abierto > em:after {
+		content: "-";
+	}
+}

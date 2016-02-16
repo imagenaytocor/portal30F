@@ -1,0 +1,86 @@
+//_googleSearch.scss
+
+#googleFrame {
+	@include para-style;
+}
+
+.gsc-results-wrapper-visible > div {
+	margin: 0;
+	padding: 0;
+}
+
+.gsc-search-box {
+	& td {
+		border: none;
+	}
+}
+td.gsc-input {
+	width: 70% !important;
+}
+td.gsc-search-button {
+	width: 20% !important;
+}
+td.gsc-clear-button {
+	width: 5% !important;
+}
+input.gsc-search-button {
+	background-color: $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			background-color: nth($a, 2);
+		}
+	}
+	background-image: url(//estaticos.coruna.es/imagesdu/lupaBuscador.png);
+	background-position: .6em .45em;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: $default-border-radius;
+	color: $blanco;
+	float: left;
+	line-height: 1.6;
+	padding-left: 2em;
+	text-transform: uppercase;
+	width: 6em;
+}
+
+.gsc-tabHeader.gsc-tabhActive {
+	border-top-color: $enlace;
+	@each $a in $site-color {
+	.#{nth($a, 1)} & {
+		border-top-color: nth($a, 2);
+	}
+}
+}
+
+.gsc-control {
+    width: 100% !important;
+}
+
+.gsc-results .gsc-cursor {
+    display: block !important;
+    margin-top: .6em;
+}
+
+.gsc-table-result {
+	border: none;
+}
+
+.gsc-table-result td {
+	border: none;
+	padding: .5em;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+	border: 1px solid $grisBorde;
+	color: $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			color: nth($a, 2);
+		}
+	}
+	padding: .4em .5em .25em;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+	color: $grisTexto;
+	}

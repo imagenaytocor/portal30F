@@ -1,0 +1,66 @@
+/*_pestanas.scss*/
+
+.etiquetas {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-image: none;
+  list-style-type: none;
+	margin-left: 0;
+	padding: .45em 0 .52em;
+	@include breakpoints(tablet){
+		clear: both;
+		display: inherit;
+		margin-left: 3.125%;
+	}
+	& li {
+		display: inline;
+		margin-right: .5em;
+		padding: .5em 0;
+		text-transform: uppercase;
+		@include breakpoints(tablet){
+			border-right: 1px solid $blanco;
+		}
+	}
+	& a {
+		background-color: $grisFondo;
+		border-radius :.15em;
+		color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				color: nth($a, 2);
+			}
+		}
+		padding: .5em;
+		text-decoration: none;
+		&.current {
+				background-color: $blanco;
+				border: 1px solid $grisBorde;
+				color: $negro;
+		}
+		@include breakpoints(tablet){
+			border-bottom: 1px solid $blanco;
+			border-radius: .15em .15em 0 0;
+			&.current {
+				border-bottom-color: $blanco;
+			}
+		}
+	}
+}
+
+.panes{
+	border: 1px solid $grisBorde;
+	margin: 0 0 1em;
+	& > div {
+		padding: .5em;
+	}
+}
+
+.panes .textoContenido h3,
+.panes .textoContenidoTab h3 {
+	@include offleft;
+}
+
+.textoContenidoTab h4 {
+	@include rem('font-size', 25px);
+	text-transform: uppercase;
+}

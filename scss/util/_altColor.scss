@@ -1,0 +1,9 @@
+@mixin altColor($test-this-color) {
+	@if lightness($test-this-color) > 43% {
+		color: $test-this-color;
+	} 
+	@else {
+		color: $grisTexto;
+		background-color: $test-this-color;
+	} 
+}

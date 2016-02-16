@@ -1,0 +1,48 @@
+//_cultura.scss
+
+.site_1322782055091 {
+	& h1 {
+		@include rem('font-size', 40px);
+		font-weight: $light;
+		padding-bottom: .9em;
+		top: 2.55em;
+		@include breakpoints(bigPhone) {
+			@include rem('font-size', 50px);
+			padding-bottom: .2em;
+			top: 2.01em;
+		}
+		@include breakpoints(desktop) {
+			@include rem('font-size', 60px);
+			padding-bottom: .1em;
+			top: 1.53em;
+		}
+	}
+	& ul#accesos {
+		right: 1em;
+		top: 10.5em; 
+		& a:before {
+			@include rem('font-size', 20px);
+		}
+		@include breakpoints(bigPhone) {
+			right: 2em;
+			top: 8.75em;
+		}
+		@include breakpoints(desktop) {
+			& a:before {
+				@include rem('font-size', 24px);
+			}
+		}
+	}
+	& #centro {
+		margin-top: 5em;
+		@include breakpoints(bigPhone) {
+			margin-top: 4.25em;
+		}
+		@include breakpoints(desktop) {
+			margin-top: 7em;
+		}
+	}
+	& #outdated {
+		background-image: url('//estaticos.coruna.es/imagesdu/cultura.jpg');  
+	}
+}

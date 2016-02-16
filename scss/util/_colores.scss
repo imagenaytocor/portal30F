@@ -1,0 +1,131 @@
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix($color, white, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix($color, black, $percentage);
+}
+
+// Colores del proyecto
+$negro: #000;
+$grisFondo: #EBEBEB;
+//$grisTexto: (lighten($negro, 25%));
+$grisTexto: tint($negro, 75%);
+$grisBorde: rgb(204,204,204);
+$titulo1: #5D99DB;
+//$error: rgb(231,76,60);
+
+$enlace: rgb(0,131,215);
+$enlaceHover: tint($enlace, 45%);
+$enlaceVisitado: tint($enlace, 95%);
+
+$tituloEnlace: $enlace;
+
+$botones: #F700B5;
+
+//$titulos: #333;
+$txt: rgb(102,102,102);
+//$txtDestacado: #999;
+//$txtEnlace:#2980B9; //#0CF;
+
+
+//Colores de sites
+
+//$colorCMIX: rgb(25,152,139);//Infinity
+//$colorCMIX: rgb(8,209,251);// Azul original
+//$colorCMIX: rgb(0,199,244);
+//$colorCMIX: rgb(90,210,255);//Oasis Blue
+//$colorCMIX: rgb(49,213,222);//Lover Blue
+//$colorCMIX: rgb(26,230,248);//Neon Blue
+//$colorCMIX: rgb(143,229,255);//Morning Blue
+//$colorCMIX: rgb(0,255,247);//Electric Blue
+$colorCultura: rgb(203,131,66);
+$colorMedioambiente: rgb(61,175,44);
+$colorEmpleo: rgb(0,117,74);
+$colorServiciossociales: rgb(154,0,80);
+$colorBibliotecas: shade(rgb(151,215,0), 95%);
+//$colorBibliotecas: rgb(151,215,0);
+$colorPMUS: rgb(237,139,0);
+$colorCarreras: rgb(224,60,49);
+$colorAdopcion: rgb(61,175,44);
+$colorVivienda: rgb(156,27,1);
+$colorUrbanismo: rgb(156,27,1);
+$colorParticipacion: rgb(0,198,243);
+$colorIgualdad: rgb(145,99,201);
+
+//Colores de sites para fondo h1 - los sites sin imagen de fondo van con el color de la cabecera sólido $colorCultura_h1: darken(rgba($colorCultura,.85),5%); $colorMedioambiente_h1: darken(rgba($colorMedioambiente,.7),5%);
+
+//$colorCMIX_h1: rgb(8,209,251);
+$colorCultura_h1: rgb(203,131,66);
+$colorMedioambiente_h1: rgb(61,175,44);
+$colorEmpleo_h1: rgb(0,117,74);
+$colorServiciossociales_h1: rgb(154,0,80);
+$colorBibliotecas_h1: rgb(151,215,0);
+$colorPMUS_h1: rgb(237,139,0);
+$colorCarreras_h1: rgb(224,60,49);
+$colorAdopcion_h1: rgb(61,175,44);
+$colorVivienda_h1: rgb(156,27,1);
+$colorUrbanismo_h1: rgb(156,27,1);
+$colorParticipacion_h1: rgb(0,199,244);
+$colorIgualdad_h1: rgb(145,99,201);
+
+$colorSinseccion: rgb(0, 159, 238);
+
+// portal30 = site_1266409838114
+// site_cmix = site_1414721835012
+// site_bibliotecas = site_1382936859765
+// site_cultura = site_1322782055091
+// site_agora = site_1300351791176**
+// site_empleo = site_1352255804703
+// site_serviciossociales = site_1280301855095
+// site_pmus = site_1369098952393
+// site_rede = site_1266187561771**
+// site_carreras = site_1327566431975
+// site_planiFamiliar = site_1408670153087**
+// site_CME = site_1346721380160**
+// site_adopcion = site_1327572561803
+// site_vivienda = site_1347499014423
+// site_OMIC = site_1270542954892**
+// site_drogas = site_1237944294200**
+// site_EMM = site_1300351501660**
+// site_medioambiente = site_1322782134412
+// site_urbanismo = site_1416276701242
+// site_redEnergia = site_1327566821900**
+// site_participacion = site_1240016856326
+// site_igualdad = site_1443062183533
+// site_eidus = site_1312153719867
+
+
+//Mezclamos las secciones con su color
+$sites: site_1322782055091 site_1322782134412 site_1352255804703 site_1280301855095 site_1382936859765 site_1369098952393 site_1327566431975 site_1327572561803 site_1347499014423 site_1416276701242 site_1240016856326 site_1443062183533;
+
+$colorSites: $colorCultura $colorMedioambiente $colorEmpleo $colorServiciossociales $colorBibliotecas $colorPMUS $colorCarreras $colorAdopcion $colorVivienda $colorUrbanismo $colorParticipacion $colorIgualdad;
+
+$colorSites_h1: $colorCultura_h1 $colorMedioambiente_h1 $colorEmpleo_h1 $colorServiciossociales_h1 $colorBibliotecas_h1 $colorPMUS_h1 $colorCarreras_h1 $colorAdopcion_h1 $colorVivienda_h1 $colorUrbanismo_h1 $colorParticipacion_h1 $colorIgualdad_h1;
+
+$site-color: zip($sites, $colorSites);
+
+$site-color-h1: zip($sites, $colorSites_h1);
+
+
+//Fondo de cajas grises
+
+$blanco: rgb(255,255,255);
+//(lighten($negro, 10%))
+
+//colores mensajes
+
+$error: rgb(230,76,59);
+$exito: rgb(25,187,155);
+$info: rgb(52,152,219);
+$warning: rgb(241,196,15);

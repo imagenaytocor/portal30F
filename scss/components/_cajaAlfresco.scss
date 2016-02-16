@@ -1,0 +1,37 @@
+//_cajaAlfresco.scss
+
+.alfrescoBrowserTable tr td:first-of-type {
+	text-align: center;
+}
+
+%iconosAlfresco {
+	&:before {
+		color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				color: nth($a, 2);
+			}
+		}
+		font-family: FontAwesome; 
+		@include rem('font-size',24px);
+		font-style: normal; 
+	}
+}
+
+.carpetaCerrada span {
+	&:before {
+		@extend %iconosAlfresco;
+		content: "\f07b";
+	}
+}
+
+.carpetaAbierta span {
+	&:before {
+		@extend %iconosAlfresco;
+		content: "\f07c";
+	}
+}
+
+.alineadoIzquierda {
+	padding-left: .5em;
+}

@@ -1,0 +1,12 @@
+//sgf.scss
+
+.loader {
+  background: url('https://coruna.es/cividas-more-employment-webapp/images/page-loader.gif') 50% 50% no-repeat rgb(256,256,256);
+  height: 100%;
+  left: 0;
+  min-width:100px;
+  min-height:100px;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}

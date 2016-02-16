@@ -1,0 +1,16 @@
+.site_1352255804703 {
+	& .menuPrincipal ul.nivel1 > li {
+		margin: .25em 0;
+		padding: 0 .15em;
+		&:first-child {
+			margin-right: 0;
+		}
+		@include breakpoints(desktop) {
+			margin: .25em;
+			padding: 0 .25em;
+			&:first-child {
+				margin-right: .75em;
+			}
+		}
+	}
+}

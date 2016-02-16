@@ -1,0 +1,317 @@
+//_cajaGenerica.scss
+
+.cajaGenerica {
+	clear: both;
+	overflow: hidden;
+	& .imagen {
+		float: left;
+		margin: 0 .5em .5em 0;
+		width: 40%;
+	}
+	& ul {
+		list-style: none;
+	}
+	& .relacionadosContenido li:before {
+		color: $grisTexto;
+	}
+	& .textoContenido dt {
+		font-weight: $regular;
+	}
+	& .textoContenido dd {
+		margin-left: 1em;
+	}
+	& + & {
+		border-top: 1px solid $grisBorde;
+		padding-top: 1em;
+	}
+	.row & + & {
+		border-top: none;
+		padding-top: 0;
+	}
+}
+
+.cajaImgTxt {
+	background-color: $grisFondo;
+	& .imagen {
+		//height: 6.25em;
+		width: 100%;
+	}
+	& .textoContenido {
+		padding: .5em;
+		& * {
+			font-family: $titulos2-font-family;
+		}
+	}
+	& + & {
+		border-top: none;
+		padding-top: 0;
+	}
+	&.t-50 {
+		margin-bottom: 1.5em;
+	}
+	&.d-25 {
+		margin-bottom: 0;
+	}
+	& .panes {
+		background-color: $blanco;
+	}
+	& .etiquetas a {
+		background-color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				background-color: nth($a, 2);
+			}
+		}
+		color: $blanco;
+		&.current {
+			background-color: $blanco;
+			color: $negro;
+		}
+	}
+
+// colCaja cajaImgTxt
+
+	&.colCaja {
+		background-repeat: repeat-x !important;
+		padding: 1em .5em .5em;
+		& h3 {
+			font-family: $titulos2-font-family;
+		}
+	}
+
+}
+
+.cajaDesplegable {
+	&.cajaGenerica {
+		background-color: $blanco;
+		border: 1px solid $grisBorde;
+		margin-bottom: .5em;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		& .imagen {
+			align-self: stretch;
+			background-color: $grisFondo;
+			justify-content: space-around;
+			margin: 0;
+			order: 3;
+			width: auto;
+		}
+		& h3 {
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			cursor: pointer;
+			margin: 0 .5em .25em .5em;
+			padding-top: .25em;
+		}
+		& p {
+			font-family: $titulos-font-family;
+			font-weight: $xLight;
+			margin: 0 0.5em 0.5em 0.75em;
+		}
+		@include breakpoints(bigPhone){
+			//@include flex-basis(32%);
+		}
+		@include breakpoints(desktop){
+			align-items: center;
+			//@include flex-basis(32%);
+			margin-bottom: 1em;
+			//min-height: 8em;
+		}
+		& .textoContenido {
+			align-items: flex-start;
+			flex-basis: 79%;
+			@include breakpoints(bigPhone){
+				flex-basis: 60%;
+			}
+			@include breakpoints(tablet){
+				flex-basis: 70%;
+			}
+		}
+	}
+	@include breakpoints(bigPhone){
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		& h2 {
+			flex-basis: 100%;
+		}
+	}
+	& .relacionadosItem {
+		display: none;
+		& ul {
+			list-style: none;
+			margin: 0 0 .5em .5em;
+		}
+		& li {
+			//background: url('../images/topoListaAccesos.png') no-repeat left .25em;
+			padding: 0 0 0 .5em;
+			&:before {
+					content: "\f101";
+					font-family: FontAwesome;
+					@include rem('font-size',20px);
+					line-height: 1;
+					padding-right: .5em;
+			}
+
+		}
+		& a {
+			color: $negro;
+			font-family: $titulos-font-family;
+			@include rem('font-size', 14px);
+			font-weight: $light;
+			text-transform: uppercase;
+		}
+	}
+}
+
+// Cajas con enlaces como las subportadas de Bibliotecas antes de DU
+
+.cajaEnlaces {
+	background-color: $blanco;
+	border: 1px solid #CCC !important;
+	margin-bottom: .5em;
+	padding: 1.5625%;
+	& h2,
+	& h3 {
+		border-left: 2px solid $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				border-left-color: nth($a, 2);
+			}
+		}
+		@include rem('font-size',20px);
+		line-height: 1;
+		margin-bottom: .5em;
+		padding-left: .5em;
+		text-transform: uppercase;
+	}
+	& li {
+		&:before {
+				content: "\f101";
+				font-family: FontAwesome;
+				@include rem('font-size',20px);
+				line-height: 1;
+				padding-right: .5em;
+		}
+	}
+	& .textoContenido {
+		@include breakpoints(tablet){
+			margin-top: 3.125%;
+		}
+		@include breakpoints(desktop){
+			margin-top: 1.5625%;
+		}
+	}
+}
+
+.cajaInfo {
+	background-color: $grisFondo;
+	border: 1px solid $grisBorde;
+	padding: .5em 1em;
+	margin-bottom: 1em;
+	& h2 {
+		border-bottom: 1px solid $grisBorde;
+		margin-bottom: 0.5em;
+	}
+	& h3 {
+		@include title2-style;
+		border-bottom: 1px solid $grisBorde;
+		margin-bottom: 0.5em;
+
+	}
+	& p,
+	& li {
+		font-family: $titulos2-font-family;
+		@include rem ('font-size', 16px);
+	}
+	& .textoContenido p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.cajaInfoFlecha {
+	border: 1px solid $grisBorde !important;
+	padding: .5em;
+	margin-bottom: 1em;
+	.colCaja & + & {
+		border-top: none;
+		padding-top: .5em;
+	}
+	& .textoContenido {
+		background-color: $blanco;
+		padding: .5em;
+	}
+	& h2 {
+		color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				color: nth($a, 2);
+			}
+		}
+	}
+	& h3 {
+		@include title2-style;
+		color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				color: nth($a, 2);
+			}
+		}
+	}
+	& p,
+	& li {
+		font-family: $titulos2-font-family;
+		@include rem ('font-size', 16px);
+	}
+	& .textoContenido p:last-child {
+		margin-bottom: 0;
+	}
+	& em {
+		display: block;
+		font-style: normal;
+		margin: .5em .5em .5em 0;
+		& a {
+			background-color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					background-color: nth($a, 2);
+				}
+			}
+			border-radius: $default-border-radius;
+			color: $blanco;
+			padding: .1em 1em .1em .5em;
+			position: relative;
+			text-transform: uppercase;
+			&:after {
+				background: none repeat scroll 0 0 $enlace;
+				@each $a in $site-color {
+					.#{nth($a, 1)} & {
+						background-color: nth($a, 2);
+					}
+				}
+				border-radius: .15em;
+				top: 5px;
+				content: " ";
+				height: 1em;
+				right: -7px;
+				margin: 0 auto;
+				position: absolute;
+				transform: rotate(-45deg);
+				width: 1em;
+				z-index: 10;
+			}
+			&:visited {
+				color: $blanco;
+			}
+		}
+	}
+}
+
+.geocli, .geodet {
+	display: none;
+}

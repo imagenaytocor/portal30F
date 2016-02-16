@@ -1,0 +1,107 @@
+<div class="cajaSlider ">
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	/*
+	https://github.com/CSS-Tricks/AnythingSlider/issues/414
+	IF browser width is more or equal to 320, I want my slider to showMultiple: 1 & changeBy: 1 
+	IF browser width is more or equal to 640, I want my slider to showMultiple: 2 & changeBy: 1 
+	IF browser width is more or equal to 960, I want my slider to showMultiple: 3 & changeBy: 1
+	*/
+	
+	var multi, w, timer, slider = jQuery('#S1322783534817'),
+	    win = jQuery(window),
+	    checkWidth = function() {
+	        multi = 3;
+	        w = win.width();
+	        if (w <= 480) {
+	        	multi = 3
+	        } else if (w >= 481 && w < 640) {
+	        	multi = 5
+	        } else {
+	        	multi = 6
+	        }
+	      	                
+	      	// update AnythingSlider
+	        slider.data('AnythingSlider').options.showMultiple = multi;
+	        slider.anythingSlider();
+	
+	        // show width for demo
+	        jQuery('#S1322783534817').addClass('multi'+multi);
+	    };
+	jQuery(document).ready(function() {
+		checkWidth();
+	});
+	win.resize(function() {
+	    clearTimeout(timer);
+	    // throttle the resize check
+	    timer = setTimeout(function() {
+	        checkWidth();
+	    }, 200);
+	});
+	
+	jQuery('#S1322783534817').anythingSlider({
+		autoPlay : false, 
+		autoPlayLocked : false, 
+		buildArrows : true, 
+		expand : true, 
+		resizeContents: false, 
+		toggleControls : false, 
+		showMultiple : 3, 
+		changeBy : 3}) 
+		.find('.panel:not(.cloned) img') 
+		.attr('rel','group')           // add all slider images to a colorbox group
+		
+			.colorbox({
+				width: '75%',
+				height: '75%',
+				href: function(){ return $(this).attr('src'); },
+				// use $(this).attr('title') for specific image captions
+				//title: 'Pulsa la tecla ESC para volver a la página',
+				previous: "&lt;&lt;",
+				next: "&gt;&gt;", 
+				close: "X" , 
+				current: "{current}/{total}",
+				rel: 'group'
+			});
+		checkWidth;
+});(jQuery)
+</script>
+	<ul id="S1322783534817">
+    	<li class="panel1">
+    		<img alt="" src="images/sliderP1.jpg">
+    		<div class="caption-right">
+    			<a href="#"><p class="tituloImagen">Marat&oacute;n atl&aacute;ntica</p></a>
+    		</div>
+    	</li>
+        <li class="panel2">
+        	<img alt="" src="images/sliderP2.jpg">
+        	<div class="caption-right">
+        		<a href=""><p class="tituloImagen">Plan de movilidad urbana sostenible </p></a>
+        	</div>
+        </li>
+        <li class="panel3">
+        	<img alt="" src="images/sliderP3.jpg">
+        	<div class="caption-right">
+        		<a href=""><p class="tituloImagen">Proyecto integral de regeneraci&oacute;n del Agra del Orz&aacute;n</p></a>
+        	</div>
+        </li>
+        <li class="panel4">
+        	<img alt="" src="images/sliderP4.jpg">
+        	<div class="caption-right">
+        		<a href=""><p class="tituloImagen">NEX Informaci&oacute;n Xuvenil</p></a>
+        	</div>
+        </li>
+        <li class="panel5">
+        	<img alt="" src="images/sliderP5.jpg">
+        	<div class="caption-right">
+        		<a href=""><p class="tituloImagen">Servicio de empleo</p></a>
+        	</div>
+        </li>
+        <li class="panel6">
+        	<img alt="" src="images/sliderP6.jpg">
+        	<div class="caption-right">
+        		<a href=""><p class="tituloImagen">Atenci&oacute;n al consumidor</p></a>
+        	</div>
+        </li>                             
+    </ul>
+</div>

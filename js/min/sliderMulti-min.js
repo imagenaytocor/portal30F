@@ -1,0 +1,1 @@
+jQuery.noConflict(),function($){$(function(){var i,n,t,o=jQuery("#S1322783534817"),e=$(window),u=function(){i=3,n=e.width(),i=480>=n?3:n>=481&&640>n?5:6,o.data("AnythingSlider").options.showMultiple=i,o.anythingSlider(),$("#S1322783534817").addClass("multi"+i)};u(),e.resize(function(){clearTimeout(t),t=setTimeout(function(){u()},200)})})}(jQuery);

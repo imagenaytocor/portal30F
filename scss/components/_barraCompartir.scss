@@ -1,0 +1,149 @@
+//_barraCompartir
+
+#barraCompartir {
+
+	@include breakpoints(tablet){
+		border-right: 1px dotted #CCC;
+		display: flex;
+		flex-basis: 6%;
+		margin-right: 1.5%;
+		padding-right: 1.5%;
+	}
+	& + div[class^="des"] {
+		@include breakpoints(tablet){
+			flex-basis: 88%;
+			padding-right: 1%;
+		}
+	}
+	& ul {
+		list-style: none;
+		margin-left: 0;
+	}
+	& li {
+		margin-bottom: 1em;
+		@include breakpoints(tablet){
+			margin-bottom: .5em;
+		}
+		&.codigoQR:before {
+			display: none;
+		}
+		& span {
+			@include offleft;
+		}
+		& ul {
+			display: inline;
+			background-color: $grisFondo;
+			border: 1px dotted #CCC;
+			padding: .75em .25em .25em .5em;
+			position: relative;
+			margin: 1em 0 0 .75em;
+			@include breakpoints(tablet){
+				display: none;
+				margin: 1em 0 0 -.5em;
+				padding-top: .5em;
+			}
+			& li {
+				margin: .25em .75em 0 0;
+				display: inline;
+				@include breakpoints(tablet){
+					display: inline-block;
+					margin: 0 0 .5em 0;
+				}
+			}
+			&:before {
+				background: none repeat scroll 0 0 $grisFondo;
+				border-top: 1px dotted #CCC;
+				border-left: 1px dotted #CCC;
+				top: 15px;
+				content: " ";
+				height: 10px;
+				left: -6px;
+				margin: 0 auto;
+				position: absolute;
+				transform: rotate(-45deg);
+				width: 10px;
+				z-index: 10;
+				@include breakpoints(tablet){
+					border-left: none;
+					border-right: 1px dotted #CCC;
+					top: -6px;
+					height: 10px;
+					left: 0;
+					right: 0;
+				}
+			}
+		}
+		& a {
+			@include rem('font-size', .001px);
+			visibility: hidden;
+			&:before  {
+				color: $negro;
+				content: '\f1e0';
+				cursor: pointer;
+				display: inline-block;
+			    font-family: FontAwesome;
+			    @include rem('font-size',30px);
+			    line-height: 1;
+			    visibility: visible;
+				}
+			// Para IE
+			/*.no-flexboxlegacy & {
+				@include rem('font-size', 14px);
+				visibility: visible;
+			}*/
+		}
+		&.facebook a:before {
+			content: '\f09a';
+		}
+		&.twitter a:before {
+			content: '\f099';
+		}
+		&.youtube a:before {
+			content: '\f167';
+		}
+		&.foursquare a:before {
+			content: '\f180';
+		}
+		&.enviarAmigo a:before {
+			content: '\f003';
+			@include rem('font-size',24px);
+		}
+		& .rss a:before {
+				content: "\f09e";
+		}
+		& .delicious a {
+				content: "\f1a5";
+		}
+		& .pinterest a:before {
+				content: "\f231";
+		}
+		& .instagram a:before {
+				content: "\f16d";
+		}
+		& .googleplus a:before {
+				content: "\f0d5";
+		}
+		& .whatsapp a:before {
+				content: "\f232";
+		}
+		&.addAgenda a:before {
+				content: "\f133";
+		}
+		& .googleCalendar a:before {
+				content: "\f1a0";
+		}
+		& .yahooCalendar a:before {
+				content: "\f19e";
+		}
+		&.codigoQR a:before {
+				content: "\f029";
+		}
+		&.geoLocalizacion a:before {
+				content: "\f041";
+		}
+		&.imprimir a:before {
+				content: "\f02f";
+		}
+	}
+
+}

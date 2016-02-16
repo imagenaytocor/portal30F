@@ -1,0 +1,28 @@
+//@media
+
+@mixin breakpoints($point) {
+  @if $point == bigDesktop {
+    @media (min-width: 78em) { @content; }
+  }
+  @else if $point == medDesktop {
+    @media (min-width: 70em) { @content; }
+  }
+  @else if $point == desktopW {
+    @media (min-width: 60em) and (min-device-aspect-ratio: 16/9) { @content; }
+  }
+  @else if $point == desktop {
+    @media (min-width: 60em) { @content; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 45em) { @content; }
+  }
+  @else if $point == bigPhone {
+    @media (min-width: 30em)  { @content; }
+  }
+  @else if $point == hiddenTablet {
+	@media (max-width: 44.9em) { @content; }
+  }
+  @else if $point == hiddenDesktop {
+  	@media (max-width: 59.9em) { @content; }
+  }
+}

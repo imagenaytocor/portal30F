@@ -1,0 +1,105 @@
+//_cajaBuscadorCategorias.scss
+
+.buscadorCategoriasComplejo {
+	& ul {
+		list-style: none;
+	}
+}
+
+ul.cat1nivel > li {
+	border: 1px solid $grisBorde;
+	margin-bottom:.5em;
+	padding-top: .5em;
+	@include breakpoints(tablet){
+		float: left;
+		margin: 0 1% .5em;
+		width: 48%;
+		&:only-child {
+			width: 100%;
+		}
+	}
+	@include breakpoints(desktop){
+		margin: 0 1% .5em;
+		width: 31%;
+	}
+	& input[type=radio] {
+		margin: 0 .5em .5em;
+		transform: scale(1.25,1.25);
+		width: 10%;
+		@include breakpoints(desktop){
+			margin: 0 0 .25em .25em;
+			transform: scale(1,1);
+		}
+	}
+	& label {
+		left: 0;
+		position: relative;
+		top: 0;
+	}
+	& label.padrecito:after {
+			content: "\f107";
+			display: inline-block;
+			font-family: FontAwesome;
+			@include rem('font-size',24px);
+			line-height: 1;
+			margin-left: .25em;
+	}
+	& label.padrecito.abierto:after {
+		content: "\f106";
+	}
+	&.catMarcada > label {
+		color: $error;
+	}
+	@include breakpoints(tablet){
+		&:nth-child(3n) {
+			clear: left;
+		}
+	}
+	@include breakpoints(desktop){
+		&:nth-child(3n) {
+			clear: none;
+		}
+		&:nth-child(4n) {
+			clear: left;
+		}
+	}
+}
+
+ul.cat2nivel {
+	background-color: $blanco;
+	border-top: 1px solid $grisBorde;
+	margin: .5em 0 0 0;
+	padding: .5em 0 0 2.5%;
+ 	& > li {
+ 		@include breakpoints(tablet){
+ 			float: left;
+ 			width: 50%;
+ 		}
+		&.catMarcada {
+			background-color: tint($enlace, 45%);
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					background-color: tint(nth($a, 2), 45%);
+				}
+			}
+		}
+		& > ul {
+			display: none;
+			margin-top: .5em;
+		}
+	}
+}
+
+ul.cat3nivel {
+	margin-left: 1em;
+ 	& > li {
+	& label {
+		@include rem('font-size',16px);
+		text-transform: none;
+		}
+	}
+}
+
+.catMarcada {
+
+}

@@ -1,0 +1,33 @@
+//_adopcion.scss
+
+.site_1327572561803 {
+	& h1 {
+		@include rem('font-size', 35px);
+		padding-bottom: 1em;
+		top:  2.85em;
+		@include breakpoints(bigPhone) {
+			@include rem('font-size', 40px);
+			padding-bottom: .75em;
+			top:  2.5em;
+		}
+		@include breakpoints(tablet) {
+			@include rem('font-size', 60px);
+			padding-bottom: .25em;
+			top:  1.68em;
+		}
+		@include breakpoints(desktop) {
+			top:  1.54em;
+		}
+	}
+	& ul#accesos {
+		right: 1em;
+		top: 9.75em;
+		@include breakpoints(bigPhone) {
+			right: 2em;
+		}
+		@include breakpoints(desktop) {
+			top: 9em;
+		}
+		
+	}
+}

@@ -1,0 +1,78 @@
+//_detallePrograma.scss
+#datosPrograma {
+	background-color: $grisFondo;
+	border: 1px solid $grisBorde;
+	float: left;
+	margin-bottom: 1em;
+	width: 100%;
+	@include breakpoints(bigPhone){
+		width: 85%;
+	}
+	& + div {
+		clear: both;
+	}
+	& ul {
+		margin-left: 0;
+	}
+	& li {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin-bottom: 0;
+		& p {
+			margin: 0 0 .5em .5em;
+		}
+		& > p {
+			flex-basis: 70%;
+			text-align: left;
+			&.tituloInterno {
+				flex-basis: 23%;
+				text-align: right;
+				margin: 0 .5em .5em 0;
+			}
+		}
+		& > ul {
+			flex-basis: 70%;
+		}
+		& div {
+			flex-basis: 70%;
+			margin: 0 0 .5em .5em;
+			& p {
+				margin-left: 0;
+			}
+		}
+		& li {
+			justify-content: flex-start;
+		}
+	}
+//Datos de programa dt
+
+	& dt {
+		background-color: $grisFondo;
+		border-bottom: none;
+		clear: left;
+		float: left;
+		padding: .25em .5em;
+		width: 25%;
+	}
+	& dd {
+		background-color: $blanco;
+		border-bottom: 1px solid $grisBorde;
+		border-left: 1px solid $grisBorde;
+		float: left;
+		margin-bottom: 0;
+		padding: .25em .5em;
+		width: 75%;
+		&:last-of-type {
+			border-bottom: none;
+		}
+		& p {
+			@include rem ('font-size', 16px);
+			font-weight: $light;
+			margin-bottom: 0;
+		}
+	}
+
+
+}

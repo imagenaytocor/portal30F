@@ -1,0 +1,96 @@
+<div class="cajaBuscadorFormularioFechas">
+	<h2>Buscar en coruna.es</h2>
+	<form method="post" action="/servlet/Satellite?argIdioma=es&amp;c=Page&amp;cid=1337562769948&amp;pagename=Medioambiente%2FPage%2FGenerico-Page-Generica&amp;rendermode=preview-julio-48u" id="buscadorFormularioFechas">
+		<input type="hidden" value="Suceso" id="categoriaTipo" name="categoriaTipo">
+		<fieldset class="busquedaPorPalabras">
+			<input type="hidden" value="" id="DateRange_campo" name="DateRange_campo">
+				<label for="textoBuscar">Escriba la palabra o palabras que desea buscar</label>
+				<input maxlength="200" value="" id="textoBuscar" name="textoBuscar">
+		</fieldset>
+		<p>Buscador avanzado</p>
+		<fieldset class="busquedaAvanzada">
+			<fieldset class="busquedaPorCategorias">
+				<label for="categoriaID">Seleccionar categor&iacute;a</label>
+				<select name="categoriaID" id="categoriaID-1103133897284">
+					<option selected="selected" value="1103133897284">Cualquiera</option>
+					<option value="1332838537577">Campa&ntilde;as y celebraciones</option>
+					<option value="1327572271229">Energ&iacute;a y Cambio Clim&aacute;tico</option>
+				</select>
+			 </fieldset>
+			 <fieldset class="busquedaPorFechas">
+				<div id="subFormIzq">
+        			<p>Seleccione <strong>per&iacute;odo o rango de fechas:</strong></p>
+        			<label for="ano" class="anoInput">
+          				<input type="radio" id="ano" name="rbDate" value="ano" onclick="javascript:checkAndSelectDate('year', 1,'sano')" class="opcion">El &uacute;ltimo <strong>a&ntilde;o</strong>
+          			</label>
+        			<label for="trimestre" class="trimestreInput">
+          				<input type="radio" id="trimestre" name="rbDate" value="trimestre" onclick="javascript:checkAndSelectDate('month',3,'strimestre')" class="opcion">Los &uacute;ltimos <strong>3 meses</strong>
+          			</label>
+        			<label for="mes" class="mesInput">
+          				<input type="radio" id="mes" name="rbDate" value="mes" onclick="javascript:checkAndSelectDate('month',1,'smes')" class="opcion">El &uacute;ltimo <strong>mes</strong>
+			        </label>
+			        <label for="semana" class="semanaInput">
+			          <input type="radio" id="semana" name="rbDate" value="semana" onclick="javascript:checkAndSelectDate('week',7,'ssemana')" class="opcion">
+					  		La &uacute;ltima <strong>semana</strong>
+			        </label>
+			        <label for="todo" class="todoInput">
+			          <input type="radio" id="todo" name="rbDate" value="todo" onclick="javascript:checkAndSelectDate('',0,'stodo')" class="opcion">
+			          <strong>Todos</strong>
+			        </label>
+			        <label for="proximoFinsemana" class="proximoFinSemanaInput">
+			          <input type="radio" id="proximoFinsemana" name="rbDate" value="proximoFinsemana" onclick="javascript:checkAndSelectNextDate('weekend',3,'sproximoFinsemana')">Pr&oacute;ximo fin de semana
+			        </label>
+			        <label for="proximaSemana" class="proximoSemanaInput">
+			          <input type="radio" id="proximaSemana" name="rbDate" value="proximaSemana" onclick="javascript:checkAndSelectNextDate('week',7,'sproximaSemana')">Pr&oacute;xima semana
+			        </label>
+		        </div>
+		        <div id="subFormDer">
+		        	<label for="range">
+						<input type="radio" id="range" name="rbDate" value="range" onclick="javascript:checkAndSelectDate('',0,'srange')" class="opcion">
+							Seleccione <strong>per&iacute;odo o rango de fechas:</strong>
+					</label>
+					<p>Desde</p>
+					<label for="DateRange_MinDay">D&iacute;a
+						<select name="DateRange_MinDay" id="DateRange_MinDay" class="brd">
+							<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5" selected="selected">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+						</select>
+					</label>
+					<label for="DateRange_MinMonth">Mes
+						<select name="DateRange_MinMonth" id="DateRange_MinMonth" class="brd">
+							<option value="1">Enero</option><option value="2">Febrero </option><option value="3">Marzo</option><option value="4">Abril</option><option value="5">Mayo</option><option value="6">Junio</option><option value="7">Julio</option><option value="8" selected="selected">Agosto</option><option value="9">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option>
+						</select>
+					</label>
+					<label for="DateRange_MinYear">A&ntilde;o
+						<select name="DateRange_MinYear" id="DateRange_MinYear" class="brd">
+							<option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014" selected="selected">2014</option><option value="2015">2015</option>
+						</select>
+					</label>
+					<p>Hasta</p>
+					<label for="DateRange_MaxDay">D&iacute;a
+						<select name="DateRange_MaxDay" id="DateRange_MaxDay" size="1" class="brd">
+							<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5" selected="selected">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+						</select>
+					</label>
+					<label for="DateRange_MaxMonth">Mes
+						<select name="DateRange_MaxMonth" id="DateRange_MaxMonth" class="brd">
+							<option value="1">Enero</option><option value="2">Febrero </option><option value="3">Marzo</option><option value="4">Abril</option><option value="5">Mayo</option><option value="6">Junio</option><option value="7">Julio</option><option value="8" selected="selected">Agosto</option><option value="9">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option>
+						</select>
+					</label>
+					<label for="DateRange_MaxYear">A&ntilde;o
+						<select name="DateRange_MaxYear" id="DateRange_MaxYear" class="brd">
+							<option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014" selected="selected">2014</option><option value="2015">2015</option>
+						</select>
+					</label>
+				</div>
+			</fieldset>
+			<!--<p>Buscador simple</p>-->
+		</fieldset>
+    	<fieldset class="busquedaEnviar">
+    		<input type="submit" value="Buscar" name="buscar" class="botonEnviarBuscador">
+    	</fieldset>
+	</form>
+	<script type="text/javascript">
+				document.getElementById('range').checked = true;
+ 				document.getElementById('range').click();
+ 			</script>
+</div>

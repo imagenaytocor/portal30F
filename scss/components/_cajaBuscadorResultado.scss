@@ -1,0 +1,638 @@
+//_cajaBuscadorResultado.scss
+
+.cajaBuscadorFormularioFechas {
+	background-color: $blanco;
+	border: 1px solid #CCC;
+	margin-bottom: 1em;
+	padding: 1.5% 0;
+	& h2 {
+		@include rem('font-size', 22px);
+		padding: 0 3.125%;
+	}
+	& fieldset {
+		margin: .5em 0 1em;
+		padding: 0 3.125%;
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+	& input {
+		border: 1px solid #CCC;
+		border-radius: $default-border-radius;
+		@include rem('font-size', 16px);
+		margin: .25em 0 0;
+		& #textoBuscar {
+			width: 100%;
+		}
+	}
+	& select {
+		border: 1px solid #CCC;
+		border-radius: $default-border-radius;
+		@include rem('font-size', 14px);
+		margin: .25em 0 0;
+	}
+	& .busquedaAvanzada {
+		display: none;
+	}
+	& p.antetitulo {
+		padding: .5em 3.125% 0;
+	}
+}
+
+#buscadorFormularioFechas {
+	& p {
+		margin-bottom: .5em;
+	}
+	& > p {
+		background-color: $grisFondo;
+		border: 1px solid #CCC;
+		cursor: pointer;
+		padding: .25em .5em;
+		position: relative;
+		text-transform: uppercase;
+		&:after {
+				content: "\f103";
+				display: inline-block;
+				font-family: FontAwesome;
+				@include rem('font-size',30px);
+				line-height: 1;
+				position: absolute;
+				right: .5em;
+		}
+		&.abierto + fieldset {
+			display: block;
+		}
+		&.abierto:after {
+			content: "\f102";
+		}
+		/*&:hover::after {
+		    -moz-transform:rotate(-180deg);
+		    -webkit-transform:rotate(-180deg);
+		}*/
+	}
+	& #subFormIzq {
+		@include breakpoints(tablet){
+			float: left;
+			width: 49%;
+		}
+	}
+	& #subFormDer {
+		@include breakpoints(tablet){
+			float: right;
+			margin-top: 2em;
+			width: 49%;
+		}
+	}
+}
+
+.busquedaPorPalabras {
+	& input {
+		width: 85%;
+	}
+}
+
+.busquedaPorFechas {
+	& label[class*="Input"] {
+		display: block;
+		margin-bottom: .5em;
+		& input {
+			margin-right: .5em;
+		}
+	}
+	& #subFormDer p {
+		@include rem('font-size', 16px);
+		font-weight: $regular;
+		margin-top: .5em;
+		text-transform: uppercase;
+	}
+}
+
+.botonEnviarBuscador {
+		background-color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				background-color: nth($a, 2);
+			}
+		}
+		background-image: url('//estaticos.coruna.es/imagesdu/lupaBuscador.png');
+		background-position: .6em .45em;
+		background-repeat: no-repeat;
+		border: none !important;
+		border-radius: $default-border-radius;
+		color: #FFF;
+		float: right;
+		line-height: 2;
+		padding-left: 2em;
+		text-transform: uppercase;
+		width: 6.5em;
+	}
+
+//
+
+.cajaBuscadorResultado {
+	& dl {
+		padding: 0 3.125%;
+	}
+	& dt {
+		@include rem('font-size', 20px);
+		margin: 1em 0 .25em;
+		text-transform: uppercase;
+		&[class^="label"] {
+			@include offleft;
+		}
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+	 @include breakpoints (desktop) {
+	 	&.m-100 dt {
+	 		@include rem('font-size', 16px);
+	 	}
+	 }
+	& dd {
+		//Cambiado por excesivo en listados genéricos de 2.15em
+		padding-left: 1em;
+	}
+	&.noticiasPortada dd.imagen {
+		margin-top: .5em;
+		padding-left: 0;
+	}
+	&.noticiasPortada ul {
+		margin-left: 0;
+	}
+	& dd[class^="fechas"] {
+		padding-left: 0;
+		text-transform: uppercase;
+		&:before  {
+				content: '\f073';
+				cursor: pointer;
+				display: inline;
+			  font-family: FontAwesome;
+			  @include rem('font-size',20px);
+			  line-height: 1;
+			  margin-right:.75em;
+		}
+	}
+	& dd[class^="fechaI"] {
+		padding-left: 0;
+		&:before  {
+				content: '\f044';
+				cursor: pointer;
+				display: inline;
+			  font-family: FontAwesome;
+			  @include rem('font-size',20px);
+			  line-height: 1;
+			  margin-right:.75em;
+		}
+	}
+	& dd[class^="nota"] {
+		margin-left: 19%;
+		padding-left: 0;
+		&:before  {
+				content: '\f05a';
+				cursor: pointer;
+				display: inline;
+			  font-family: FontAwesome;
+			  @include rem('font-size',20px);
+			  line-height: 1;
+			  margin-right:.75em;
+		}
+		@include breakpoints(bigPhone) {
+			margin-left: 23%;
+		}
+		@include breakpoints(tablet) {
+			margin-left: 25%;
+		}
+	}
+	.colCaja & {
+	}
+	& dd[class^="fecha"] {
+		@include rem('font-size', 16px);
+		text-transform: uppercase;
+		& strong {
+			@include offleft;
+		}
+	}
+	& ul {
+		list-style: none;
+		margin-left: 0;
+	}
+	&.cajaDesplegable {
+		background-color: $blanco;
+		border: 1px solid $grisBorde;
+		margin-bottom: 0.5em;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		& img {
+			align-self: stretch;
+			background-color: $grisFondo;
+			justify-content: space-around;
+		}
+		& h2 {
+			@include title3-style;
+			align-items: flex-start;
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			cursor: pointer;
+			flex-basis: 79%;
+			padding-left:.5em;
+			text-transform: none;
+		}
+		& dl.listadoResultados {
+			display: none;
+		}
+		& dt {
+			border: none;
+			@include rem('font-size', 18px);
+			padding: .25em 1em;
+			margin: .25em 0;
+			&:before {
+					content: "\f101";
+					font-family: FontAwesome;
+					@include rem('font-size',20px);
+					line-height: 1;
+					padding-right: .5em;
+			}
+		}
+	}
+}
+
+// Lista con imagen a la izquierda
+.lstImgIzq {
+	& li {
+		clear: both;
+	}
+	& .imagenLista {
+		background-color: $grisFondo;
+		margin-right: 1.625%;
+		padding: .5em;
+		width: 30%;
+		@include breakpoints(tablet) {
+			float: left;
+			width: auto;
+		}
+	}
+	& dl {
+		display: flex;
+		flex-flow: row wrap;
+		padding: 0;
+		& dt {
+			flex-basis: 20%;
+			@include rem('font-size',16px);
+		}
+		& dd {
+			flex-basis: 75%;
+			align-self: flex-end;
+			margin-bottom: .25em;
+			@include breakpoints(tablet) {
+				flex-basis: 78%;
+			}
+		}
+	}
+	& .resultadosBot {
+		margin:  1em 3.125% .5em;
+	}
+}
+
+//Perfiles de la agenda
+
+.buscadorTitDestacado {
+	border: 1px solid $enlace;
+	border-color: $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			border-color: nth($a, 2);
+		}
+	margin-bottom: 1em;
+	@include breakpoints(tablet) {
+		margin-bottom: 2em;
+	}
+	@include breakpoints(desktop) {
+		margin-bottom: 0;
+	}
+	position: relative;
+	}
+	& .listadoResultados {
+		margin-bottom: 4em;
+		padding: 0 .5em;
+	}
+	& h2 {
+		background-color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				background-color: nth($a, 2);
+			}
+		}
+		color: $blanco;
+		@include rem('font-size', 25px);
+		padding: 4em 0.5em 0.5em;
+	}
+	& p.masInfo {
+		bottom: .5em;
+		font-weight: $light;
+		margin-bottom: 0;
+		position: absolute;
+		right: .75em;
+		width: 90%;
+		& a {
+			border: none;
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+		}
+	}
+}
+
+// listado complejo - sin dt - 1, 3, 4 y 6
+%listCompNoDT {
+	& .listadoResultados > li {
+		border-bottom: 1px dotted $grisBorde;
+		float: left;
+		padding: 0 0 .5em;
+		width: 100%;
+	}
+	& dt {
+		@include offleft;
+		&.titulo {
+			@include rem('font-size', 20px);
+			left: 0;
+			margin: 0 0 .5em;
+			padding-left: 0;
+			position: relative;
+			text-transform: uppercase;
+			top: 0;
+		}
+	}
+	& dd {
+		padding-left: 0;
+		& p {
+			display:inline;
+			@include rem('font-size', 16px);
+			&:only-child {
+				margin-bottom: 0;
+			}
+		}
+		& p:empty {
+			display: none;
+		}
+	}
+	& dd[class^="fechas"]:before,
+	& dd[class^="fechaI"]:before,
+	& dd[class^="nota"]:before {
+			display:none;
+	}
+	& dd[class^="nota"] {
+		margin-left: 0;
+	}
+	& .entradilla {
+		color: $negro;
+		@include rem('font-size', 16px);
+		font-weight: $xLight;
+		padding-left: .5em;
+	}
+	& .imagen {
+		@include breakpoints (tablet) {
+			float: right;
+			margin: 0 0 3.125% 3.125%;
+			padding-left: 0;
+			width: 30%;
+		}
+	}
+	& img.imagen {
+		width: 100%;
+	}
+}
+
+// nuevo listEventosComplejo - dt - 2, 5, 8, 9
+%listCompDT {
+	& .listadoResultados > li {
+		border-bottom: 1px dotted $grisBorde;
+		float: left;
+		padding: 0 0 .5em;
+		width: 100%;
+		& > a {
+			display: block;
+			@include rem('font-size', 20px);
+			margin-bottom: .5em;
+			text-transform: uppercase;
+		}
+	}
+	& dt {
+		clear: left;
+		float: left;
+		@include rem('font-size', 16px);
+		margin: 0 3.125% 0 0;
+		text-align: right;
+		text-transform: none;
+		width: 27%;
+		&.titulo {
+			@include rem('font-size', 20px);
+			margin-bottom: .5em;
+			text-align: left;
+			text-transform: uppercase;
+			width: 100%;
+		}
+	}
+	& dd {
+		float: left;
+		padding-left: 0;
+		width: 67%;
+		& p {
+			@include rem('font-size', 16px);
+			margin-bottom: 0;
+			&:empty {
+				display: none;
+			}
+		}
+		&[class]:before {
+				display:none;
+		}
+		&[class^="nota"]:before {
+				display: inline;
+		}
+		&[class^="tipoPublico"] {
+			display: inline-block;
+			margin-right: 1em;
+			width: auto;
+		}
+	}
+	& .imagen {
+		@include breakpoints (tablet) {
+			float: right;
+			margin: 0 0 3.125% 3.125%;
+			width: 30%;
+		}
+	}
+	& img.imagen {
+		width: 100%;
+	}
+}
+
+//listado complejo sin etiquetas
+.lstComSinEti {
+	@extend %listCompNoDT;
+}
+
+//listado complejo con etiquetas
+.lstComConEti {
+	@extend %listCompDT;
+}
+
+//listado complejo sin etiquetas y con iconos
+
+.lstIconos {
+	@extend %listCompNoDT;
+
+	& dd[class^="fecha"] {
+			padding-left: 0;
+			text-transform: uppercase;
+			&:before {
+				@include iconoLista('\f073');
+			}
+	}
+	& dd[class^="fechaI"] {
+		padding-left: 0;
+		&:before {
+			@include iconoLista('\f044');
+		}
+	}
+	& dd[class^="horario"] {
+		padding-left: 0;
+		&:before {
+			@include iconoLista('\f017');
+		}
+	}
+	& dd[class^="direccion"] {
+		padding-left: 0;
+		&:before {
+			@include iconoLista('\f041');
+		}
+	}
+	& dd[class^="precio"] {
+		padding-left: 0;
+		&:before {
+			@include iconoLista('\f153');
+		}
+	}
+	& dd[class^="nota"] {
+		padding-left: 0;
+		&:before {
+			@include iconoLista('\f05a');
+		}
+	}
+	& dd[class^="tipoActividad"] {
+		padding-left: 0;
+		&:before {
+			@include iconoLista('\f02d');
+		}
+	}
+	& dd[class^="colectivo"] {
+		padding-left: 0;
+		&:before {
+			@include iconoLista('\f234');
+		}
+	}
+	& dd[class^="tipoPublico"] {
+		display: inline-block;
+		padding-left: 0;
+		&:before {
+			@include iconoLista('\f0c0', $marginR: 0.65em);
+		}
+		&:not(last-of-type) {
+			&:after {
+					content: ', ';
+			}
+		}
+		&:nth-of-type(n+3) {
+			&::before {
+				content: '';
+				margin-right: .35em;
+			}
+		}
+	}
+
+}
+
+//ListadoEntidad
+
+.listEntidad {
+	& dt {
+		text-transform: uppercase;
+		&:before  {
+				color: $enlace;
+				@each $a in $site-color {
+					.#{nth($a, 1)} & {
+						color: nth($a, 2);
+					}
+				}
+				content: '\f041';
+				cursor: pointer;
+				display: inline;
+			  font-family: FontAwesome;
+			  @include rem('font-size',24px);
+			  line-height: 1;
+			  margin-right:.25em;
+		}
+	}
+	& dd {
+		@include rem('font-size',16px);
+		margin-bottom: .25em;
+		margin-left: 1em;
+		& strong {
+			display: inline-block;
+			font-weight: $light;
+			margin-right: 1em;
+			text-align: right;
+			width: 25%;
+		}
+	}
+}
+
+//listDosCol
+
+.listDosCol {
+	& ul {
+		display: flex;
+	  flex-flow: row wrap;
+		margin-left: 0;
+	}
+	& .listadoResultados li {
+		flex-basis: 100%;
+		margin: .5em 1%;
+		@include breakpoints (bigPhone) {
+			flex-basis: 48%;
+		}
+		& > a {
+			display: block;
+			margin-bottom: 1em;
+		}
+		& .imagen {
+			height: 5.52em;
+			object-fit: cover;
+			width: 100% !important;
+			@include breakpoints(bigPhone){
+				height: 8.5em;
+			}
+			@include breakpoints(tablet){
+				height: 11.039em;
+			}
+			@include breakpoints(desktop){
+				height: 9.7382em;
+			}
+		}
+		& dd[class^="nota"] {
+		    margin-left: 0;
+		}
+	}
+	&.lstComConEti dd[class^="nota"] {
+	    margin-left: 18%;
+	}
+}

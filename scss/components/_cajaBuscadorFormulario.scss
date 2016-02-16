@@ -1,0 +1,152 @@
+/*_cajaBuscadorFormulario.scss*/
+
+.cajaBuscadorFormulario {
+	clear: both;
+	& fieldset {
+		margin: .5em 0 1em;
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+	& label {
+		@include offleft;
+	}
+	& input {
+		width: 97%;
+		.m-100 & {
+			@include breakpoints(tablet){
+				margin-top: .25em;
+				width: 75%;
+			}
+		}
+		&[type="submit"] {
+			width: 6.5em;
+			.m-100 & {
+				@include breakpoints(tablet){
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	& select {
+		width: 100%;
+	}
+}
+
+.cajaBuscadorFormularioLista {
+	& ul {
+		float: left;
+		list-style: none;
+		margin-bottom: 1em;
+	}
+	& .listaCategorias li {
+		float: left;
+		width: 100%;
+		&:before  {
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			content: '\f02b';
+			cursor: pointer;
+			display: inline-block; 
+		  font-family: FontAwesome; 
+		  @include rem('font-size',18px); 
+		  line-height: 1;
+		  margin-right: .5em;
+		}
+		& a {
+			color: $grisTexto;
+		}
+	}
+	&.cajaDesplegable {
+		background-color: $blanco;
+		border: 1px solid $grisBorde;
+		margin-bottom: 0.5em;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		& img {
+			align-self: stretch;
+			background-color: $grisFondo;
+			justify-content: space-around;
+		}
+		& h3 {
+			@include title3-style;
+			align-items: flex-start;
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			cursor: pointer;
+			flex-basis: 79%;
+			padding-left:.5em;
+			text-transform: none;
+		}
+		& ul.listaCategorias {
+			display: none;
+		}
+		& li {
+			border: none;
+			@include rem('font-size', 18px);
+			padding: .25em 1em;
+			margin: .25em 0;
+			&:before {
+					content: "\f101";
+					font-family: FontAwesome; 
+					@include rem('font-size',20px); 
+					line-height: 1;
+					padding-right: .5em;
+			}
+		}
+	}
+}
+
+//listado como hilo de Ariadna
+.mostrarCategoriasAsset {
+	margin-bottom: 1em;
+	& p {
+		@include title2-style;
+		margin-bottom: 0;
+	}
+	& ul {
+		display: inline-block;
+		list-style: none;
+		margin-bottom: .25em;
+	}
+	& li {
+		@include offleft;
+		&:last-of-type {
+			@include rem('font-size', 16px);
+			left:0;
+			margin:0 .5em .25em 0;
+			padding: .25em .5em;
+			position: relative;
+			text-transform: uppercase;
+			top:0;
+		}
+		&:before  {
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			content: '\f02b';
+			cursor: pointer;
+			display: inline-block; 
+		  font-family: FontAwesome; 
+		  @include rem('font-size',18px); 
+		  line-height: 1;
+		  margin-right: .5em;
+		}
+		& a {
+			color: $negro;
+		}
+	}
+}
+ 

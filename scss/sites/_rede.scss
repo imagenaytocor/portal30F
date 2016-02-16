@@ -1,0 +1,32 @@
+.site_1266187561771 {
+	& h1 {
+		@include rem('font-size', 30px);
+		top:  3.35em;
+		@include breakpoints(bigPhone) {
+			@include rem('font-size', 40px);
+			top:  2.5em;
+		}
+		@include breakpoints(tablet) {
+			@include rem('font-size', 60px);
+			top:  1.68em;
+		}
+		@include breakpoints(desktop) {
+			top:  1.54em;
+		}
+	}
+	& .menuPrincipal ul.nivel2 li {
+		flex-basis: 31%;
+		&:last-of-type {
+			border-right: none;
+		}
+	} 
+	#centro {
+		margin-top: 2em;
+		@include breakpoints(bigPhone) {
+			margin-top: 2.5em;
+		}
+		@include breakpoints(tablet) {
+			margin-top: 6em;
+		}
+	}
+}

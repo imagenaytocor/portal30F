@@ -1,0 +1,18 @@
+//_countdown.scss
+
+#countdown {
+	display: none;
+}
+
+p#note {
+	background-color: $grisFondo;
+	color: $enlace;
+	@include rem('font-size', 18px);
+	font-weight: $regular;
+	margin-bottom: .25em;
+	padding: .5em 2%;
+	text-align: center;
+	@include breakpoints(tablet){
+		@include rem('font-size', 30px);
+	}
+}

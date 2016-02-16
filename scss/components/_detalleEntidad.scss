@@ -1,0 +1,56 @@
+//_detalleEntidad.scss incluye #detalleTituloEstudios
+#dtEntidad {
+	margin-bottom: 1em;
+	@include breakpoints(bigPhone) {
+		width: 85%;
+	}
+	& dl {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin-left: 0;
+		.site_cmix & {
+			background-color: $blanco;
+		}
+	}
+	& dt {
+		flex-basis: 25%;
+		@include rem('font-size',16px);
+		text-align: right;
+		text-transform: uppercase;
+		margin: 0 .5em .5em 0;
+		&.codigoQR {
+			flex-basis: 35%;
+		}
+		@include breakpoints(tablet){
+			@include rem('font-size',20px);
+		}
+	}
+
+	& dd {
+		flex-basis: 70%;
+		@include rem('font-size',16px);
+		margin: 0 0 .5em 30%;
+		text-align: left;
+		& p {
+			font-size: inherit;
+			margin-bottom: .5em;
+		}
+		@include breakpoints(tablet){
+			@include rem('font-size',20px);
+		}
+	}
+	& dt + dd {
+		flex-basis: 70%;
+		margin: 0 0 .5em .5em;
+	}
+	& > a {
+		display: block;
+		text-align: right;
+	}
+}
+
+#detalleTituloEstudios {
+	@extend #dtEntidad;
+}

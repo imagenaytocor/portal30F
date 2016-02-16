@@ -1,0 +1,15 @@
+//_cultura.scss
+
+.site_1322782055091 {
+	& #centro {
+		@include breakpoints(tablet) {
+			margin-top: 3em;
+		}
+		@include breakpoints(desktop) {
+			margin-top: 6em;
+		}
+	}
+	& #outdated {
+		background-image: url('//estaticos.coruna.es/imagesdu/agora.jpg');
+	}
+}

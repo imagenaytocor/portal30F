@@ -1,0 +1,33 @@
+//_enlacesInternos.scss
+
+.enlacesInternos {
+	ul.enlacesInternos {
+		border-left: 2px solid $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				border-color: nth($a, 2);
+			}
+		}
+		list-style: none;
+		list-style-position: inside;
+		margin-bottom: 1em;
+		padding: 1em;
+		& li {
+			text-transform: uppercase;
+			@include breakpoints(desktop){
+				line-height: 1.2;
+			}
+			&:before {
+					color: $grisBorde;
+					content: "\f101";
+					display: inline-block;
+					float: left; 
+					font-family: FontAwesome; 
+					@include rem('font-size',24px);
+					font-style: normal; 
+					line-height: 1;
+					margin-right: .5em;
+			}
+		} 
+	}
+}

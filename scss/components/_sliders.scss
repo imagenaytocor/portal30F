@@ -1,0 +1,117 @@
+//_sliders.scss
+
+
+.anythingControls a.start-stop span {
+	color: #FFF;
+	font-family: $titulos-font-family;
+	@include rem('font-size', 12px);
+	font-weight: $titulos-font-weight;
+	line-height: 2;
+	text-transform: uppercase;
+    visibility: visible;
+    
+}
+
+// slider destacado
+
+.sliderDestacado {
+	height: 11.875em;
+	margin: 0 0 1em;
+	position: relative;
+	width: 100%;
+	@include breakpoints(bigPhone){
+		height: 18em;
+	}
+	@include breakpoints(tablet){
+		height: 25.5em;
+	}
+	@include breakpoints(desktop){
+		height: 22.289em;
+	}
+	@include breakpoints(medDesktop){
+		height: 25.066em;
+	}
+	@include breakpoints(bigDesktop){
+		height: 27.8437em;
+	}
+	& img {
+		height: auto;
+		max-width: 100%;
+		width: 100%;
+	}
+	& .anythingWindow {
+		position: absolute;
+		top: 0;
+	}
+	& .anythingControls {
+		bottom: .5em;
+		position: absolute;
+		right: 0;
+	}
+	& .panel {
+		position: relative;
+	}
+	& .caption-right {
+		background-color: rgba($negro, 0.75);
+		bottom: 2.1em;
+		//height: 3em;
+		margin: .35em 0;
+		padding: .3em;
+		position: absolute;
+		@include breakpoints(tablet){
+			bottom: 1.75em;
+		}
+		& p {
+			color: #FFF;
+			font-family: $titulos-font-family;
+			@include rem('font-size', 16px);
+			font-weight: $titulos-font-weight;
+			line-height: 1.2;
+			margin-bottom: 0;
+			padding: .25em 1em;
+			position: relative;
+			text-transform: uppercase;
+			width: 100%;
+			@include breakpoints(bigPhone){
+				@include rem('font-size', 18px);
+			}
+			@include breakpoints(tablet){
+				@include rem('font-size', 24px);
+			}
+		}
+	}
+}
+
+//Slider mini
+
+.sliderMini {
+	@extend .sliderDestacado;
+	height: 13em;
+	@include breakpoints(bigPhone){
+		height: 20em;
+	}
+	@include breakpoints(tablet){
+		height: 25.5em;
+	}
+	@include breakpoints(desktop){
+		height: 12.5em;
+	}
+	@include breakpoints(medDesktop){
+		height: 14em;
+	}
+	@include breakpoints(bigDesktop){
+		height: 15em;
+	}
+	& .caption-right {
+		bottom: auto;
+		top: 0;
+		& p {
+			@include breakpoints(bigPhone){
+				@include rem('font-size', 16px);
+			}
+			@include breakpoints(tablet){
+				@include rem('font-size', 16px);
+			}
+		}
+	}
+}

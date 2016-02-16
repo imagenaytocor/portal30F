@@ -1,0 +1,164 @@
+//_pie.scss
+#pie {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin-top: 1em;
+	max-width: 80em;
+}
+
+
+#listaPieEnlacesLogos {
+		list-style: none;
+}
+
+#listaPieEnlaces {
+	margin-left: 2%;
+	& li {
+		@include rem('font-size', 12px);
+		list-style: none;
+		margin-bottom: 0;
+	}
+	& span {
+		@include offleft;
+	}
+	& > li {
+		margin-bottom: 1em;
+	}
+	@include breakpoints(tablet) {
+		width: 71%;
+		& > li {
+			float: left;
+			margin-right: 2em;
+			width: 42%;
+			&:last-of-type {
+				margin-right:0;
+			}
+		}
+	}
+}
+
+.enlacesPie {
+	flex-basis: 100%;
+	margin-top: .5em;
+	padding: 1.5625% 3.125%;
+	order: 3;
+	@include breakpoints(tablet){
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	& > div {
+		border: 1px solid $grisFondo;
+		margin-bottom: 1em;
+		padding: .5em .25em;
+		&:last-of-type {
+			margin-bottom:0;
+		}
+		@include breakpoints(tablet){
+			border: none;
+			border-right: 1px dotted #CCC;
+			flex-basis: 32%;
+			margin-bottom: 0;
+			&:last-of-type {
+				border:none;
+			}
+		}
+	}
+	& .cajaGenerica + .cajaGenerica {
+		border-top: none;
+	   padding-top: .5em;
+	}
+	& h2 {
+		color: $negro;
+		cursor: pointer;
+		font-family: $titulos-font-family;
+		@include rem('font-size', 16px);
+		font-weight: $light;
+		position: relative;
+		text-transform: uppercase;
+		&:after {
+			content: "\f107";
+			display: inline-block;
+			font-family: FontAwesome;
+			@include rem('font-size',30px);
+			line-height: .75;
+			position: absolute;
+			right: .5em;
+		}
+		@include breakpoints(tablet){
+			cursor: default;
+			&:after {
+				content:'';
+			}
+		}
+	}
+	& .relacionadosItem {
+		display: none;
+		@include breakpoints(tablet){
+			display: block;
+		}
+	}
+	& ul {
+		margin: .5em 0 .5em 1em;
+		@include breakpoints(tablet){
+			margin-left: 0;
+		}
+	}
+	& li {
+		list-style: none;
+		@include breakpoints(tablet){
+			margin-bottom: 0;
+		}
+	}
+}
+
+.cierrePie {
+	flex-basis: 100%;
+	order: 4;
+	& > div {
+		padding: 3.125%;
+	}
+	& h2 {
+		color: $txt;
+		font-family: $titulos-font-family;
+		@include rem('font-size', 14px);
+		font-weight: $xLight;
+		margin-bottom: .5em;
+		text-transform: none;
+	}
+	& ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+	& li {
+		@include rem('font-size', 12px);
+		list-style: none;
+		margin-right: 1em;
+		& a {
+			padding-right: 1em;
+		}
+	}
+	& .promocionContenido {
+		display: flex;
+		flex-direction: row;
+		& .interiorPromocion {
+			& p {
+				@include rem('font-size', 15px);
+				line-height: 1.2;
+				margin-bottom: 0;
+				padding-left: 1em;
+				@include breakpoints(tablet){
+					@include rem('font-size', 18px);
+				}
+			}
+		}
+	}
+	& img {
+		//quitar el object-fit en la portada... de momento
+		height: auto;
+		object-fit: none;
+		width: auto;
+	}
+}

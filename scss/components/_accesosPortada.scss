@@ -1,0 +1,155 @@
+//_accesosPortada.scss
+// Caja con información auxiliar que va en contenido 100%
+
+.accesosPortada, .infoAux {
+	& .cajaGenerica {
+		background-color: $blanco;
+		border: 1px solid #CCC;
+		margin-bottom: .5em;
+		/*@include display-flex;
+		@include flex-direction(row);
+		@include justify-content(space-between);
+		@include flex-wrap(wrap);*/
+		& .imagen {
+			@include align-self(stretch);
+			background-color: #EBEBEB;
+			@include order(3);
+			/*float: right;
+			width: 13.5%;
+			@include breakpoints(bigPhone){
+				width: 7.671%;
+			}
+			@include breakpoints(tablet){
+				width: 24.671%;
+			}*/
+		}
+		& h3 {
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			cursor: pointer;
+			margin: 0 .5em .25em .5em; 
+			padding-top: .25em;
+		}
+		& p {
+			font-family: $titulos-font-family;
+			font-weight: $xLight;
+			margin: 0 0.5em 0.5em 0.75em;
+		}
+		/*@include breakpoints(bigPhone){ 
+			@include flex-basis(32%);
+		}*/
+		@include breakpoints(desktop){
+			@include align-items(center);
+			//@include flex-basis(32%);
+			margin-bottom: 1em;
+			min-height: 8em;
+		}
+		& .textoContenido {
+			@include align-items(flex-start);
+			@include flex-basis(79%);
+			@include breakpoints(bigPhone){
+				@include flex-basis(60%);
+			}
+			@include breakpoints(tablet){
+				@include flex-basis(70%);
+			}
+		}
+		
+				
+	}
+	@include breakpoints(bigPhone){
+		/*@include display-flex;
+		@include flex-direction(row);
+		@include justify-content(space-between);
+		@include flex-wrap(wrap);*/
+		& > h2 {
+			@include flex-basis(100%);
+		}
+	}
+	@include breakpoints(desktop){
+		
+		@include flex-direction(column);
+		@include justify-content(flex-start);
+		@include flex-wrap(nowrap);
+		& > h2 {
+			@include flex-basis(0);
+			margin-bottom: 1.25em;
+		}
+	}
+	& .relacionadosItem {
+		display: none;
+		& ul {
+			list-style: none;
+			margin: 0 0 .5em .5em;
+		}
+		& li {
+			//background: url('../images/topoListaAccesos.png') no-repeat left .25em; 
+			padding: 0 0 0 .5em;
+			&:before {
+					content: "\f101";
+					font-family: FontAwesome; 
+					@include rem('font-size',20px); 
+					line-height: 1;
+					padding-right: .5em;
+			}
+			
+		}
+		& a {
+			color: $negro;
+			font-family: $titulos-font-family;
+			@include rem('font-size', 14px);
+			font-weight: $light;
+			text-transform: uppercase;
+		}
+	}
+	
+	.cajaAlcalde {
+		background: {
+			color: $blanco;
+			position: bottom right;
+			repeat: no-repeat;
+			size: 42%;
+		}
+		border: 1px solid #CCC;
+		margin-bottom: .5em;
+		min-height: 6.75em;
+		@include breakpoints(bigPhone){
+			background-size: 90%;
+			@include flex-basis(32%);
+		}
+		@include breakpoints(tablet){
+			background-size: auto;
+			@include flex-basis(32%);
+		}
+		@include breakpoints(desktop){
+			@include align-items(center);
+			margin-bottom: 1em;
+			
+		}
+		& p {
+			cursor: pointer;
+			font-family: $titulos-font-family;
+			@include rem('font-size', 25px);
+			font-weight: $xLight;
+			margin: .55em .5em .5em .75em;
+			@include breakpoints(bigPhone){
+				margin: .25em .5em .5em .75em;
+			}
+			@include breakpoints(desktop){
+				margin: .55em .5em .5em .75em;
+			}
+			& .linea2banner {
+				color: $grisTexto;
+				display: block;
+				width: 45%;
+				@include rem('font-size', 20px);
+				margin-top: .25em;
+			}
+		}
+		
+	}
+}

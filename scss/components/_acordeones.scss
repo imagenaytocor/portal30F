@@ -1,0 +1,132 @@
+//_acordeones.scss
+
+.acordeon {
+	border: 1px solid $grisBorde;
+	clear: both;
+	margin: 0;
+	& h3 {
+		@include rem('font-size',20px);
+		background-color: $grisFondo;
+		border-bottom: 1px solid $grisBorde;
+		border-left: 2px solid $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				border-left-color: nth($a, 2);
+			}
+		}
+		cursor: pointer;
+		margin:0;
+		padding: .5em 1em;
+		text-transform: uppercase;
+		& em {
+			&:after {
+					content: "\f107";
+					display: inline-block;
+					float: right; 
+					font-family: FontAwesome; 
+					@include rem('font-size',30px);
+					font-style: normal; 
+					line-height: 1;
+			}
+		}
+		&.abierto {
+			background-color: rgba($enlace,.25) !important;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					background-color: rgba(nth($a, 2),.25) !important;
+				}
+			}
+			& em {
+				&:after {
+					content: "\f106";
+				}
+			}
+		}
+	}
+	& .cajaGenerica + .cajaGenerica {
+	    padding-top: 0;
+	}
+}
+
+.colCaja.acordeon {
+	& h3 {
+		border-bottom: none;
+		border-left: none;
+	}
+	& .contenidoAcordeon {
+		padding: 1em 0 0;
+		& li {
+			margin-left: 0;
+		}
+	}
+}
+
+.tituloAcordeon {
+	background-color: $grisFondo;
+	border: 1px solid $grisBorde;
+	border-left: 2px solid $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			border-left-color: nth($a, 2);
+		}
+	}
+	cursor: pointer;	
+	@include title3-style;
+	margin: 0;
+	@include rem('font-size',18px);
+	@include breakpoints (tablet){
+		@include rem('font-size',20px);
+	}
+	padding: .5em 1em;
+	text-transform: uppercase;
+	& em {
+		&:after {
+				content: "\f107";
+				display: inline-block;
+				float: right; 
+				font-family: FontAwesome; 
+				@include rem('font-size',30px);
+				font-style: normal; 
+				line-height: 1;
+		}
+	}
+	&.abierto {
+		background-color: rgba($enlace,.25) !important;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				background-color: rgba(nth($a, 2),.25) !important;
+			}
+		}
+		& em {
+			&:after {
+				content: "\f106";
+			}
+		}
+	}
+	&.tituloInterno {
+		clear: both;
+		margin-bottom: 0;
+	}
+}
+	
+.contenidoAcordeon {
+	display: none;
+	padding: 1em 5% 0;
+	& ul {
+		list-style: none;
+		& li {
+			margin-left:2em;
+			&:before  {
+				color: $negro;
+				content: '\f101';
+				cursor: pointer;
+				display: inline-block; 
+			  font-family: FontAwesome; 
+			  @include rem('font-size',18px); 
+			  line-height: 1;
+			  margin-right: .5em;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,130 @@
+//_cajaRSS.scss
+
+.rssFeed {
+	& ul {
+		list-style: none;
+	}
+}
+
+.rssRow {
+	float: left;
+	width: 32%;
+	&.even {
+		background-color: $grisFondo;
+		margin: 0 1%;
+		padding: .25em 1%;
+
+	}
+	& > div:first-of-type {
+		@include rem('font-size',14px);
+		margin-bottom: .5em;
+	}
+	& img {
+		height: 7em;
+		object-fit: cover;
+		width: 100%;
+	}
+}
+
+.rssMedia {
+	& li:first-of-type {
+		display: none;
+	}
+	& li:nth-of-type(n+2) {
+		display: none;
+	}
+	@include breakpoints(bigPhone){
+		& li:nth-of-type(n+3) {
+			display: none;
+		}
+	}
+}
+
+.holder {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin-bottom: 1em;
+	& > a {
+		border: 1px solid #CCC;
+		list-style: none;
+		margin-bottom: 0;
+		padding: .25em .6em;
+		text-align: center;
+
+		&.jp-current {
+			background-color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					background-color: nth($a, 2);
+				}
+			}
+			border-color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					border-color: nth($a, 2);
+				}
+			}
+			color: #FFF;
+		}
+	}
+	& > span {
+		border: 1px solid #CCC;
+		@include rem('font-size',16px);
+		list-style: none;
+		margin-bottom: 0;
+		padding: .25em .6em;
+		text-align: center;
+	}
+}
+
+.rssMiniFotos {
+	& .rssFeed {
+		& ul {
+			margin-left: 0;
+		}
+		& .rssRow {
+			float: left;
+			margin: 0 .5%;
+			width: 18%;
+			&.even {
+				background-color: $blanco;
+				margin: 0 .5%;
+				padding: 0;
+
+			}
+			& > div:first-of-type {
+				@include offleft;
+			}
+			& img {
+				height: 7em;
+				object-fit: cover;
+				width: 100%;
+			}
+			& h4 {
+				@include offleft;
+			}
+		}
+		.rssMedia {
+			& li:first-of-type {
+				display: block;
+			}
+		}
+	}
+}
+
+//Bug de Firefox - no calcula bien el ancho
+.no-cssreflections .rssFeed {
+	@include breakpoints(tablet){
+		max-width: 44.6em;
+	}
+	@include breakpoints(desktop){
+		max-width: 39.6em;
+	}
+	@include breakpoints(medDesktop){
+		max-width: 44.55em;
+	}
+	@include breakpoints(bigDesktop){
+		max-width: 49.5em;
+	}
+}

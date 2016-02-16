@@ -1,0 +1,63 @@
+//_navegacionInterna.scss
+
+#navegacionInterna {
+	@include offleft;
+}
+
+.volverEnlaces {
+	margin: 1.5em 0 4em;
+	& a {
+		border: 1px solid;
+		display: block;
+		float: right;
+		padding: .5em;
+	}
+}
+
+p.masInfo {
+	@include rem('font-size',18px);
+	text-align: right;
+	text-transform: uppercase;
+	width: 100%;
+	& a {
+		background-color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				background-color: nth($a, 2);
+			}
+		}
+		border-radius: $default-border-radius;
+		color: $blanco;
+		display: inline-block;
+		margin-top: 0.5em;
+		padding: 0.25em 0.5em;
+		width: auto;
+		&:hover {
+			background-color: $blanco;
+			border: 1px solid;
+			border-color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					border-color: nth($a, 2);
+				}
+			}
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+		}
+		&:before {
+			content: "\f067";
+			display: inline-block;
+			font-family: FontAwesome;
+			@include rem('font-size',20px);
+			line-height: 1;
+			padding-right: .5em;
+		}
+		&:visited {
+			color: $blanco;
+		}
+	}
+}

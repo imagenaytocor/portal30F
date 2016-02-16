@@ -1,0 +1,683 @@
+//_banners.scss
+
+.destacadosPortada {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	& .cajaBanner {
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 10.45em;
+		margin-bottom: 1em;
+		position: relative;
+		width: 48%;
+		@include breakpoints(bigPhone){
+			flex-basis: 48%;
+			height: 7.35em;
+		}
+		@include breakpoints(tablet){
+			height: 12.5em;
+		}
+		& p {
+			bottom: 4px;
+			position: absolute;
+		}
+		&.m-100 {
+			flex-basis: 100%;
+			@include breakpoints(bigPhone){
+				height: 15.1em;
+			}
+			@include breakpoints(bigPhone){
+				height: 20em;
+			}
+		}
+		&.t-33 {
+			@include breakpoints(tablet){
+				flex-basis: 31%;
+				height: 12.5em;
+			}
+		}
+		&.t-50 {
+			@include breakpoints(tablet){
+				flex-basis: 49%;
+				height: 12.5em;
+			}
+		}
+	}
+	& .promocionContenido {
+		height: 10.45em;
+		margin-bottom: 1em;
+		position: relative;
+		flex-basis: 48%;
+		& .imagenPromocion {
+			height: 100%;
+			overflow: hidden;
+		}
+		& .interiorPromocion {
+			bottom: 0;
+			position: absolute;
+			width: 95%;
+		}
+		@include breakpoints(bigPhone){
+			display: block;
+			float: left;
+			height: 10.45em;
+			flex-basis: 48%;
+
+		}
+		@include breakpoints(tablet){
+			height: 12.5em;
+
+		}
+	}
+	& p {
+		font-family: $titulos-font-family;
+		font-weight: $titulos-font-weight;
+		margin-bottom: 0;
+		width: 100%;
+	}
+	& span {
+		display: block;
+		&.linea1banner {
+			background-color: #FFF;
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			@include rem('font-size', 18px);
+			max-width: 95%;
+			padding: .15em .5em;
+			text-transform: uppercase;
+		}
+		&.linea2banner {
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					border-top: 3px solid nth($a, 2);
+				}
+			}
+			background-color: rgba(0,0,0,.75);
+			color: #FFF;
+			@include rem('font-size', 17px);
+			padding: .15em .55em;
+		}
+	}
+}
+//Banner para las subportadas
+.bannerSubportada {
+	&.cajaBanner {
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 10.45em;
+		margin-bottom: 1em;
+		position: relative;
+		@include breakpoints(bigPhone){
+			height: 15em;
+		}
+		@include breakpoints(tablet){
+			height: 17.5em;
+		}
+	}
+	& p {
+		bottom: 0;
+		margin-bottom: 0;
+		position: absolute;
+		width: 100%;
+	}
+	& span {
+		display: block;
+		&.linea1banner {
+			background-color: #FFF;
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			@include rem('font-size', 22px);
+			font-weight:$regular;
+			max-width: 95%;
+			padding: .25em .75em;
+			text-transform: uppercase;
+		}
+		&.linea2banner {
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					border-top: 3px solid nth($a, 2);
+				}
+			}
+			background-color: rgba(0,0,0,.75);
+			color: #FFF;
+			@include rem('font-size', 25px);
+			font-weight: $xLight;
+			padding: .15em .75em;
+		}
+	}
+}
+
+//Caja que sustituye al slider multielemento
+.tiraBanners {
+	& .cajaBanner {
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 12.5em;
+		float: left;
+		margin: .5em 1.1%;
+		position: relative;
+		//display: none;
+
+		&:last-of-type {
+			margin-right:0;
+		}
+		//&:nth-of-type(-n+3){
+		//	display: block;
+		//}
+		&.m-50 {
+			display: block;
+			margin: .5em 0;
+			&:nth-of-type(2n) {
+				margin-left:2%;
+				@include breakpoints(tablet){
+					margin: .5em .4%;
+				}
+			}
+		}
+		@include breakpoints(tablet){
+			display: block;
+			margin: .5em .4%;
+			&:first-of-type {
+				margin-left:0;
+			}
+		}
+		& p {
+			background-color: rgba($negro, 0.75);
+			font-family: $titulos-font-family;
+			@include rem('font-size', 13px);
+			font-weight: $light;
+			height: 8em;
+			line-height: 1.2;
+			padding: .5em 5%;
+			position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+			top: 7.35em;
+			width: 100%;
+			@include breakpoints(tablet){
+				height: 7em;
+				top: 8.35em;
+			}
+			@include breakpoints(desktop){
+				@include rem('font-size', 14px);
+				height: 6em;
+			}
+		}
+		& a {
+			color: $blanco;
+		}
+	}
+}
+
+//tiraBanners con fondo gris
+.tiraBannersFondo {
+	background-color: $grisFondo;
+	padding: .5em 2.5%;
+	& h2,
+	& h3 {
+		border-left: 2px solid $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				border-left-color: nth($a, 2);
+			}
+		}
+		@include rem('font-size',20px);
+		line-height: 1;
+		margin-bottom: .5em;
+		padding-left: .5em;
+		text-transform: uppercase;
+	}
+	& .imagenPromocion {
+		padding: .5em;
+	}
+	& .promocionContenido img {
+		object-fit: contain;
+	}
+	& > div.m-50:last-of-type {
+		@include breakpoints(tablet) {
+			margin-bottom: .5em !important;
+		}
+	}
+	#contenidoAux & > div.m-50:last-of-type {
+		@include breakpoints(tablet) {
+			margin-bottom: 1em !important;
+		}
+	}
+	& > div.m-50:nth-of-type(odd) {
+		clear: left;
+	}
+}
+
+.bannerEnviarComentarios {
+	background-color: $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			background-color: nth($a, 2);
+		}
+	}
+	height: 2.5em;
+	margin-bottom: .5em;
+	padding: .25em .5em;
+	& p {
+		margin-bottom: 0;
+		&:before  {
+			color: $blanco;
+			content: '\f1d8';
+			cursor: pointer;
+			display: inline-block;
+		  font-family: FontAwesome;
+		  @include rem('font-size',18px);
+		  line-height: 1;
+		  margin-right: .5em;
+		}
+	}
+	& a {
+		color: $blanco;
+	}
+}
+
+.bannerRecibirComentarios {
+	@extend .bannerEnviarComentarios;
+	& p {
+		&:before  {
+			content: '\f1d9';
+			transform: rotate(180deg);
+		}
+	}
+}
+
+//Aviso urgente
+.aviso {
+	#contenidoCentralSuperior > &:only-child {
+		margin: 1.5em 0 -1.5em;
+		width: 100%;
+		@include breakpoints (tablet) {
+			margin: 1em 0 -1.25em;
+		}
+		@include breakpoints (desktop) {
+			margin: 1.5em 0 -1.5em;
+		}
+	}
+	& p {
+		display: flex;
+		justify-content: space-between;
+		font-family: $titulos2-font-family;
+		@include rem ('font-size', 14px);
+		margin-bottom: 0;
+		@include breakpoints (tablet) {
+			@include rem ('font-size', 16px);
+		}
+	}
+	& .linea1banner {
+		background-color: $error;
+		color: $blanco;
+		flex-basis: 26%;
+		padding: .5em;
+		text-transform: uppercase;
+		@include breakpoints (medDesktop) {
+			flex-basis: 12%;
+		}
+	}
+	& .linea2banner {
+		background-color: $grisFondo;
+		flex-basis: 74%;
+		margin-right: 1%;
+		padding: .5em;
+		@include breakpoints (bigPhone) {
+			flex-basis: 83%;
+		}
+		@include breakpoints (tablet) {
+			flex-basis: 85%;
+			margin-right: 0;
+		}
+		@include breakpoints (medDesktop) {
+			flex-basis: 87%;
+		}
+	}
+}
+
+.promocionContenido {
+	background-color: $blanco;
+	border: 1px solid $grisFondo;
+	margin-bottom: .5em;
+	& img {
+		//Funciona en Safari y en Chrome para recortar las fotos en Firefox las aplasta...
+		object-fit: cover;
+		height: 8em;
+		width: 100%;
+		@include breakpoints (desktop) {
+			height: 7em;
+		}
+	}
+	&.escalarImagen {
+		& img {
+			object-fit: contain;
+		}
+	}
+	& p {
+		padding: 0 .5em;
+		&.linea1cajaPromocion {
+			@include title3-style;
+			font-weight: $light;
+			margin: .25em 0;
+			text-transform: uppercase;
+			//se cambia el color de blanco a transparent por las cajas masonry
+			background-color: $blanco;
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			@include rem('font-size', 18px);
+			max-width: 95%;
+			padding: .15em .5em;
+			text-transform: uppercase;
+		}
+		&.linea2cajaPromocion {
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					border-top: 3px solid nth($a, 2);
+				}
+			}
+			background-color: rgba(0,0,0,.75);
+			color: $blanco;
+			@include rem('font-size', 17px);
+			font-weight: $light;
+			margin-bottom:0;
+			padding: .15em .55em;
+			& a {
+				color: $blanco;
+				font-weight: $regular;
+			}
+		}
+	}
+	& ul {
+		list-style: none;
+	}
+	& li {
+		margin-left:1em;
+		margin-right:.5em;
+		&:before  {
+			color: $negro;
+			content: '\f101';
+			cursor: pointer;
+			display: inline-block;
+		  font-family: FontAwesome;
+		  @include rem('font-size',18px);
+		  line-height: 1;
+		  margin-right: .5em;
+		}
+	}
+}
+
+.bannerUnaLinea {
+	background-color: $blanco;
+	border: 1px solid $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			border-color: nth($a, 2);
+			}
+		}
+	margin-bottom: .5em !important;
+	& p {
+		@include rem('font-size',22px);
+		margin: 0;
+		@include breakpoints (bigPhone) {
+			@include rem('font-size',25px);
+		}
+	}
+	&.fondoColor {
+		background-color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				background-color: nth($a, 2);
+				}
+		}
+		border-color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				border-color: nth($a, 2);
+			}
+		}
+		& p {
+			background-color: transparent;
+			font-weight: $regular;
+		}
+		& a {
+			color: $blanco;
+			&:hover {
+				color: $blanco;
+			}
+			&:visited {
+				color: $blanco;
+			}
+		}
+	}
+}
+
+.categoriasAgenda {
+	@extend .bannerUnaLinea;
+	&.m-50 p,
+	&.t-33 p {
+		@include breakpoints (tablet) {
+			@include rem('font-size',18px);
+		}
+		@include breakpoints (desktop) {
+			@include rem('font-size',25px);
+		}
+	}
+	& a {
+		display: block;
+
+	}
+}
+
+#contenido_1414980652072 a:before {
+	color: $blanco;
+	content: '\f002';
+	cursor: pointer;
+	display: inline;
+	font-family: FontAwesome;
+	@include rem('font-size',18px);
+	line-height: 1;
+	margin-right:.5em;
+}
+
+//banner con icono FA - tiene que ser cajaBanner
+
+.bannerFA {
+	background-color: $blanco;
+	border: 1px solid $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			border-color: nth($a, 2);
+			}
+		}
+	margin-bottom: .5em !important;
+	& p {
+		float: right;
+		margin-bottom: 0;
+		padding: .15em .25em .15em .1em;
+		width: 80%;
+	}
+	&.m-100 p,
+	&.m-50 p,
+	&.t-50 p,
+	&.d-50 p {
+		@include breakpoints (tablet) {
+			@include rem('font-size',25px);
+			width: 86%;
+		}
+	}
+	&.t-33 p,
+	&.t-50 p {
+		@include breakpoints (tablet) {
+			@include rem('font-size',25px);
+			width: 80%;
+		}
+	}
+}
+
+
+span.fa {
+	color: $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			color: nth($a, 2);
+		}
+	}
+	@include rem('font-size',22px);
+	margin: .25em;
+	@include breakpoints (bigPhone) {
+		@include rem('font-size',25px);
+	}
+	//margin: .25em;
+	.m-100 &,
+	.m-50 &,
+	.t-33 & {
+		@include breakpoints (tablet) {
+			@include rem('font-size',18px);
+		}
+		@include breakpoints (desktop) {
+			@include rem('font-size',25px);
+		}
+	}
+}
+
+.bannerFAcirc {
+	border: 1px solid $grisBorde;
+	margin-bottom: .5em;
+	& .fa {
+		background-color: $enlace;
+		@each $a in $site-color {
+			.#{nth($a, 1)} & {
+				background-color: nth($a, 2);
+			}
+		}
+		border-radius: 50%;
+		color: $blanco;
+		@include rem('font-size',30px);
+		height: auto;
+		margin: 1em 25% .25em;
+		padding-top: 50%;
+		position: relative;
+		text-align: center;
+		width: 50%;
+		&:before {
+			color: $blanco;
+			left: 0;
+			position: absolute;
+			top: 38%;
+			width: 100%;
+		}
+	}
+	& p {
+		padding: .15em .5em 0;
+		text-align: center;
+		width: 100%;
+		& span {
+		display: block;
+		}
+		& .linea1banner {
+			color: $enlace;
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					color: nth($a, 2);
+				}
+			}
+			margin-bottom: .5em;
+			text-transform: uppercase;
+		}
+		& .linea2banner {
+			color: $grisTexto;
+			@include rem('font-size',16px);
+		}
+	}
+	&.m-50:nth-of-type(2n+1) {
+		clear: left;
+	}
+}
+
+.bannerHero {
+	background-size: cover;
+	height: 11.875em;
+	margin: 0 0 1em;
+	position: relative;
+	&:only-child {
+		margin-bottom:0;
+	}
+	& p {
+		background-color: rgba($negro, 0.35);
+		height: 100%;
+		margin-bottom: 0;
+		width: 100%;
+		@include breakpoints(bigPhone) {
+			background-color: rgba($negro, 0.5);
+			margin-left: 50%;
+			width: 50%;
+		}
+	}
+	& a {
+		color: $blanco;
+		display: block;
+		height: 100%;
+		padding: 0 5%;
+		text-align: center;
+		&:hover {
+			background-color: rgba(tint($enlace, 35%),.25);
+			@each $a in $site-color {
+				.#{nth($a, 1)} & {
+					background-color: rgba(tint(nth($a, 2), 35%),.25);
+				}
+			}
+		}
+		&:visited {
+			color: $blanco;
+		}
+	}
+	& span {
+		display: block;
+		position: relative;
+		top: 49%;
+		transform: translateY(-49%);
+	}
+	& span.linea1banner {
+		display: block;
+		@include rem('font-size',20px);
+		margin-bottom: .25em;
+	}
+	& span.linea2banner em {
+		border: 1px solid $blanco;
+		border-radius: $default-border-radius;
+		padding: .25em .75em;
+	}
+	@include breakpoints(bigPhone){
+		height: 18em;
+	}
+	@include breakpoints(tablet){
+		height: 25.5em;
+		& span.linea1banner {
+			@include rem('font-size',30px);
+		}
+	}
+	@include breakpoints(desktop){
+		height: 22.289em;
+	}
+	@include breakpoints(medDesktop){
+		height: 25.066em;
+	}
+	@include breakpoints(bigDesktop){
+		height: 27.8437em;
+	}
+
+}

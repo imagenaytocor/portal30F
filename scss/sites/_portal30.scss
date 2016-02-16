@@ -1,0 +1,64 @@
+.site_1266409838114 {
+	& ul#accesos {
+			top: 6.85em;
+			right: .5em;
+			& li {
+				margin-right: .3em;
+				& a {
+					&::before {
+						border:1px solid $grisBorde;
+						border-radius: $default-border-radius;
+					}
+				}
+			/*	&:last-of-type {
+					& a:before {
+							color: #e18208;
+							content: "\61";
+							display: block;
+							font-family: "lse";
+							@include rem('font-size',24px);
+							font-style: normal;
+							height: 1.2em;
+							line-height: 1.2;
+							text-align: center;
+							width: 1.2em;
+						  -webkit-font-smoothing: antialiased;
+						  -moz-osx-font-smoothing: grayscale;
+					}
+				}*/
+			}
+		& .facebook a::before {
+			color: $grisTexto;
+			display: block;
+			text-align: center;
+			height: 1.2em;
+			line-height: 1.2;
+			width: 1.2em;
+		}
+		& .twitter a::before {
+			color: $grisTexto;
+			display: block;
+			text-align: center;
+			height: 1.2em;
+			line-height: 1.2;
+			width: 1.2em;
+		}
+	}
+	@include breakpoints(tablet){
+		& ul#accesos {
+			right: 1.45em;
+			top: 3.9em;
+		}
+	}
+	@include breakpoints(desktop){
+		& ul#accesos {
+			top: 3.25em;
+			right: 2.5em;
+		}
+	}
+	& #menuMapaWeb .menu_1283931718543 {
+		@include breakpoints(desktop) {
+			@include offleft;
+		}
+	}
+}

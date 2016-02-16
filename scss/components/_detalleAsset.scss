@@ -1,0 +1,151 @@
+//_detalleAsset.scss
+
+.detalleAsset {
+	margin-bottom: 1em;
+	@include breakpoints(tablet){
+		background-color: rgba($blanco,.8);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	& div[id^="detalle"] {
+		@include breakpoints(tablet){
+			flex-basis: 88%;
+			padding-right: 1%;
+		}
+	}
+	& .article {
+		@include breakpoints(tablet){
+		flex-basis: 92%;
+		}
+	}
+	& h2 {
+		text-transform: none;
+	}
+	& ol {
+	    counter-reset:li;
+		& > li {
+		    position:relative;
+		    margin:0 0 6px 1em;
+		    list-style:none;
+			&:before {
+				color:$enlace;
+			    content:counter(li);
+			    counter-increment:li;
+			    font-weight:$medium;
+				left:-1em;
+			    position:absolute;
+		    }
+		}
+	}
+	& ul {
+		margin-left: 1.5em;
+	}
+	& .imagen {
+		margin-bottom: 1em;
+		position: relative;
+		@include breakpoints (bigPhone) {
+			width: 85%;
+		}
+		& img {
+			object-fit: cover;
+			max-height: 12.6562em;
+			width: 100%;
+			@include breakpoints (bigPhone) {
+				max-height: 16.7937em;
+			}
+			@include breakpoints (tablet) {
+				max-height: 18.457em;
+			}
+			@include breakpoints (desktop) {
+				max-height: 16.5625em;
+			}
+			@include breakpoints (medDesktop) {
+				max-height: 18.5976em;
+			}
+			@include breakpoints (bigDesktop) {
+				max-height: 20.6015em;
+			}
+		}
+		& .pieImagen {
+			background-color: rgba(0, 0, 0, 0.75);
+			bottom: 0;
+			color: white;
+			@include rem('font-size', 12px);
+			font-weight: $regular;
+			left: 0;
+			margin-bottom: 0;
+			padding: .15em 3.125%;
+			position: absolute;
+			@include breakpoints(tablet){
+				@include rem('font-size', 14px);
+			}
+		}
+	}
+}
+
+.entradilla {
+	border-left: 2px solid $enlace;
+	@each $a in $site-color {
+		.#{nth($a, 1)} & {
+			border-left-color: nth($a, 2);
+		}
+	}
+	color: $txt;
+	@include rem('font-size', 22px);
+	font-weight: $regular;
+	line-height: 1.2;
+	margin-bottom: .5em;
+	padding-left: .55em;
+}
+
+dt.codigoQR {
+	&:before {
+			color: $negro;
+			content: "\f029";
+			font-family: FontAwesome;
+			@include rem('font-size',24px);
+			line-height: 1;
+			padding-right: .5em;
+	}
+}
+
+li.codigoQR {
+	@extend dt.codigoQR;
+}
+
+//Bug de Firefox - no calcula bien el ancho
+.no-cssreflections div[id^="detalle"] {
+	@include breakpoints(tablet){
+		max-width: 39em;
+	}
+	@include breakpoints(desktop){
+		max-width: 34.9em;
+	}
+	@include breakpoints(medDesktop){
+		max-width: 41.2em;
+	}
+	@include breakpoints(bigDesktop){
+		max-width: 45.7em;
+	}
+}
+
+.docuGen {
+	margin: 0 0 .5em 1.5em;
+	&:last-of-type {
+		margin-bottom: 1.5em;
+	}
+	&:before {
+			color: $negro;
+			content: "\f016";
+			font-family: FontAwesome;
+			line-height: 1;
+			padding-right: .5em;
+	}
+}
+.docuPdf {
+	&:before {
+			content: "\f1c1";
+	}
+}
