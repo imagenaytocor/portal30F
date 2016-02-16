@@ -19,7 +19,7 @@
 	& a {
 		font-weight: $global-weight-normal;
 		&:hover {
-			color: $blanco;
+			color: $white;
 		}
 	}
 	& #menuMapaWeb .menu_1424941872927 {
@@ -142,18 +142,18 @@
 	
 	& .destacadosPortada span.linea1banner {
 	    background-color: $colorBibliotecas;
-	    color: $blanco;
+	    color: $white;
 	    font-weight: $global-weight-bold;
 	}
 	& .destacadosPortada span.linea2banner {
-	    border-top: 3px solid $blanco;
+	    border-top: 3px solid $white;
 	}
 	& .bannerUnaLinea p.linea1cajaPromocion a {
 		color: $colorBibliotecas;
 		font-weight: $global-weight-bold;
 	}
 	& .fondoColor p.linea1cajaPromocion a {
-		color: $blanco;
+		color: $white;
 	}
 	& .ui-datepicker-prev,
 	& .ui-datepicker-next {

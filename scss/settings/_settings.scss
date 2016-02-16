@@ -70,17 +70,23 @@ $global-weight-xLight: 200;
 $global-weight-light: 200;
 $global-weight-normal: 400;
 $global-weight-bold: 500;
-
 $global-radius: .3em;
 $global-namespace: false;
 $global-text-direction: ltr;
 $rem-base: 16px;
 
+// 3. The Grid
+// -----------
+
+$grid-row-width: $global-width;
+$grid-column-count: 12;
+$grid-column-gutter: 30px;
+$block-grid-max: 6;
+
+
 // Base Font
-//$body-font-family: "Helvetica", Arial, sans-serif;
-//$base-font-weight: $global-weight-normal;
 $global-font-size: 10px;//$base-font-size
-//$global-lineheight:1.5;//$global-lineheight
+
 
 // Headings
 $titulos-font-family: "Dosis", serif;

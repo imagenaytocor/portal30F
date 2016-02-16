@@ -145,7 +145,7 @@
     	}
     }
     @include breakpoints(desktop){
-    	background: $blanco;
+    	background: $white;
     	box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.75);
     	height: auto;
     	left: 0;
@@ -201,7 +201,7 @@
 				padding: 0 .25em;
 				text-transform: uppercase;
 				&:first-child {
-					background-color: $blanco;
+					background-color: $white;
 					border: 1px solid #CCC;
 					border-radius: 5px;
 					@include rem('font-size', 20px);
@@ -225,7 +225,7 @@
 			}
 	}
 	& .subMenu {
-		background-color: $blanco;
+		background-color: $white;
 		box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.75);
 		display: none;
 		position: absolute;

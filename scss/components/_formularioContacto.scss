@@ -153,7 +153,7 @@ textarea.Error {
 	background-color: $error;
 	border: 1px solid $error;
 	border-radius: $global-radius;
-	color: $blanco;
+	color: $white;
 	float: left;
 	@include rem('font-size',16px);
 	margin-top: .5em;
@@ -214,9 +214,9 @@ textarea.Error {
 	& p {
 		&.resultadoError {
 			@include title3-style;
-			color: $blanco;
+			color: $white;
 		}
-		color: $blanco;
+		color: $white;
 		margin-bottom: 0;
 	}
 }

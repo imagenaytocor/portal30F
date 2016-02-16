@@ -18,7 +18,7 @@
 		padding: .5em 0;
 		text-transform: uppercase;
 		@include breakpoints(tablet){
-			border-right: 1px solid $blanco;
+			border-right: 1px solid $white;
 		}
 	}
 	& a {
@@ -33,15 +33,15 @@
 		padding: .5em;
 		text-decoration: none;
 		&.current {
-				background-color: $blanco;
+				background-color: $white;
 				border: 1px solid $grisBorde;
 				color: $negro;
 		}
 		@include breakpoints(tablet){
-			border-bottom: 1px solid $blanco;
+			border-bottom: 1px solid $white;
 			border-radius: .15em .15em 0 0;
 			&.current {
-				border-bottom-color: $blanco;
+				border-bottom-color: $white;
 			}
 		}
 	}

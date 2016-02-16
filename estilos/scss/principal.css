@@ -653,9 +653,9 @@ td {
 
 div.tooltip {
   background-color: rgba(15, 52, 83, 0.75);
-  border: 1px dotted white;
+  border: 1px dotted #fefefe;
   border-radius: 3px;
-  color: white;
+  color: #fefefe;
   margin-top: .5em;
   padding: .25em; }
 
@@ -683,7 +683,7 @@ website:    http://www.burocratik.com
   text-align: center;
   z-index: 1500;
   background-color: #0083d7;
-  color: white; }
+  color: #fefefe; }
   .site_1322782055091 #outdated {
     background-color: #cb8342; }
   .site_1322782134412 #outdated {
@@ -733,11 +733,11 @@ website:    http://www.burocratik.com
   font-weight: 200;
   line-height: 1.3;
   margin-bottom: 1em;
-  color: white;
+  color: #fefefe;
   font-weight: 400; }
 
 #outdated #btnUpdateBrowser {
-  color: white;
+  color: #fefefe;
   display: block;
   position: relative;
   padding: .5em 1em;
@@ -745,7 +745,7 @@ website:    http://www.burocratik.com
   width: 400px;
   /*need for IE*/
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid #fefefe;
   border-radius: 0.3em;
   cursor: pointer; }
 
@@ -794,7 +794,7 @@ website:    http://www.burocratik.com
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: white;
+  color: #fefefe;
   font-size: 36px;
   line-height: 36px; }
 
@@ -988,7 +988,7 @@ input.gsc-search-button {
   background-repeat: no-repeat;
   border: none;
   border-radius: 0.3em;
-  color: white;
+  color: #fefefe;
   float: left;
   line-height: 1.6;
   padding-left: 2em;
@@ -1522,7 +1522,7 @@ th, td {
   text-transform: uppercase; }
 
 tr {
-  background-color: white; }
+  background-color: #fefefe; }
   tr:nth-of-type(even) {
     background-color: #EBEBEB; }
 
@@ -1871,9 +1871,9 @@ body:after {
   .site_1443062183533 h1 {
     background-color: #9163c9; }
   .site_1322782055091 h1 a, .site_1322782134412 h1 a, .site_1352255804703 h1 a, .site_1280301855095 h1 a, .site_1382936859765 h1 a, .site_1369098952393 h1 a, .site_1327566431975 h1 a, .site_1327572561803 h1 a, .site_1347499014423 h1 a, .site_1416276701242 h1 a, .site_1240016856326 h1 a, .site_1443062183533 h1 a {
-    color: white; }
+    color: #fefefe; }
     .site_1322782055091 h1 a:visited, .site_1322782134412 h1 a:visited, .site_1352255804703 h1 a:visited, .site_1280301855095 h1 a:visited, .site_1382936859765 h1 a:visited, .site_1369098952393 h1 a:visited, .site_1327566431975 h1 a:visited, .site_1327572561803 h1 a:visited, .site_1347499014423 h1 a:visited, .site_1416276701242 h1 a:visited, .site_1240016856326 h1 a:visited, .site_1443062183533 h1 a:visited {
-      color: white; }
+      color: #fefefe; }
   @media (min-width: 45em) {
     .site_1322782055091 h1, .site_1322782134412 h1, .site_1352255804703 h1, .site_1280301855095 h1, .site_1382936859765 h1, .site_1369098952393 h1, .site_1327566431975 h1, .site_1327572561803 h1, .site_1347499014423 h1, .site_1416276701242 h1, .site_1240016856326 h1, .site_1443062183533 h1 {
       background-image: none;
@@ -1947,12 +1947,12 @@ ul#accesos {
     top: -99999em;
     left: -999999em; }
   ul#accesos a {
-    color: white;
+    color: #fefefe;
     display: block;
     font-size: 0.1px;
     font-size: 0.00625rem; }
   ul#accesos .facebook a:before, ul#accesos .twitter a:before, ul#accesos .youtube a:before, ul#accesos .foursquare a:before, ul#accesos .flickr a:before, ul#accesos .rss a:before, ul#accesos .delicious a:before, ul#accesos .pinterest a:before, ul#accesos .instagram a:before, ul#accesos .linkedin a:before, ul#accesos .vimeo a:before {
-    color: white;
+    color: #fefefe;
     display: block;
     font-family: FontAwesome;
     font-size: 24px;
@@ -2160,7 +2160,7 @@ ul#accesos {
         text-shadow: none; } }
   @media (min-width: 60em) {
     #menuMapaWeb {
-      background: white;
+      background: #fefefe;
       box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.75);
       height: auto;
       left: 0;
@@ -2211,7 +2211,7 @@ ul#accesos {
       padding: 0 .25em;
       text-transform: uppercase; }
       .menuPrincipal ul.nivel1 > li:first-child {
-        background-color: white;
+        background-color: #fefefe;
         border: 1px solid #CCC;
         border-radius: 5px;
         font-size: 20px;
@@ -2232,7 +2232,7 @@ ul#accesos {
           .menuPrincipal ul.nivel1 > li:first-child {
             margin-top: .15em; } }
   .menuPrincipal .subMenu {
-    background-color: white;
+    background-color: #fefefe;
     box-shadow: 0 2px 3px 0 rgba(50, 50, 50, 0.75);
     display: none;
     position: absolute;
@@ -2522,7 +2522,7 @@ ul#accesos {
   margin-bottom: 1em; }
   @media (min-width: 45em) {
     .detalleAsset {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(254, 254, 254, 0.8);
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -2713,7 +2713,7 @@ dt.codigoQR:before, li.codigoQR:before {
       #dtEvento li.inscripcionAbierta a {
         background-color: #0083d7;
         border-radius: 0.3em;
-        color: white;
+        color: #fefefe;
         font-size: 20px;
         font-size: 1.25rem;
         margin-left: 35%;
@@ -2747,7 +2747,7 @@ dt.codigoQR:before, li.codigoQR:before {
           #dtEvento li.inscripcionAbierta a {
             margin-left: 30%; } }
         #dtEvento li.inscripcionAbierta a:before {
-          color: white;
+          color: #fefefe;
           content: "\f044";
           cursor: pointer;
           display: inline-block;
@@ -2756,7 +2756,7 @@ dt.codigoQR:before, li.codigoQR:before {
           line-height: 1;
           margin-right: 0.5em; }
         #dtEvento li.inscripcionAbierta a:visited {
-          color: white; }
+          color: #fefefe; }
     #dtEvento li p {
       font-size: 18px;
       font-size: 1.125rem;
@@ -2827,7 +2827,7 @@ dt.codigoQR:before, li.codigoQR:before {
     justify-content: flex-end;
     margin-left: 0; }
     .site_cmix #dtEntidad dl, .site_cmix #detalleTituloEstudios dl {
-      background-color: white; }
+      background-color: #fefefe; }
   #dtEntidad dt, #detalleTituloEstudios dt {
     flex-basis: 25%;
     font-size: 16px;
@@ -2906,7 +2906,7 @@ dt.codigoQR:before, li.codigoQR:before {
     padding: .25em .5em;
     width: 25%; }
   #datosPrograma dd {
-    background-color: white;
+    background-color: #fefefe;
     border-bottom: 1px solid #cccccc;
     border-left: 1px solid #cccccc;
     float: left;
@@ -3027,7 +3027,7 @@ dt.codigoQR:before, li.codigoQR:before {
   margin: 0 .5%;
   width: 18%; }
   .rssMiniFotos .rssFeed .rssRow.even {
-    background-color: white;
+    background-color: #fefefe;
     margin: 0 .5%;
     padding: 0; }
   .rssMiniFotos .rssFeed .rssRow > div:first-of-type {
@@ -3078,7 +3078,7 @@ dt.codigoQR:before, li.codigoQR:before {
     text-transform: uppercase; }
     @media (min-width: 45em) {
       .etiquetas li {
-        border-right: 1px solid white; } }
+        border-right: 1px solid #fefefe; } }
   .etiquetas a {
     background-color: #EBEBEB;
     border-radius: .15em;
@@ -3110,15 +3110,15 @@ dt.codigoQR:before, li.codigoQR:before {
     .site_1443062183533 .etiquetas a {
       color: #9163c9; }
     .etiquetas a.current {
-      background-color: white;
+      background-color: #fefefe;
       border: 1px solid #cccccc;
       color: #000; }
     @media (min-width: 45em) {
       .etiquetas a {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #fefefe;
         border-radius: .15em .15em 0 0; }
         .etiquetas a.current {
-          border-bottom-color: white; } }
+          border-bottom-color: #fefefe; } }
 
 .panes {
   border: 1px solid #cccccc;
@@ -3159,7 +3159,7 @@ p.masInfo {
   p.masInfo a {
     background-color: #0083d7;
     border-radius: 0.3em;
-    color: white;
+    color: #fefefe;
     display: inline-block;
     margin-top: 0.5em;
     padding: 0.25em 0.5em;
@@ -3189,7 +3189,7 @@ p.masInfo {
     .site_1443062183533 p.masInfo a {
       background-color: #9163c9; }
     p.masInfo a:hover {
-      background-color: white;
+      background-color: #fefefe;
       border: 1px solid;
       border-color: #0083d7;
       color: #0083d7; }
@@ -3250,7 +3250,7 @@ p.masInfo {
       line-height: 1;
       padding-right: .5em; }
     p.masInfo a:visited {
-      color: white; }
+      color: #fefefe; }
 
 #accordion {
  /*
@@ -3505,7 +3505,7 @@ p.masInfo {
       margin-right: 0; } }
 
 .cajaBuscadorFormularioFechas {
-  background-color: white;
+  background-color: #fefefe;
   border: 1px solid #CCC;
   margin-bottom: 1em;
   padding: 1.5% 0; }
@@ -3703,7 +3703,7 @@ p.masInfo {
   list-style: none;
   margin-left: 0; }
 .cajaBuscadorResultado.cajaDesplegable {
-  background-color: white;
+  background-color: #fefefe;
   border: 1px solid #cccccc;
   margin-bottom: 0.5em;
   display: flex;
@@ -3924,7 +3924,7 @@ p.masInfo {
     padding: 0 .5em; }
   .buscadorTitDestacado h2 {
     background-color: #0083d7;
-    color: white;
+    color: #fefefe;
     font-size: 25px;
     font-size: 1.5625rem;
     padding: 4em 0.5em 0.5em; }
@@ -4295,7 +4295,7 @@ p.masInfo {
   font-size: 0.875rem; }
 
 .ui-datepicker {
-  background-color: white; }
+  background-color: #fefefe; }
   .ui-datepicker .ui-datepicker-header {
     border: 1px solid #cccccc;
     display: flex;
@@ -4434,7 +4434,7 @@ p.masInfo {
   .cajaBuscadorFormularioLista .listaCategorias li a {
     color: #404040; }
 .cajaBuscadorFormularioLista.cajaDesplegable {
-  background-color: white;
+  background-color: #fefefe;
   border: 1px solid #cccccc;
   margin-bottom: 0.5em;
   display: flex;
@@ -4617,7 +4617,7 @@ ul.cat1nivel > li {
       clear: left; } }
 
 ul.cat2nivel {
-  background-color: white;
+  background-color: #fefefe;
   border-top: 1px solid #cccccc;
   margin: .5em 0 0 0;
   padding: .5em 0 0 2.5%; }
@@ -4765,10 +4765,10 @@ ul.cat3nivel {
   .cajaImgTxt.d-25 {
     margin-bottom: 0; }
   .cajaImgTxt .panes {
-    background-color: white; }
+    background-color: #fefefe; }
   .cajaImgTxt .etiquetas a {
     background-color: #0083d7;
-    color: white; }
+    color: #fefefe; }
     .site_1322782055091 .cajaImgTxt .etiquetas a {
       background-color: #cb8342; }
     .site_1322782134412 .cajaImgTxt .etiquetas a {
@@ -4794,7 +4794,7 @@ ul.cat3nivel {
     .site_1443062183533 .cajaImgTxt .etiquetas a {
       background-color: #9163c9; }
     .cajaImgTxt .etiquetas a.current {
-      background-color: white;
+      background-color: #fefefe;
       color: #000; }
   .cajaImgTxt.colCaja {
     background-repeat: repeat-x !important;
@@ -4803,7 +4803,7 @@ ul.cat3nivel {
       font-family: "Roboto Condensed", sans-serif; }
 
 .cajaDesplegable.cajaGenerica {
-  background-color: white;
+  background-color: #fefefe;
   border: 1px solid #cccccc;
   margin-bottom: .5em;
   display: flex;
@@ -4892,7 +4892,7 @@ ul.cat3nivel {
     text-transform: uppercase; }
 
 .cajaEnlaces {
-  background-color: white;
+  background-color: #fefefe;
   border: 1px solid #CCC !important;
   margin-bottom: .5em;
   padding: 1.5625%; }
@@ -4977,7 +4977,7 @@ ul.cat3nivel {
     border-top: none;
     padding-top: .5em; }
   .cajaInfoFlecha .textoContenido {
-    background-color: white;
+    background-color: #fefefe;
     padding: .5em; }
   .cajaInfoFlecha h2 {
     color: #0083d7; }
@@ -5053,7 +5053,7 @@ ul.cat3nivel {
     .cajaInfoFlecha em a {
       background-color: #0083d7;
       border-radius: 0.3em;
-      color: white;
+      color: #fefefe;
       padding: .1em 1em .1em .5em;
       position: relative;
       text-transform: uppercase; }
@@ -5118,7 +5118,7 @@ ul.cat3nivel {
         .site_1443062183533 .cajaInfoFlecha em a:after {
           background-color: #9163c9; }
       .cajaInfoFlecha em a:visited {
-        color: white; }
+        color: #fefefe; }
 
 .geocli, .geodet {
   display: none; }
@@ -5160,7 +5160,7 @@ ul.cat3nivel {
   .contenidoApartado .imagen p.pieImagen {
     background-color: #000;
     bottom: 0;
-    color: white;
+    color: #fefefe;
     font-size: 14px;
     font-size: 0.875rem;
     left: 0;
@@ -5612,7 +5612,7 @@ ul.cat3nivel {
       .relacionados ul {
         margin-left: 0; }
       .relacionados li {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(254, 254, 254, 0.8);
         border: 1px solid #EBEBEB;
         padding: .5em; }
         .relacionados li.descripcion {
@@ -5972,7 +5972,7 @@ ul.cat3nivel {
         font-size: 0.875rem;
         height: 6em; } }
   .tiraBanners .cajaBanner a {
-    color: white; }
+    color: #fefefe; }
 
 .tiraBannersFondo {
   background-color: #EBEBEB;
@@ -6054,7 +6054,7 @@ ul.cat3nivel {
   .bannerEnviarComentarios p, .bannerRecibirComentarios p {
     margin-bottom: 0; }
     .bannerEnviarComentarios p:before, .bannerRecibirComentarios p:before {
-      color: white;
+      color: #fefefe;
       content: '\f1d8';
       cursor: pointer;
       display: inline-block;
@@ -6064,7 +6064,7 @@ ul.cat3nivel {
       line-height: 1;
       margin-right: .5em; }
   .bannerEnviarComentarios a, .bannerRecibirComentarios a {
-    color: white; }
+    color: #fefefe; }
 
 .bannerRecibirComentarios p:before {
   content: '\f1d9';
@@ -6092,7 +6092,7 @@ ul.cat3nivel {
       font-size: 1rem; } }
 .aviso .linea1banner {
   background-color: #e64c3b;
-  color: white;
+  color: #fefefe;
   flex-basis: 26%;
   padding: .5em;
   text-transform: uppercase; }
@@ -6116,7 +6116,7 @@ ul.cat3nivel {
       flex-basis: 87%; } }
 
 .promocionContenido {
-  background-color: white;
+  background-color: #fefefe;
   border: 1px solid #EBEBEB;
   margin-bottom: .5em; }
   .promocionContenido img {
@@ -6141,7 +6141,7 @@ ul.cat3nivel {
       font-weight: 200;
       margin: .25em 0;
       text-transform: uppercase;
-      background-color: white;
+      background-color: #fefefe;
       color: #0083d7;
       font-size: 18px;
       font-size: 1.125rem;
@@ -6174,7 +6174,7 @@ ul.cat3nivel {
         color: #9163c9; }
     .promocionContenido p.linea2cajaPromocion {
       background-color: rgba(0, 0, 0, 0.75);
-      color: white;
+      color: #fefefe;
       font-size: 17px;
       font-size: 1.0625rem;
       font-weight: 200;
@@ -6205,7 +6205,7 @@ ul.cat3nivel {
       .site_1443062183533 .promocionContenido p.linea2cajaPromocion {
         border-top: 3px solid #9163c9; }
       .promocionContenido p.linea2cajaPromocion a {
-        color: white;
+        color: #fefefe;
         font-weight: 400; }
   .promocionContenido ul {
     list-style: none; }
@@ -6224,7 +6224,7 @@ ul.cat3nivel {
       margin-right: .5em; }
 
 .bannerUnaLinea, .categoriasAgenda {
-  background-color: white;
+  background-color: #fefefe;
   border: 1px solid #0083d7;
   margin-bottom: .5em !important; }
   .site_1322782055091 .bannerUnaLinea, .site_1322782055091 .categoriasAgenda {
@@ -6314,11 +6314,11 @@ ul.cat3nivel {
       background-color: transparent;
       font-weight: 400; }
     .bannerUnaLinea.fondoColor a, .fondoColor.categoriasAgenda a {
-      color: white; }
+      color: #fefefe; }
       .bannerUnaLinea.fondoColor a:hover, .fondoColor.categoriasAgenda a:hover {
-        color: white; }
+        color: #fefefe; }
       .bannerUnaLinea.fondoColor a:visited, .fondoColor.categoriasAgenda a:visited {
-        color: white; }
+        color: #fefefe; }
 
 @media (min-width: 45em) {
   .categoriasAgenda.m-50 p, .categoriasAgenda.t-33 p {
@@ -6332,7 +6332,7 @@ ul.cat3nivel {
   display: block; }
 
 #contenido_1414980652072 a:before {
-  color: white;
+  color: #fefefe;
   content: '\f002';
   cursor: pointer;
   display: inline;
@@ -6343,7 +6343,7 @@ ul.cat3nivel {
   margin-right: .5em; }
 
 .bannerFA {
-  background-color: white;
+  background-color: #fefefe;
   border: 1px solid #0083d7;
   margin-bottom: .5em !important; }
   .site_1322782055091 .bannerFA {
@@ -6434,7 +6434,7 @@ span.fa {
   .bannerFAcirc .fa {
     background-color: #0083d7;
     border-radius: 50%;
-    color: white;
+    color: #fefefe;
     font-size: 30px;
     font-size: 1.875rem;
     height: auto;
@@ -6468,7 +6468,7 @@ span.fa {
     .site_1443062183533 .bannerFAcirc .fa {
       background-color: #9163c9; }
     .bannerFAcirc .fa:before {
-      color: white;
+      color: #fefefe;
       left: 0;
       position: absolute;
       top: 38%;
@@ -6532,7 +6532,7 @@ span.fa {
         margin-left: 50%;
         width: 50%; } }
   .bannerHero a {
-    color: white;
+    color: #fefefe;
     display: block;
     height: 100%;
     padding: 0 5%;
@@ -6564,7 +6564,7 @@ span.fa {
       .site_1443062183533 .bannerHero a:hover {
         background-color: rgba(217, 200, 236, 0.25); }
     .bannerHero a:visited {
-      color: white; }
+      color: #fefefe; }
   .bannerHero span {
     display: block;
     position: relative;
@@ -6576,7 +6576,7 @@ span.fa {
     font-size: 1.25rem;
     margin-bottom: .25em; }
   .bannerHero span.linea2banner em {
-    border: 1px solid white;
+    border: 1px solid #fefefe;
     border-radius: 0.3em;
     padding: .25em .75em; }
   @media (min-width: 30em) {
@@ -6694,29 +6694,29 @@ p#note {
     .site_1443062183533 .eventosPortada li a {
       background-color: #9163c9; }
     .site_1322782055091 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1322782134412 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1352255804703 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1280301855095 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1382936859765 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1369098952393 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1327566431975 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1327572561803 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1347499014423 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1416276701242 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1240016856326 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
     .site_1443062183533 .eventosPortada li a {
-      color: white; }
+      color: #fefefe; }
   .eventosPortada li:first-of-type {
     display: block; }
     .eventosPortada li:first-of-type a {
@@ -7025,7 +7025,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
   background-color: #e64c3b;
   border: 1px solid #e64c3b;
   border-radius: 0.3em;
-  color: white;
+  color: #fefefe;
   float: left;
   font-size: 16px;
   font-size: 1rem;
@@ -7084,7 +7084,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
   padding: .5em 1em;
   border-radius: 0.3em; }
   #instruccionesUnicaError p {
-    color: white;
+    color: #fefefe;
     margin-bottom: 0; }
     #instruccionesUnicaError p.resultadoError {
       color: #000;
@@ -7094,7 +7094,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
       font-weight: 200;
       line-height: 1.3;
       margin: 0 0 .5em;
-      color: white; }
+      color: #fefefe; }
 
 #sf_1430183569439 .direccionLocalidad label:last-of-type, #sf_1430183569439 .direccionProvincia {
   display: none; }
@@ -7316,7 +7316,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
   top: 0;
   width: 94%; }
   .tilesApp dt.titulo a {
-    color: white;
+    color: #fefefe;
     display: block;
     font-size: 18px;
     font-size: 1.125rem;
@@ -7490,7 +7490,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
 .site_1382936859765 a {
   font-weight: 400; }
   .site_1382936859765 a:hover {
-    color: white; }
+    color: #fefefe; }
 @media (min-width: 60em) {
   .site_1382936859765 #menuMapaWeb .menu_1424941872927 {
     position: absolute;
@@ -7590,15 +7590,15 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
   background-image: url("//estaticos.coruna.es/imagesdu/bibliotecas.jpg"); }
 .site_1382936859765 .destacadosPortada span.linea1banner {
   background-color: #8fcc00;
-  color: white;
+  color: #fefefe;
   font-weight: 500; }
 .site_1382936859765 .destacadosPortada span.linea2banner {
-  border-top: 3px solid white; }
+  border-top: 3px solid #fefefe; }
 .site_1382936859765 .bannerUnaLinea p.linea1cajaPromocion a, .site_1382936859765 .categoriasAgenda p.linea1cajaPromocion a {
   color: #8fcc00;
   font-weight: 500; }
 .site_1382936859765 .fondoColor p.linea1cajaPromocion a {
-  color: white; }
+  color: #fefefe; }
 .site_1382936859765 .ui-datepicker-prev, .site_1382936859765 .ui-datepicker-next {
   font-weight: 500; }
 .site_1382936859765 span[class$="_fancy"] {
@@ -7668,12 +7668,12 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
 
 ::-moz-selection .site_1414721835012 {
   background-color: #bff1fc;
-  color: white;
+  color: #fefefe;
   text-shadow: none; }
 
 ::selection .site_1414721835012 {
   background-color: #bff1fc;
-  color: white;
+  color: #fefefe;
   text-shadow: none; }
 
 @media (min-width: 45em) {

@@ -3,7 +3,7 @@
 
 .accesosPortada, .infoAux {
 	& .cajaGenerica {
-		background-color: $blanco;
+		background-color: $white;
 		border: 1px solid #CCC;
 		margin-bottom: .5em;
 		/*@include display-flex;
@@ -109,7 +109,7 @@
 	
 	.cajaAlcalde {
 		background: {
-			color: $blanco;
+			color: $white;
 			position: bottom right;
 			repeat: no-repeat;
 			size: 42%;

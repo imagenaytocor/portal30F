@@ -3,7 +3,7 @@
 .detalleAsset {
 	margin-bottom: 1em;
 	@include breakpoints(tablet){
-		background-color: rgba($blanco,.8);
+		background-color: rgba($white,.8);
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;

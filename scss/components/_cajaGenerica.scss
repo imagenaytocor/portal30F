@@ -53,7 +53,7 @@
 		margin-bottom: 0;
 	}
 	& .panes {
-		background-color: $blanco;
+		background-color: $white;
 	}
 	& .etiquetas a {
 		background-color: $enlace;
@@ -62,9 +62,9 @@
 				background-color: nth($a, 2);
 			}
 		}
-		color: $blanco;
+		color: $white;
 		&.current {
-			background-color: $blanco;
+			background-color: $white;
 			color: $negro;
 		}
 	}
@@ -83,7 +83,7 @@
 
 .cajaDesplegable {
 	&.cajaGenerica {
-		background-color: $blanco;
+		background-color: $white;
 		border: 1px solid $grisBorde;
 		margin-bottom: .5em;
 		display: flex;
@@ -172,7 +172,7 @@
 // Cajas con enlaces como las subportadas de Bibliotecas antes de DU
 
 .cajaEnlaces {
-	background-color: $blanco;
+	background-color: $white;
 	border: 1px solid #CCC !important;
 	margin-bottom: .5em;
 	padding: 1.5625%;
@@ -243,7 +243,7 @@
 		padding-top: .5em;
 	}
 	& .textoContenido {
-		background-color: $blanco;
+		background-color: $white;
 		padding: .5em;
 	}
 	& h2 {
@@ -283,7 +283,7 @@
 				}
 			}
 			border-radius: $global-radius;
-			color: $blanco;
+			color: $white;
 			padding: .1em 1em .1em .5em;
 			position: relative;
 			text-transform: uppercase;
@@ -306,7 +306,7 @@
 				z-index: 10;
 			}
 			&:visited {
-				color: $blanco;
+				color: $white;
 			}
 		}
 	}

@@ -40,7 +40,7 @@
 			color: $negro;
 			@each $a in $site-color {
 				.#{nth($a, 1)} & {
-					color: $blanco;
+					color: $white;
 				}
 			}
 			font-family: $titulos-font-family;

@@ -213,7 +213,7 @@
 			}
 		}
 		& a {
-			color: $blanco;
+			color: $white;
 		}
 	}
 }
@@ -270,7 +270,7 @@
 	& p {
 		margin-bottom: 0;
 		&:before  {
-			color: $blanco;
+			color: $white;
 			content: '\f1d8';
 			cursor: pointer;
 			display: inline-block;
@@ -281,7 +281,7 @@
 		}
 	}
 	& a {
-		color: $blanco;
+		color: $white;
 	}
 }
 
@@ -319,7 +319,7 @@
 	}
 	& .linea1banner {
 		background-color: $error;
-		color: $blanco;
+		color: $white;
 		flex-basis: 26%;
 		padding: .5em;
 		text-transform: uppercase;
@@ -346,7 +346,7 @@
 }
 
 .promocionContenido {
-	background-color: $blanco;
+	background-color: $white;
 	border: 1px solid $grisFondo;
 	margin-bottom: .5em;
 	& img {
@@ -371,7 +371,7 @@
 			margin: .25em 0;
 			text-transform: uppercase;
 			//se cambia el color de blanco a transparent por las cajas masonry
-			background-color: $blanco;
+			background-color: $white;
 			color: $enlace;
 			@each $a in $site-color {
 				.#{nth($a, 1)} & {
@@ -390,13 +390,13 @@
 				}
 			}
 			background-color: rgba(0,0,0,.75);
-			color: $blanco;
+			color: $white;
 			@include rem('font-size', 17px);
 			font-weight: $global-weight-light;
 			margin-bottom:0;
 			padding: .15em .55em;
 			& a {
-				color: $blanco;
+				color: $white;
 				font-weight: $global-weight-normal;
 			}
 		}
@@ -421,7 +421,7 @@
 }
 
 .bannerUnaLinea {
-	background-color: $blanco;
+	background-color: $white;
 	border: 1px solid $enlace;
 	@each $a in $site-color {
 		.#{nth($a, 1)} & {
@@ -454,12 +454,12 @@
 			font-weight: $global-weight-normal;
 		}
 		& a {
-			color: $blanco;
+			color: $white;
 			&:hover {
-				color: $blanco;
+				color: $white;
 			}
 			&:visited {
-				color: $blanco;
+				color: $white;
 			}
 		}
 	}
@@ -483,7 +483,7 @@
 }
 
 #contenido_1414980652072 a:before {
-	color: $blanco;
+	color: $white;
 	content: '\f002';
 	cursor: pointer;
 	display: inline;
@@ -496,7 +496,7 @@
 //banner con icono FA - tiene que ser cajaBanner
 
 .bannerFA {
-	background-color: $blanco;
+	background-color: $white;
 	border: 1px solid $enlace;
 	@each $a in $site-color {
 		.#{nth($a, 1)} & {
@@ -565,7 +565,7 @@ span.fa {
 			}
 		}
 		border-radius: 50%;
-		color: $blanco;
+		color: $white;
 		@include rem('font-size',30px);
 		height: auto;
 		margin: 1em 25% .25em;
@@ -574,7 +574,7 @@ span.fa {
 		text-align: center;
 		width: 50%;
 		&:before {
-			color: $blanco;
+			color: $white;
 			left: 0;
 			position: absolute;
 			top: 38%;
@@ -628,7 +628,7 @@ span.fa {
 		}
 	}
 	& a {
-		color: $blanco;
+		color: $white;
 		display: block;
 		height: 100%;
 		padding: 0 5%;
@@ -642,7 +642,7 @@ span.fa {
 			}
 		}
 		&:visited {
-			color: $blanco;
+			color: $white;
 		}
 	}
 	& span {
@@ -657,7 +657,7 @@ span.fa {
 		margin-bottom: .25em;
 	}
 	& span.linea2banner em {
-		border: 1px solid $blanco;
+		border: 1px solid $white;
 		border-radius: $global-radius;
 		padding: .25em .75em;
 	}

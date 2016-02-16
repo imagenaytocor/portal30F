@@ -14,9 +14,9 @@
 	width: 93%;
 
 	& a {
-		color: $blanco;
+		color: $white;
 		&:visited {
-			color: $blanco;
+			color: $white;
 			}
 	}
 	@include breakpoints(tablet) {
@@ -101,13 +101,13 @@ ul#accesos {
 		@include offleft;
 	}
 	& a {
-		color: $blanco;
+		color: $white;
 		display: block;
 		@include rem('font-size', .1px);
 	}
 	%socialCabecera {
 		&:before {
-				color: $blanco;
+				color: $white;
 				display: block;
 				font-family: FontAwesome;
 				@include rem('font-size',24px);

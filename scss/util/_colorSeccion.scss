@@ -8,14 +8,14 @@
 			background-color: nth($a, 2);
 		}
 	}
-	color: $blanco;
+	color: $white;
 	cursor: pointer;
 	font-style: $bold;
 	margin: 1em 0;
 	padding: .5em;
 	text-transform: uppercase;
 	& > em:after {
-		color: $blanco;
+		color: $white;
 		font-style: normal;
 		font-weight: $extraBold;
 		float: right;

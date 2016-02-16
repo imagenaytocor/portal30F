@@ -24,7 +24,7 @@
 					}
 				}
 				border-radius: $global-radius;
-				color: $blanco;
+				color: $white;
 				@include rem('font-size', 20px);
 				margin-left: 35%;
 				padding: .25em .5em;
@@ -33,7 +33,7 @@
 					margin-left: 30%;
 				}
 				&:before {
-					color: $blanco;
+					color: $white;
 					content: "\f044";
 					cursor: pointer;
 					display: inline-block;
@@ -43,7 +43,7 @@
 					margin-right: 0.5em;
 				}
 				&:visited {
-					color: $blanco;
+					color: $white;
 				}
 			}
 		}
