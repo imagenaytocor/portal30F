@@ -1,5 +1,77 @@
-// Import fonts
+//  Foundation for Sites Settings
+//  -----------------------------
+//
+//  Table of Contents:
+//
+//   0. Import fonts
+//   1. Global
+//   2. Breakpoints
+//   3. The Grid
+//   4. Base Typography
+//   5. Typography Helpers
+//   6. Abide
+//   7. Accordion
+//   8. Accordion Menu
+//   9. Badge
+//  10. Breadcrumbs
+//  11. Button
+//  12. Button Group
+//  13. Callout
+//  14. Close Button
+//  15. Drilldown
+//  16. Dropdown
+//  17. Dropdown Menu
+//  18. Flex Video
+//  19. Forms
+//  20. Label
+//  21. Media Object
+//  22. Menu
+//  23. Off-canvas
+//  24. Orbit
+//  25. Pagination
+//  26. Progress Bar
+//  27. Reveal
+//  28. Slider
+//  29. Switch
+//  30. Table
+//  31. Tabs
+//  32. Thumbnail
+//  33. Tooltip
+//  34. Top Bar
+
+// 0. Import fonts
 @import url(https://fonts.googleapis.com/css?family=Dosis:200,300,400,500|Roboto+Condensed:300,400);
+
+// 1. Global
+// ---------
+
+$global-width: rem-calc(1200);
+$global-font-size: 100%;
+$global-lineheight: 1.5;
+$primary-color: #2199e8;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+$body-background: $white;
+$body-font-color: $black;
+$body-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$body-antialiased: true;
+$text-direction: ltr;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-margin: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 0;
+$global-namespace: false;
+$global-text-direction: ltr;
+$rem-base: 16px;
 
 // Font weights
 $xLight: 200;
@@ -8,7 +80,7 @@ $regular:400;
 $medium: 500;
 
 // Base Font
-$base-font-family: "Helvetica", Arial, sans-serif;
+//$body-font-family: "Helvetica", Arial, sans-serif;
 $base-font-weight: $regular;
 $global-font-size: 10px;//$base-font-size
 $global-lineheight:1.5;//$global-lineheight
