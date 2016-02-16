@@ -136,7 +136,7 @@
 				}
 			}
 			@include rem('font-size', 22px);
-			font-weight:$regular;
+			font-weight:$global-weight-normal;
 			max-width: 95%;
 			padding: .25em .75em;
 			text-transform: uppercase;
@@ -397,7 +397,7 @@
 			padding: .15em .55em;
 			& a {
 				color: $blanco;
-				font-weight: $regular;
+				font-weight: $global-weight-normal;
 			}
 		}
 	}
@@ -451,7 +451,7 @@
 		}
 		& p {
 			background-color: transparent;
-			font-weight: $regular;
+			font-weight: $global-weight-normal;
 		}
 		& a {
 			color: $blanco;

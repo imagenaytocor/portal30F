@@ -73,7 +73,7 @@
 			bottom: 0;
 			color: white;
 			@include rem('font-size', 12px);
-			font-weight: $regular;
+			font-weight: $global-weight-normal;
 			left: 0;
 			margin-bottom: 0;
 			padding: .15em 3.125%;
@@ -94,7 +94,7 @@
 	}
 	color: $txt;
 	@include rem('font-size', 22px);
-	font-weight: $regular;
+	font-weight: $global-weight-normal;
 	line-height: 1.2;
 	margin-bottom: .5em;
 	padding-left: .55em;

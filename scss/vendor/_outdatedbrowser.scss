@@ -40,7 +40,7 @@ website:    http://www.burocratik.com
 #outdated p {
 	@include para-style;
 	color: $blanco;
-	font-weight: $regular;
+	font-weight: $global-weight-normal;
 }
 
 #outdated #btnUpdateBrowser {

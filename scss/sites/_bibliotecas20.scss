@@ -17,7 +17,7 @@
 
 .site_1382936859765 {
 	& a {
-		font-weight: $regular;
+		font-weight: $global-weight-normal;
 		&:hover {
 			color: $blanco;
 		}
@@ -130,7 +130,7 @@
 		}
 	}
 	& .destacadosPortada p {
-		font-weight: $regular;
+		font-weight: $global-weight-normal;
 	} 
 	& p.linea1cajaPromocion a {
 		color: $grisTexto;

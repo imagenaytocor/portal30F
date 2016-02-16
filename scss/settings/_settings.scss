@@ -66,8 +66,8 @@ $text-direction: ltr;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-margin: 1rem;
-$global-weight-normal: normal;
-$global-weight-bold: bold;
+$global-weight-normal: 400;
+$global-weight-bold: 500;
 $global-radius: 0;
 $global-namespace: false;
 $global-text-direction: ltr;
@@ -76,12 +76,12 @@ $rem-base: 16px;
 // Font weights
 $xLight: 200;
 $light: 300;
-$regular:400;
+//$regular:400;
 $medium: 500;
 
 // Base Font
 //$body-font-family: "Helvetica", Arial, sans-serif;
-$base-font-weight: $regular;
+$base-font-weight: $global-weight-normal;
 $global-font-size: 10px;//$base-font-size
 $global-lineheight:1.5;//$global-lineheight
 
@@ -95,7 +95,7 @@ $alt-font-family: "Roboto Condensed", sans-serif;
 // Citas
 
 $quote-font-family: "Georgia", serif;
-$quote-font-weight: $regular;
+$quote-font-weight: $global-weight-normal;
 $quote-font-size: 18px;
 $quote-font-style: italic;
 $quote-line-height:1.5;

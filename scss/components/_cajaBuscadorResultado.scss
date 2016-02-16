@@ -101,7 +101,7 @@
 	}
 	& #subFormDer p {
 		@include rem('font-size', 16px);
-		font-weight: $regular;
+		font-weight: $global-weight-normal;
 		margin-top: .5em;
 		text-transform: uppercase;
 	}

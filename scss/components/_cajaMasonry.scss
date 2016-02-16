@@ -66,7 +66,7 @@
 	&.linea1cajaPromocion {
 		background-color: transparent;
 		@include rem('font-size',16px);
-		font-weight: $regular;
+		font-weight: $global-weight-normal;
 	}
 	& a {
 		text-decoration: none;

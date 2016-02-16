@@ -8,7 +8,7 @@ p#note {
 	background-color: $grisFondo;
 	color: $enlace;
 	@include rem('font-size', 18px);
-	font-weight: $regular;
+	font-weight: $global-weight-normal;
 	margin-bottom: .25em;
 	padding: .5em 2%;
 	text-align: center;

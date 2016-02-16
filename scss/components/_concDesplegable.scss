@@ -29,7 +29,7 @@
 			margin-top: .5em;
 			@include rem('font-size', 18px);
 			color: $grisTexto;
-			font-weight: $regular;
+			font-weight: $global-weight-normal;
 		}
 		& a {
 			color: $grisTexto;
