@@ -77,7 +77,7 @@
 			@include rem('font-size', .001px);
 			visibility: hidden;
 			&:before  {
-				color: $negro;
+				color: $black;
 				content: '\f1e0';
 				cursor: pointer;
 				display: inline-block;

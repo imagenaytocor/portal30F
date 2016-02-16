@@ -191,7 +191,7 @@
 			}
 		}
 		& p {
-			background-color: rgba($negro, 0.75);
+			background-color: rgba($black, 0.75);
 			font-family: $titulos-font-family;
 			@include rem('font-size', 13px);
 			font-weight: $global-weight-light;
@@ -408,7 +408,7 @@
 		margin-left:1em;
 		margin-right:.5em;
 		&:before  {
-			color: $negro;
+			color: $black;
 			content: '\f101';
 			cursor: pointer;
 			display: inline-block;
@@ -617,12 +617,12 @@ span.fa {
 		margin-bottom:0;
 	}
 	& p {
-		background-color: rgba($negro, 0.35);
+		background-color: rgba($black, 0.35);
 		height: 100%;
 		margin-bottom: 0;
 		width: 100%;
 		@include breakpoints(bigPhone) {
-			background-color: rgba($negro, 0.5);
+			background-color: rgba($black, 0.5);
 			margin-left: 50%;
 			width: 50%;
 		}

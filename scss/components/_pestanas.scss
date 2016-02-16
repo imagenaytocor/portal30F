@@ -35,7 +35,7 @@
 		&.current {
 				background-color: $white;
 				border: 1px solid $grisBorde;
-				color: $negro;
+				color: $black;
 		}
 		@include breakpoints(tablet){
 			border-bottom: 1px solid $white;

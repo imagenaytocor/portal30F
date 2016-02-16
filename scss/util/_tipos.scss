@@ -16,7 +16,7 @@
 }
 
 @mixin title2-style {
-	color: $negro;
+	color: $black;
 	font-family: $titulos-font-family;
 	@include rem('font-size',30px);
 	font-weight: $global-weight-xLight;
@@ -27,7 +27,7 @@
 }
 
 @mixin title3-style {
-	color: $negro;
+	color: $black;
 	font-family: $titulos-font-family;
 	@include rem('font-size',25px);
 	font-weight: $global-weight-xLight;
@@ -36,7 +36,7 @@
 }
 
 @mixin title4-style {
-	color: $negro;
+	color: $black;
 	font-family: $titulos2-font-family;
 	@include rem('font-size',20px);
 	font-weight: $global-weight-light;
@@ -45,7 +45,7 @@
 }
 
 @mixin title5-style {
-	color: $negro;
+	color: $black;
 	font-family: $titulos2-font-family;
 	@include rem('font-size',18px);
 	font-weight: $global-weight-light;
@@ -54,7 +54,7 @@
 }
 
 @mixin title6-style {
-	color: $negro;
+	color: $black;
 	font-family: $titulos2-font-family;
 	@include rem('font-size',16px);
 	font-weight: $global-weight-normal;

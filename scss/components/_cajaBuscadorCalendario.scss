@@ -44,7 +44,7 @@
 		order:1;
 		width: auto;
 		&:before  {
-			color: $negro;
+			color: $black;
 			content: '\f100';
 			cursor: pointer;
 			display: inline-block;
@@ -65,7 +65,7 @@
 		text-align: right;
 		width: auto;
 		&:after  {
-			color: $negro;
+			color: $black;
 			content: '\f101';
 			cursor: pointer;
 			display: inline-block;

@@ -65,7 +65,7 @@
 		color: $white;
 		&.current {
 			background-color: $white;
-			color: $negro;
+			color: $black;
 		}
 	}
 
@@ -160,7 +160,7 @@
 
 		}
 		& a {
-			color: $negro;
+			color: $black;
 			font-family: $titulos-font-family;
 			@include rem('font-size', 14px);
 			font-weight: $global-weight-light;

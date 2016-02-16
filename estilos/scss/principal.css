@@ -2376,7 +2376,7 @@ ul#accesos {
   		@include rem('font-size', .1px);
   		visibility: hidden;
   		&:before  {
-  			color: $negro;
+  			color: $black;
   			content: '\f0a1';
   			display: inline-block; 
   		    font-family: FontAwesome; 

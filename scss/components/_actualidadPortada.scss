@@ -37,7 +37,7 @@
 				}
 			}
 			bottom: -10%;
-			color: $negro;
+			color: $black;
 			@each $a in $site-color {
 				.#{nth($a, 1)} & {
 					color: $white;
@@ -122,7 +122,7 @@
 		padding: .5em .5em .25em;
 	}
 	& a {
-		color: $negro;
+		color: $black;
 	}
 }
 
@@ -196,7 +196,7 @@
 		*/
 	}
 	& a {
-		color: $negro;
+		color: $black;
 		font-weight: $global-weight-light;
 	}
 }
