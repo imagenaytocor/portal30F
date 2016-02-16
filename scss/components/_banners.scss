@@ -150,7 +150,7 @@
 			background-color: rgba(0,0,0,.75);
 			color: #FFF;
 			@include rem('font-size', 25px);
-			font-weight: $xLight;
+			font-weight: $global-weight-xLight;
 			padding: .15em .75em;
 		}
 	}
@@ -194,7 +194,7 @@
 			background-color: rgba($negro, 0.75);
 			font-family: $titulos-font-family;
 			@include rem('font-size', 13px);
-			font-weight: $light;
+			font-weight: $global-weight-light;
 			height: 8em;
 			line-height: 1.2;
 			padding: .5em 5%;
@@ -367,7 +367,7 @@
 		padding: 0 .5em;
 		&.linea1cajaPromocion {
 			@include title3-style;
-			font-weight: $light;
+			font-weight: $global-weight-light;
 			margin: .25em 0;
 			text-transform: uppercase;
 			//se cambia el color de blanco a transparent por las cajas masonry
@@ -392,7 +392,7 @@
 			background-color: rgba(0,0,0,.75);
 			color: $blanco;
 			@include rem('font-size', 17px);
-			font-weight: $light;
+			font-weight: $global-weight-light;
 			margin-bottom:0;
 			padding: .15em .55em;
 			& a {

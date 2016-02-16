@@ -110,7 +110,7 @@
 		}
 		& p {
 			font-family: $titulos-font-family;
-			font-weight: $xLight;
+			font-weight: $global-weight-xLight;
 			margin: 0 0.5em 0.5em 0.75em;
 		}
 		@include breakpoints(bigPhone){
@@ -163,7 +163,7 @@
 			color: $negro;
 			font-family: $titulos-font-family;
 			@include rem('font-size', 14px);
-			font-weight: $light;
+			font-weight: $global-weight-light;
 			text-transform: uppercase;
 		}
 	}

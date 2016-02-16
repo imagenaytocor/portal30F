@@ -3,7 +3,7 @@
 .site_1322782055091 {
 	& h1 {
 		@include rem('font-size', 40px);
-		font-weight: $light;
+		font-weight: $global-weight-light;
 		padding-bottom: .9em;
 		top: 2.55em;
 		@include breakpoints(bigPhone) {

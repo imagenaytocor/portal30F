@@ -53,7 +53,7 @@ $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #e6e6e6;
+$global-weight-light-gray: #e6e6e6;
 $global-weight-bold-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
@@ -66,28 +66,25 @@ $text-direction: ltr;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-margin: 1rem;
+$global-weight-xLight: 200;
+$global-weight-light: 200;
 $global-weight-normal: 400;
 $global-weight-bold: 500;
+
 $global-radius: 0;
 $global-namespace: false;
 $global-text-direction: ltr;
 $rem-base: 16px;
 
-// Font weights
-$xLight: 200;
-$light: 300;
-//$regular:400;
-//$medium: 500;
-
 // Base Font
 //$body-font-family: "Helvetica", Arial, sans-serif;
-$base-font-weight: $global-weight-normal;
+//$base-font-weight: $global-weight-normal;
 $global-font-size: 10px;//$base-font-size
 //$global-lineheight:1.5;//$global-lineheight
 
 // Headings
 $titulos-font-family: "Dosis", serif;
-$titulos-font-weight: $xLight;
+$titulos-font-weight: $global-weight-xLight;
 
 $titulos2-font-family: "Roboto Condensed", sans-serif;
 $alt-font-family: "Roboto Condensed", sans-serif;

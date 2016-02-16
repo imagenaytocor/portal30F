@@ -32,7 +32,7 @@
 		padding-bottom: 1em;
 		top: 3.1em;
 		& a {
-			font-weight: $light;
+			font-weight: $global-weight-light;
 		}
 		@include breakpoints(bigPhone) {
 			@include rem('font-size', 40px);

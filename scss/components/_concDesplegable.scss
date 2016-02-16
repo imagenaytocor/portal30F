@@ -45,7 +45,7 @@
 			width: 48%;
 			color: $grisTexto;
 			font-family: $titulos2-font-family;
-			font-weight: $light;
+			font-weight: $global-weight-light;
 			margin-bottom: 2.5em;
 			@include breakpoints (desktop) {
 				@include rem('font-size', 14px);

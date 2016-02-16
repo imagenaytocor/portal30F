@@ -96,7 +96,7 @@
     			@include breakpoints(desktop){
     				border-right: none;
     				@include rem('font-size', 15px);
-    				font-weight: $xLight;
+    				font-weight: $global-weight-xLight;
     				padding: .25em 0;
     				text-transform: none;
     				& > a {
@@ -126,7 +126,7 @@
     			@include breakpoints(desktop){
     				border-right: none;
     				@include rem('font-size', 12px);
-    				font-weight: $xLight;
+    				font-weight: $global-weight-xLight;
     				padding: .25em 0;
     				text-transform: none;
     				& a {
@@ -276,7 +276,7 @@
 			margin: 0 0 0.5em;
 			padding: 0;
 			@include rem('font-size', 14px);
-			font-weight: $xLight;
+			font-weight: $global-weight-xLight;
 			text-transform: none;
 		}
 		& a {

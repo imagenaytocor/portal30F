@@ -3,7 +3,7 @@
 .site_1327566431975 {
 	& h1 {
 		@include rem('font-size', 40px);
-		font-weight: $light;
+		font-weight: $global-weight-light;
 		top: 2.5em;
 		@include breakpoints(tablet) {
 			@include rem('font-size', 60px);

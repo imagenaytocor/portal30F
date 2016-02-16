@@ -200,7 +200,7 @@ textarea.Error {
 	& p:first-of-type {
 		@include title3-style;
 		& strong {
-			font-weight: $light;
+			font-weight: $global-weight-light;
 		}
 	}
 }

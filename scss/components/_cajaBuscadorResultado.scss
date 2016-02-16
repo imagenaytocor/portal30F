@@ -334,7 +334,7 @@
 	}
 	& p.masInfo {
 		bottom: .5em;
-		font-weight: $light;
+		font-weight: $global-weight-light;
 		margin-bottom: 0;
 		position: absolute;
 		right: .75em;
@@ -395,7 +395,7 @@
 	& .entradilla {
 		color: $negro;
 		@include rem('font-size', 16px);
-		font-weight: $xLight;
+		font-weight: $global-weight-xLight;
 		padding-left: .5em;
 	}
 	& .imagen {
@@ -588,7 +588,7 @@
 		margin-left: 1em;
 		& strong {
 			display: inline-block;
-			font-weight: $light;
+			font-weight: $global-weight-light;
 			margin-right: 1em;
 			text-align: right;
 			width: 25%;

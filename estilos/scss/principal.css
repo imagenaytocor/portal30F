@@ -1280,7 +1280,7 @@ h4 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3;
   margin: 0 0 .5em; }
 
@@ -1289,7 +1289,7 @@ h5 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3;
   margin: 0 0 .5em; }
 
@@ -1423,7 +1423,7 @@ dt {
   font-family: "Dosis", serif;
   font-size: 16px;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3; }
 
 dd {
@@ -1431,7 +1431,7 @@ dd {
   font-family: "Dosis", serif;
   font-size: 16px;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3;
   margin-bottom: .5em; }
 
@@ -1445,7 +1445,7 @@ li {
   font-family: "Dosis", serif;
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3;
   margin-bottom: .5em; }
   ol > li {
@@ -1465,7 +1465,7 @@ table {
   font-family: "Dosis", serif;
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3;
   margin-bottom: .5em; }
 
@@ -2335,7 +2335,7 @@ ul#accesos {
   #hilo li {
     font-size: 16px;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 200;
     list-style: none;
     margin-bottom: 0;
     margin-right: .5em;
@@ -2918,7 +2918,7 @@ dt.codigoQR:before, li.codigoQR:before {
     #datosPrograma dd p {
       font-size: 16px;
       font-size: 1rem;
-      font-weight: 300;
+      font-weight: 200;
       margin-bottom: 0; }
 
 .rssFeed ul {
@@ -3448,7 +3448,7 @@ p.masInfo {
     width: 48%;
     color: #404040;
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     margin-bottom: 2.5em; }
     @media (min-width: 60em) {
       .concDesplegable .desConTitulo p {
@@ -3954,7 +3954,7 @@ p.masInfo {
       background-color: #9163c9; }
   .buscadorTitDestacado p.masInfo {
     bottom: .5em;
-    font-weight: 300;
+    font-weight: 200;
     margin-bottom: 0;
     position: absolute;
     right: .75em;
@@ -4237,7 +4237,7 @@ p.masInfo {
   margin-left: 1em; }
   .listEntidad dd strong {
     display: inline-block;
-    font-weight: 300;
+    font-weight: 200;
     margin-right: 1em;
     text-align: right;
     width: 25%; }
@@ -4888,7 +4888,7 @@ ul.cat3nivel {
     font-family: "Dosis", serif;
     font-size: 14px;
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: 200;
     text-transform: uppercase; }
 
 .cajaEnlaces {
@@ -5312,7 +5312,7 @@ ul.cat3nivel {
     color: #FFF;
     font-size: 60px;
     font-size: 3.75rem;
-    font-weight: 300;
+    font-weight: 200;
     margin: 0 0 .25em 0;
     text-transform: uppercase; }
   .cornerstone p {
@@ -5320,7 +5320,7 @@ ul.cat3nivel {
     font-size: 18px;
     font-size: 1.125rem;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 200;
     margin: 0 0 .5em; }
 
 .mason .interiorPromocion p.linea1cajaPromocion {
@@ -5953,7 +5953,7 @@ ul.cat3nivel {
     font-family: "Dosis", serif;
     font-size: 13px;
     font-size: 0.8125rem;
-    font-weight: 300;
+    font-weight: 200;
     height: 8em;
     line-height: 1.2;
     padding: .5em 5%;
@@ -6138,7 +6138,7 @@ ul.cat3nivel {
       font-weight: 200;
       line-height: 1.3;
       margin: 0 0 .5em;
-      font-weight: 300;
+      font-weight: 200;
       margin: .25em 0;
       text-transform: uppercase;
       background-color: white;
@@ -6177,7 +6177,7 @@ ul.cat3nivel {
       color: white;
       font-size: 17px;
       font-size: 1.0625rem;
-      font-weight: 300;
+      font-weight: 200;
       margin-bottom: 0;
       padding: .15em .55em; }
       .site_1322782055091 .promocionContenido p.linea2cajaPromocion {
@@ -6663,7 +6663,7 @@ p#note {
     font-family: "Dosis", serif;
     font-size: 16px;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 200;
     left: 0;
     padding: 0.25em .35em .25em .5em;
     position: absolute;
@@ -6836,7 +6836,7 @@ p#note {
   position: relative;
   /*&:first-of-type {
   	font-family: 'Roboto Condensed', sans-serif;
-  	font-weight: $light;
+  	font-weight: $global-weight-light;
   	min-height: 16em;
   	padding: 0;
   	text-transform: uppercase;
@@ -6876,7 +6876,7 @@ p#note {
     font-size: 1rem; }
 .noticiasPortada a {
   color: #000;
-  font-weight: 300; }
+  font-weight: 200; }
 
 #cajaFormularioGenerico, #formContacto {
   border: 1px solid #cccccc;
@@ -7075,7 +7075,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     line-height: 1.3;
     margin: 0 0 .5em; }
     .cajaAyudaBorde p:first-of-type strong {
-      font-weight: 300; }
+      font-weight: 200; }
 
 #instruccionesUnicaError {
   background-color: #e64c3b;
@@ -7222,7 +7222,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     font-family: "Dosis", serif;
     font-size: 16px;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 200;
     position: relative;
     text-transform: uppercase; }
     .enlacesPie h2:after {
@@ -7502,7 +7502,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
   padding-bottom: 1em;
   top: 3.1em; }
   .site_1382936859765 h1 a {
-    font-weight: 300; }
+    font-weight: 200; }
   @media (min-width: 30em) {
     .site_1382936859765 h1 {
       font-size: 40px;
@@ -7615,7 +7615,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
 .site_1322782055091 h1 {
   font-size: 40px;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 200;
   padding-bottom: .9em;
   top: 2.55em; }
   @media (min-width: 30em) {
@@ -7730,7 +7730,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
 .site_1327566431975 h1 {
   font-size: 40px;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 200;
   top: 2.5em; }
   @media (min-width: 45em) {
     .site_1327566431975 h1 {
