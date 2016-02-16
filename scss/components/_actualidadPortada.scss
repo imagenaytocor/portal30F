@@ -118,7 +118,7 @@
 	& li {
 		border-bottom: 1px dotted #CCC;
 		@include rem('font-size',14px);
-		font-weight: $medium;
+		font-weight: $global-weight-bold;
 		padding: .5em .5em .25em;
 	}
 	& a {
@@ -151,7 +151,7 @@
 	}
 	& li {
 		border: 1px solid $grisBorde;
-		font-weight: $medium;
+		font-weight: $global-weight-bold;
 		padding: .5em .5em .25em;
 		position: relative;
 		@include breakpoints(tablet){

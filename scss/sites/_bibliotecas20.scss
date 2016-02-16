@@ -143,21 +143,21 @@
 	& .destacadosPortada span.linea1banner {
 	    background-color: $colorBibliotecas;
 	    color: $blanco;
-	    font-weight: $medium;
+	    font-weight: $global-weight-bold;
 	}
 	& .destacadosPortada span.linea2banner {
 	    border-top: 3px solid $blanco;
 	}
 	& .bannerUnaLinea p.linea1cajaPromocion a {
 		color: $colorBibliotecas;
-		font-weight: $medium;
+		font-weight: $global-weight-bold;
 	}
 	& .fondoColor p.linea1cajaPromocion a {
 		color: $blanco;
 	}
 	& .ui-datepicker-prev,
 	& .ui-datepicker-next {
-		font-weight: $medium;
+		font-weight: $global-weight-bold;
 	}
 	& span[class$="_fancy"]{
 		margin: 1% !important;

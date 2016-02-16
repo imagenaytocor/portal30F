@@ -39,7 +39,7 @@ td {
 	text-transform: none;
 	& dt {
 		@include rem('font-size',18px);
-		font-weight: $medium;
+		font-weight: $global-weight-bold;
 	}
 }
 

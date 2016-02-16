@@ -33,7 +33,7 @@
 				color:$enlace;
 			    content:counter(li);
 			    counter-increment:li;
-			    font-weight:$medium;
+			    font-weight:$global-weight-bold;
 				left:-1em;
 			    position:absolute;
 		    }
