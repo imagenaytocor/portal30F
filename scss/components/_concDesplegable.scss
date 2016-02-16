@@ -44,7 +44,7 @@
 			float: right;
 			width: 48%;
 			color: $grisTexto;
-			font-family: $titulos2-font-family;
+			font-family: $subheader-font-family;
 			font-weight: $global-weight-light;
 			margin-bottom: 2.5em;
 			@include breakpoints (desktop) {
@@ -83,7 +83,7 @@
 			& li {
 				background-color: transparent;
 				border: medium none;
-				font-family: $titulos2-font-family;
+				font-family: $subheader-font-family;
 				@include rem('font-size', 16px);
 				padding: 0;
 				&:before {

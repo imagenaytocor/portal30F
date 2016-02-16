@@ -156,6 +156,7 @@ $abbr-underline: 1px dotted $black;
 
 $lead-font-size: $global-font-size * 1.25;
 $lead-lineheight: 1.6;
+$subheader-font-family: "Roboto Condensed", Arial, sans-serif;
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;
@@ -170,8 +171,8 @@ $global-font-size: 10px;//$base-font-size
 
 // Headings
 
-$titulos2-font-family: "Roboto Condensed", sans-serif;
-$alt-font-family: "Roboto Condensed", sans-serif;
+
+$subheader-font-family: "Roboto Condensed", sans-serif;
 
 // Citas
 

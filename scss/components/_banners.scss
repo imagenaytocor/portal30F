@@ -310,7 +310,7 @@
 	& p {
 		display: flex;
 		justify-content: space-between;
-		font-family: $titulos2-font-family;
+		font-family: $subheader-font-family;
 		@include rem ('font-size', 14px);
 		margin-bottom: 0;
 		@include breakpoints (tablet) {

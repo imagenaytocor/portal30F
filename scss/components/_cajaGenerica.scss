@@ -39,7 +39,7 @@
 	& .textoContenido {
 		padding: .5em;
 		& * {
-			font-family: $titulos2-font-family;
+			font-family: $subheader-font-family;
 		}
 	}
 	& + & {
@@ -75,7 +75,7 @@
 		background-repeat: repeat-x !important;
 		padding: 1em .5em .5em;
 		& h3 {
-			font-family: $titulos2-font-family;
+			font-family: $subheader-font-family;
 		}
 	}
 
@@ -226,7 +226,7 @@
 	}
 	& p,
 	& li {
-		font-family: $titulos2-font-family;
+		font-family: $subheader-font-family;
 		@include rem ('font-size', 16px);
 	}
 	& .textoContenido p:last-child {
@@ -265,7 +265,7 @@
 	}
 	& p,
 	& li {
-		font-family: $titulos2-font-family;
+		font-family: $subheader-font-family;
 		@include rem ('font-size', 16px);
 	}
 	& .textoContenido p:last-child {
