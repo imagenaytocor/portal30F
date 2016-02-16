@@ -714,7 +714,7 @@ website:    http://www.burocratik.com
 
 #outdated h5,
 #outdated h6 {
-  color: #000;
+  color: #0a0a0a;
   font-family: "Dosis", serif;
   font-size: 30px;
   font-size: 1.875rem;
@@ -726,7 +726,7 @@ website:    http://www.burocratik.com
   margin: 1em 0 0; }
 
 #outdated p {
-  color: #404040;
+  color: #474747;
   font-family: "Dosis", serif;
   font-size: 20px;
   font-size: 1.25rem;
@@ -957,7 +957,7 @@ website:    http://www.burocratik.com
   background-position: -25px -25px; }
 
 #googleFrame {
-  color: #404040;
+  color: #474747;
   font-family: "Dosis", serif;
   font-size: 20px;
   font-size: 1.25rem;
@@ -1090,7 +1090,7 @@ input.gsc-search-button {
     color: #9163c9; }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
-  color: #404040; }
+  color: #474747; }
 
 .loader {
   background: url("https://coruna.es/cividas-more-employment-webapp/images/page-loader.gif") 50% 50% no-repeat white;
@@ -1125,7 +1125,7 @@ html {
 body {
   background-color: #FFF;
   color: #666666;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1250,7 +1250,7 @@ sub {
   font-size: smaller; }
 
 h2 {
-  color: #000;
+  color: #0a0a0a;
   font-family: "Dosis", serif;
   font-size: 30px;
   font-size: 1.875rem;
@@ -1264,7 +1264,7 @@ h2 {
     width: 100%; }
 
 h3 {
-  color: #000;
+  color: #0a0a0a;
   font-family: "Dosis", serif;
   font-size: 25px;
   font-size: 1.5625rem;
@@ -1276,7 +1276,7 @@ h3 {
     width: 100%; }
 
 h4 {
-  color: #000;
+  color: #0a0a0a;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
@@ -1285,7 +1285,7 @@ h4 {
   margin: 0 0 .5em; }
 
 h5 {
-  color: #000;
+  color: #0a0a0a;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
@@ -1294,7 +1294,7 @@ h5 {
   margin: 0 0 .5em; }
 
 h6 {
-  color: #000;
+  color: #0a0a0a;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -1303,7 +1303,7 @@ h6 {
   margin: 0 0 .5em; }
 
 p {
-  color: #404040;
+  color: #474747;
   font-family: "Dosis", serif;
   font-size: 20px;
   font-size: 1.25rem;
@@ -1419,7 +1419,7 @@ a {
       color: #b89adc; }
 
 dt {
-  color: #000;
+  color: #0a0a0a;
   font-family: "Dosis", serif;
   font-size: 16px;
   font-size: 1rem;
@@ -1427,7 +1427,7 @@ dt {
   line-height: 1.3; }
 
 dd {
-  color: #404040;
+  color: #474747;
   font-family: "Dosis", serif;
   font-size: 16px;
   font-size: 1rem;
@@ -1441,7 +1441,7 @@ ol {
   margin-left: 3.125%; }
 
 li {
-  color: #404040;
+  color: #474747;
   font-family: "Dosis", serif;
   font-size: 18px;
   font-size: 1.125rem;
@@ -1452,7 +1452,7 @@ li {
     list-style-type: decimal; }
 
 label, input, select, legend {
-  color: #404040;
+  color: #474747;
   font-family: "Dosis", serif;
   font-size: 20px;
   font-size: 1.25rem;
@@ -1461,7 +1461,7 @@ label, input, select, legend {
   margin-bottom: 1em; }
 
 table {
-  color: #404040;
+  color: #474747;
   font-family: "Dosis", serif;
   font-size: 18px;
   font-size: 1.125rem;
@@ -2304,9 +2304,9 @@ ul#accesos {
     .menuPrincipal ul.nivel3 a {
       color: #000 !important; }
   .menuPrincipal a {
-    color: #404040; }
+    color: #474747; }
     .menuPrincipal a:visited {
-      color: #404040; }
+      color: #474747; }
 
 .toggle-sub {
   margin: 0 .25em; }
@@ -2472,7 +2472,7 @@ ul#accesos {
     	visibility: visible;
     }*/ }
     #barraCompartir li a:before {
-      color: #000;
+      color: #0a0a0a;
       content: '\f1e0';
       cursor: pointer;
       display: inline-block;
@@ -2627,7 +2627,7 @@ ul#accesos {
     border-left-color: #9163c9; }
 
 dt.codigoQR:before, li.codigoQR:before {
-  color: #000;
+  color: #0a0a0a;
   content: "\f029";
   font-family: FontAwesome;
   font-size: 24px;
@@ -2653,7 +2653,7 @@ dt.codigoQR:before, li.codigoQR:before {
   .docuGen:last-of-type {
     margin-bottom: 1.5em; }
   .docuGen:before {
-    color: #000;
+    color: #0a0a0a;
     content: "\f016";
     font-family: FontAwesome;
     line-height: 1;
@@ -3112,7 +3112,7 @@ dt.codigoQR:before, li.codigoQR:before {
     .etiquetas a.current {
       background-color: #fefefe;
       border: 1px solid #cccccc;
-      color: #000; }
+      color: #0a0a0a; }
     @media (min-width: 45em) {
       .etiquetas a {
         border-bottom: 1px solid #fefefe;
@@ -3433,10 +3433,10 @@ p.masInfo {
     margin-top: .5em;
     font-size: 18px;
     font-size: 1.125rem;
-    color: #404040;
+    color: #474747;
     font-weight: 400; }
   .concDesplegable .desConTitulo a {
-    color: #404040; }
+    color: #474747; }
   .concDesplegable .desConTitulo .imagen {
     float: left;
     margin: 0;
@@ -3446,7 +3446,7 @@ p.masInfo {
     font-size: 1rem;
     float: right;
     width: 48%;
-    color: #404040;
+    color: #474747;
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 200;
     margin-bottom: 2.5em; }
@@ -3464,7 +3464,7 @@ p.masInfo {
       width: 100%; }
   .concDesplegable .desConTitulo span.fa {
     bottom: 0.25em;
-    color: #404040;
+    color: #474747;
     cursor: pointer;
     font-size: 2.5rem;
     position: absolute;
@@ -3486,7 +3486,7 @@ p.masInfo {
       font-size: 1rem;
       padding: 0; }
       .concDesplegable .desConTitulo .relacionados li:before {
-        color: #404040;
+        color: #474747;
         content: "\f101";
         font-family: FontAwesome;
         font-size: 20px;
@@ -3714,7 +3714,7 @@ p.masInfo {
     background-color: #EBEBEB;
     justify-content: space-around; }
   .cajaBuscadorResultado.cajaDesplegable h2 {
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 25px;
     font-size: 1.5625rem;
@@ -4020,7 +4020,7 @@ p.masInfo {
 .lstComSinEti dd[class^="nota"], .lstIconos dd[class^="nota"] {
   margin-left: 0; }
 .lstComSinEti .entradilla, .lstIconos .entradilla {
-  color: #000;
+  color: #0a0a0a;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 200;
@@ -4308,7 +4308,7 @@ p.masInfo {
     order: 1;
     width: auto; }
     .ui-datepicker .ui-datepicker-prev:before {
-      color: #000;
+      color: #0a0a0a;
       content: '\f100';
       cursor: pointer;
       display: inline-block;
@@ -4327,7 +4327,7 @@ p.masInfo {
     text-align: right;
     width: auto; }
     .ui-datepicker .ui-datepicker-next:after {
-      color: #000;
+      color: #0a0a0a;
       content: '\f101';
       cursor: pointer;
       display: inline-block;
@@ -4432,7 +4432,7 @@ p.masInfo {
     .site_1443062183533 .cajaBuscadorFormularioLista .listaCategorias li:before {
       color: #9163c9; }
   .cajaBuscadorFormularioLista .listaCategorias li a {
-    color: #404040; }
+    color: #474747; }
 .cajaBuscadorFormularioLista.cajaDesplegable {
   background-color: #fefefe;
   border: 1px solid #cccccc;
@@ -4445,7 +4445,7 @@ p.masInfo {
     background-color: #EBEBEB;
     justify-content: space-around; }
   .cajaBuscadorFormularioLista.cajaDesplegable h3 {
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 25px;
     font-size: 1.5625rem;
@@ -4501,7 +4501,7 @@ p.masInfo {
 .mostrarCategoriasAsset {
   margin-bottom: 1em; }
   .mostrarCategoriasAsset p {
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 30px;
     font-size: 1.875rem;
@@ -4563,7 +4563,7 @@ p.masInfo {
       .site_1443062183533 .mostrarCategoriasAsset li:before {
         color: #9163c9; }
     .mostrarCategoriasAsset li a {
-      color: #000; }
+      color: #0a0a0a; }
 
 .buscadorCategoriasComplejo ul {
   list-style: none; }
@@ -4737,7 +4737,7 @@ ul.cat3nivel {
   .cajaGenerica ul {
     list-style: none; }
   .cajaGenerica .relacionadosContenido li:before {
-    color: #404040; }
+    color: #474747; }
   .cajaGenerica .textoContenido dt {
     font-weight: 400; }
   .cajaGenerica .textoContenido dd {
@@ -4795,7 +4795,7 @@ ul.cat3nivel {
       background-color: #9163c9; }
     .cajaImgTxt .etiquetas a.current {
       background-color: #fefefe;
-      color: #000; }
+      color: #0a0a0a; }
   .cajaImgTxt.colCaja {
     background-repeat: repeat-x !important;
     padding: 1em .5em .5em; }
@@ -4884,7 +4884,7 @@ ul.cat3nivel {
       line-height: 1;
       padding-right: .5em; }
   .cajaDesplegable .relacionadosItem a {
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 14px;
     font-size: 0.875rem;
@@ -4951,7 +4951,7 @@ ul.cat3nivel {
     border-bottom: 1px solid #cccccc;
     margin-bottom: 0.5em; }
   .cajaInfo h3 {
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 30px;
     font-size: 1.875rem;
@@ -5006,7 +5006,7 @@ ul.cat3nivel {
     .site_1443062183533 .cajaInfoFlecha h2 {
       color: #9163c9; }
   .cajaInfoFlecha h3 {
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 30px;
     font-size: 1.875rem;
@@ -5158,7 +5158,7 @@ ul.cat3nivel {
       margin: 0 1em .5em 0 !important;
       width: 40%; } }
   .contenidoApartado .imagen p.pieImagen {
-    background-color: #000;
+    background-color: #0a0a0a;
     bottom: 0;
     color: #fefefe;
     font-size: 14px;
@@ -5468,7 +5468,7 @@ ul.cat3nivel {
   border: 1px solid #cccccc;
   border-left: 2px solid #0083d7;
   cursor: pointer;
-  color: #000;
+  color: #0a0a0a;
   font-family: "Dosis", serif;
   font-size: 25px;
   font-size: 1.5625rem;
@@ -5557,7 +5557,7 @@ ul.cat3nivel {
     .contenidoAcordeon ul li {
       margin-left: 2em; }
       .contenidoAcordeon ul li:before {
-        color: #000;
+        color: #0a0a0a;
         content: '\f101';
         cursor: pointer;
         display: inline-block;
@@ -5625,7 +5625,7 @@ ul.cat3nivel {
 .relacionadosItem ul {
   list-style: none; }
 .relacionadosItem li:before {
-  color: #000;
+  color: #0a0a0a;
   content: '\f101';
   cursor: pointer;
   display: inline-block;
@@ -5642,7 +5642,7 @@ ul.cat3nivel {
 .enlaceIconos .relacionadosContenido li:before {
   content: ''; }
 .enlaceIconos .relacionadosContenido li a:before {
-  color: #000;
+  color: #0a0a0a;
   content: '\f0ac';
   cursor: pointer;
   display: inline-block;
@@ -5949,7 +5949,7 @@ ul.cat3nivel {
       .tiraBanners .cajaBanner:first-of-type {
         margin-left: 0; } }
   .tiraBanners .cajaBanner p {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(10, 10, 10, 0.75);
     font-family: "Dosis", serif;
     font-size: 13px;
     font-size: 0.8125rem;
@@ -6131,7 +6131,7 @@ ul.cat3nivel {
   .promocionContenido p {
     padding: 0 .5em; }
     .promocionContenido p.linea1cajaPromocion {
-      color: #000;
+      color: #0a0a0a;
       font-family: "Dosis", serif;
       font-size: 25px;
       font-size: 1.5625rem;
@@ -6213,7 +6213,7 @@ ul.cat3nivel {
     margin-left: 1em;
     margin-right: .5em; }
     .promocionContenido li:before {
-      color: #000;
+      color: #0a0a0a;
       content: '\f101';
       cursor: pointer;
       display: inline-block;
@@ -6508,7 +6508,7 @@ span.fa {
       .site_1443062183533 .bannerFAcirc p .linea1banner {
         color: #9163c9; }
     .bannerFAcirc p .linea2banner {
-      color: #404040;
+      color: #474747;
       font-size: 16px;
       font-size: 1rem; }
   .bannerFAcirc.m-50:nth-of-type(2n+1) {
@@ -6522,13 +6522,13 @@ span.fa {
   .bannerHero:only-child {
     margin-bottom: 0; }
   .bannerHero p {
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(10, 10, 10, 0.35);
     height: 100%;
     margin-bottom: 0;
     width: 100%; }
     @media (min-width: 30em) {
       .bannerHero p {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(10, 10, 10, 0.5);
         margin-left: 50%;
         width: 50%; } }
   .bannerHero a {
@@ -6659,7 +6659,7 @@ p#note {
   .eventosPortada li a {
     background-color: #FFF;
     bottom: -10%;
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 16px;
     font-size: 1rem;
@@ -6793,7 +6793,7 @@ p#note {
     font-weight: 500;
     padding: .5em .5em .25em; }
   .avisosPortada a {
-    color: #000; }
+    color: #0a0a0a; }
 
 .noticiasPortada h3 {
   color: #0083d7;
@@ -6875,14 +6875,14 @@ p#note {
     font-size: 16px;
     font-size: 1rem; }
 .noticiasPortada a {
-  color: #000;
+  color: #0a0a0a;
   font-weight: 200; }
 
 #cajaFormularioGenerico, #formContacto {
   border: 1px solid #cccccc;
   padding: 1em; }
   #cajaFormularioGenerico legend, #formContacto legend {
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 25px;
     font-size: 1.5625rem;
@@ -6900,7 +6900,7 @@ p#note {
       #cajaFormularioGenerico label, #formContacto label {
         width: 75%; } }
     #cajaFormularioGenerico label input, #formContacto label input {
-      border: 1px solid #404040;
+      border: 1px solid #474747;
       border-radius: 0.3em;
       display: block;
       margin: .25em 0;
@@ -7067,7 +7067,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     font-size: 14px;
     font-size: 0.875rem; }
   .cajaAyudaBorde p:first-of-type {
-    color: #000;
+    color: #0a0a0a;
     font-family: "Dosis", serif;
     font-size: 25px;
     font-size: 1.5625rem;
@@ -7087,7 +7087,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     color: #fefefe;
     margin-bottom: 0; }
     #instruccionesUnicaError p.resultadoError {
-      color: #000;
+      color: #0a0a0a;
       font-family: "Dosis", serif;
       font-size: 25px;
       font-size: 1.5625rem;
@@ -7217,7 +7217,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     border-top: none;
     padding-top: .5em; }
   .enlacesPie h2 {
-    color: #000;
+    color: #0a0a0a;
     cursor: pointer;
     font-family: "Dosis", serif;
     font-size: 16px;
@@ -7308,7 +7308,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     object-fit: cover;
     width: 100%; }
 .tilesApp dt.titulo {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(10, 10, 10, 0.4);
   height: 4.85em;
   margin: 0;
   position: absolute;
@@ -7368,7 +7368,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
   .sliderDestacado .panel, .sliderMini .panel {
     position: relative; }
   .sliderDestacado .caption-right, .sliderMini .caption-right {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(10, 10, 10, 0.75);
     bottom: 2.1em;
     margin: .35em 0;
     padding: .3em;
@@ -7451,14 +7451,14 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
       border: 1px solid #cccccc;
       border-radius: 0.3em; }
   .site_1266409838114 ul#accesos .facebook a::before {
-    color: #404040;
+    color: #474747;
     display: block;
     text-align: center;
     height: 1.2em;
     line-height: 1.2;
     width: 1.2em; }
   .site_1266409838114 ul#accesos .twitter a::before {
-    color: #404040;
+    color: #474747;
     display: block;
     text-align: center;
     height: 1.2em;
@@ -7542,7 +7542,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
         font-size: 24px;
         font-size: 1.5rem; } }
 .site_1382936859765 .hilo2nivel a {
-  color: #404040; }
+  color: #474747; }
 .site_1382936859765 .menuPrincipal .nivel2 > li > a:hover, .site_1382936859765 .hilo2nivel a:hover {
   background-color: transparent;
   cursor: default; }
@@ -7585,7 +7585,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
 .site_1382936859765 .destacadosPortada p {
   font-weight: 400; }
 .site_1382936859765 p.linea1cajaPromocion a {
-  color: #404040; }
+  color: #474747; }
 .site_1382936859765 #outdated {
   background-image: url("//estaticos.coruna.es/imagesdu/bibliotecas.jpg"); }
 .site_1382936859765 .destacadosPortada span.linea1banner {

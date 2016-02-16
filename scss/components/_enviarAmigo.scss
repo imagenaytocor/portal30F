@@ -41,6 +41,6 @@
 }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-	font-family: $titulos-font-family !important;
+	font-family: $header-font-family !important;
 	@include rem('font-size',20px);
 }

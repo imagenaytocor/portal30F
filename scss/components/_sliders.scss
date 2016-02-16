@@ -3,7 +3,7 @@
 
 .anythingControls a.start-stop span {
 	color: #FFF;
-	font-family: $titulos-font-family;
+	font-family: $header-font-family;
 	@include rem('font-size', 12px);
 	font-weight: $titulos-font-weight;
 	line-height: 2;
@@ -63,7 +63,7 @@
 		}
 		& p {
 			color: #FFF;
-			font-family: $titulos-font-family;
+			font-family: $header-font-family;
 			@include rem('font-size', 16px);
 			font-weight: $titulos-font-weight;
 			line-height: 1.2;

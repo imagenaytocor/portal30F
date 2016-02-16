@@ -109,7 +109,7 @@
 			padding-top: .25em;
 		}
 		& p {
-			font-family: $titulos-font-family;
+			font-family: $header-font-family;
 			font-weight: $global-weight-xLight;
 			margin: 0 0.5em 0.5em 0.75em;
 		}
@@ -161,7 +161,7 @@
 		}
 		& a {
 			color: $black;
-			font-family: $titulos-font-family;
+			font-family: $header-font-family;
 			@include rem('font-size', 14px);
 			font-weight: $global-weight-light;
 			text-transform: uppercase;

@@ -71,7 +71,7 @@
 		}
 	}
 	& p {
-		font-family: $titulos-font-family;
+		font-family: $header-font-family;
 		font-weight: $titulos-font-weight;
 		margin-bottom: 0;
 		width: 100%;
@@ -192,7 +192,7 @@
 		}
 		& p {
 			background-color: rgba($black, 0.75);
-			font-family: $titulos-font-family;
+			font-family: $header-font-family;
 			@include rem('font-size', 13px);
 			font-weight: $global-weight-light;
 			height: 8em;
