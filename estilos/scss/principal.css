@@ -715,7 +715,7 @@ website:    http://www.burocratik.com
 #outdated h5,
 #outdated h6 {
   color: #0a0a0a;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: 200;
@@ -727,7 +727,7 @@ website:    http://www.burocratik.com
 
 #outdated p {
   color: #474747;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 200;
@@ -958,7 +958,7 @@ website:    http://www.burocratik.com
 
 #googleFrame {
   color: #474747;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 200;
@@ -1251,7 +1251,7 @@ sub {
 
 h2 {
   color: #0a0a0a;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: 200;
@@ -1265,7 +1265,7 @@ h2 {
 
 h3 {
   color: #0a0a0a;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 25px;
   font-size: 1.5625rem;
   font-weight: 200;
@@ -1304,7 +1304,7 @@ h6 {
 
 p {
   color: #474747;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 200;
@@ -1420,7 +1420,7 @@ a {
 
 dt {
   color: #0a0a0a;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 200;
@@ -1428,7 +1428,7 @@ dt {
 
 dd {
   color: #474747;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 200;
@@ -1442,7 +1442,7 @@ ol {
 
 li {
   color: #474747;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 200;
@@ -1453,7 +1453,7 @@ li {
 
 label, input, select, legend {
   color: #474747;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 200;
@@ -1462,7 +1462,7 @@ label, input, select, legend {
 
 table {
   color: #474747;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 200;
@@ -1838,7 +1838,7 @@ body:after {
     font-size: 1.5625rem; }
 
 .site_1322782055091 h1, .site_1322782134412 h1, .site_1352255804703 h1, .site_1280301855095 h1, .site_1382936859765 h1, .site_1369098952393 h1, .site_1327566431975 h1, .site_1327572561803 h1, .site_1347499014423 h1, .site_1416276701242 h1, .site_1240016856326 h1, .site_1443062183533 h1 {
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 60px;
   font-size: 3.75rem;
   font-weight: 400;
@@ -1911,7 +1911,7 @@ ul#idiomas {
   top: .75em; }
   ul#idiomas li {
     display: none;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 13px;
     font-size: 0.8125rem;
     text-transform: uppercase; }
@@ -2053,7 +2053,7 @@ ul#accesos {
     #menuMapaWeb ul li {
       border-bottom: 1px solid #FFF;
       flex-grow: 1;
-      font-family: "Dosis", serif;
+      font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
       font-size: 20px;
       font-size: 1.25rem;
       font-weight: 400;
@@ -3715,7 +3715,7 @@ p.masInfo {
     justify-content: space-around; }
   .cajaBuscadorResultado.cajaDesplegable h2 {
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 25px;
     font-size: 1.5625rem;
     font-weight: 200;
@@ -4299,7 +4299,7 @@ p.masInfo {
   .ui-datepicker .ui-datepicker-header {
     border: 1px solid #cccccc;
     display: flex;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     justify-content: space-between; }
   .ui-datepicker .ui-datepicker-prev {
     flex-basis: 5%;
@@ -4446,7 +4446,7 @@ p.masInfo {
     justify-content: space-around; }
   .cajaBuscadorFormularioLista.cajaDesplegable h3 {
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 25px;
     font-size: 1.5625rem;
     font-weight: 200;
@@ -4502,7 +4502,7 @@ p.masInfo {
   margin-bottom: 1em; }
   .mostrarCategoriasAsset p {
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 30px;
     font-size: 1.875rem;
     font-weight: 200;
@@ -4846,7 +4846,7 @@ ul.cat3nivel {
     .site_1443062183533 .cajaDesplegable.cajaGenerica h3 {
       color: #9163c9; }
   .cajaDesplegable.cajaGenerica p {
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-weight: 200;
     margin: 0 0.5em 0.5em 0.75em; }
   @media (min-width: 60em) {
@@ -4885,7 +4885,7 @@ ul.cat3nivel {
       padding-right: .5em; }
   .cajaDesplegable .relacionadosItem a {
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 200;
@@ -4952,7 +4952,7 @@ ul.cat3nivel {
     margin-bottom: 0.5em; }
   .cajaInfo h3 {
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 30px;
     font-size: 1.875rem;
     font-weight: 200;
@@ -5007,7 +5007,7 @@ ul.cat3nivel {
       color: #9163c9; }
   .cajaInfoFlecha h3 {
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 30px;
     font-size: 1.875rem;
     font-weight: 200;
@@ -5469,7 +5469,7 @@ ul.cat3nivel {
   border-left: 2px solid #0083d7;
   cursor: pointer;
   color: #0a0a0a;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 25px;
   font-size: 1.5625rem;
   font-weight: 200;
@@ -5772,7 +5772,7 @@ ul.cat3nivel {
       .destacadosPortada .promocionContenido {
         height: 12.5em; } }
   .destacadosPortada p {
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-weight: 200;
     margin-bottom: 0;
     width: 100%; }
@@ -5950,7 +5950,7 @@ ul.cat3nivel {
         margin-left: 0; } }
   .tiraBanners .cajaBanner p {
     background-color: rgba(10, 10, 10, 0.75);
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 13px;
     font-size: 0.8125rem;
     font-weight: 200;
@@ -6132,7 +6132,7 @@ ul.cat3nivel {
     padding: 0 .5em; }
     .promocionContenido p.linea1cajaPromocion {
       color: #0a0a0a;
-      font-family: "Dosis", serif;
+      font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
       font-size: 25px;
       font-size: 1.5625rem;
       font-weight: 200;
@@ -6660,7 +6660,7 @@ p#note {
     background-color: #FFF;
     bottom: -10%;
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 16px;
     font-size: 1rem;
     font-weight: 200;
@@ -6883,7 +6883,7 @@ p#note {
   padding: 1em; }
   #cajaFormularioGenerico legend, #formContacto legend {
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 25px;
     font-size: 1.5625rem;
     font-weight: 200;
@@ -7068,7 +7068,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     font-size: 0.875rem; }
   .cajaAyudaBorde p:first-of-type {
     color: #0a0a0a;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 25px;
     font-size: 1.5625rem;
     font-weight: 200;
@@ -7088,7 +7088,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     margin-bottom: 0; }
     #instruccionesUnicaError p.resultadoError {
       color: #0a0a0a;
-      font-family: "Dosis", serif;
+      font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
       font-size: 25px;
       font-size: 1.5625rem;
       font-weight: 200;
@@ -7152,7 +7152,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     background-color: #9163c9; }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-  font-family: "Dosis", serif !important;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif !important;
   font-size: 20px;
   font-size: 1.25rem; }
 
@@ -7219,7 +7219,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
   .enlacesPie h2 {
     color: #0a0a0a;
     cursor: pointer;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 16px;
     font-size: 1rem;
     font-weight: 200;
@@ -7262,7 +7262,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
     padding: 3.125%; }
   .cierrePie h2 {
     color: #666666;
-    font-family: "Dosis", serif;
+    font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 200;
@@ -7326,7 +7326,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
 
 .anythingControls a.start-stop span {
   color: #FFF;
-  font-family: "Dosis", serif;
+  font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 200;
@@ -7378,7 +7378,7 @@ textarea.Error, textarea.labelError, textarea.inputError, textarea.nullError {
         bottom: 1.75em; } }
     .sliderDestacado .caption-right p, .sliderMini .caption-right p {
       color: #FFF;
-      font-family: "Dosis", serif;
+      font-family: "Dosis", Helvetica, Roboto, Arial, sans-serif;
       font-size: 16px;
       font-size: 1rem;
       font-weight: 200;

@@ -87,7 +87,7 @@ $block-grid-max: 6;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: $global-weight-xLight;
 $header-font-style: normal;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 $header-sizes: (
@@ -169,8 +169,6 @@ $global-font-size: 10px;//$base-font-size
 
 
 // Headings
-$header-font-family: "Dosis", serif;
-$titulos-font-weight: $global-weight-xLight;
 
 $titulos2-font-family: "Roboto Condensed", sans-serif;
 $alt-font-family: "Roboto Condensed", sans-serif;
